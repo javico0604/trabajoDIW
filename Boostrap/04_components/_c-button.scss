@@ -1,0 +1,40 @@
+.c-button{
+    --c-button-strong-color: var( --color-primary-5);
+    --c-button-weak-color: var(--color-white-5);
+   
+    font-family: sans-serif;
+    font-size: 16px;
+    padding: 12px;
+    
+    border-radius: 6px;
+    border-width: 1px;
+    border-style: solid;
+    
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    
+    border-color: var(--c-button-strong-color);
+    background-color: var(--c-button-strong-color);
+    color: var(--c-button-weak-color);
+}
+
+.c-button--funcion-secundary{
+    --c-button-strong-color: var(--color-secundary-5);
+}
+
+.c-button--funcion-peligrosa{
+    --c-button-strong-color: var(--color-red-5);
+}
+
+.c-button--importancia-secundary{
+    border-color: var(--c-button-strong-color);
+    background-color: var(--c-button-weak-color);
+    color: var(--c-button-strong-color);
+}
+
+.c-button--importancia-tertiary{
+    border-color: transparent;
+    background-color: transparent;
+    color: var(--c-button-strong-color);
+}

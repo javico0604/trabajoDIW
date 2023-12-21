@@ -1,0 +1,18 @@
+.c-links {
+    --c-links-color: var( --color-primary-5);
+    
+    color: var(--c-links-color);
+    text-decoration: none;
+    
+}
+
+@each $key, $tones in $colores{
+
+    @if $key == "primary" {
+
+    }@else {
+        .c-links--#{$key}{
+            --c-links-color: var( --color-#{$key}-5);
+        }
+    }
+}

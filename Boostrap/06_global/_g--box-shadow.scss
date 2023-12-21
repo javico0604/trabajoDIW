@@ -1,0 +1,19 @@
+@mixin box-shadow($box-shadow) {
+  -webkit-box-shadow: $box-shadow;
+  -moz-box-shadow: $box-shadow;
+  box-shadow: $box-shadow;
+}
+
+$shadowsMap:map-keys($shadows);
+
+@each $value in $shadowsMap{
+    @if $value == ""{
+        .g--box-shadow{
+            @include box-shadow(map-get($shadows, $value));
+        }
+    } @else{
+        .g--box-shadow-#{$value}{
+            @include box-shadow(map-get($shadows, $value))
+        }
+    }
+}

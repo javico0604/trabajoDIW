@@ -1,0 +1,30 @@
+.c-footer {
+    --c-footer-strong-color: var( --color-primary-5);
+    --c-footer-weak-color: var(--color-white-5);
+
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    background-color: var(--c-footer-strong-color);
+    color: var(--c-footer-weak-color);
+}
+
+@each $key, $tones in $colores{
+
+    @if $key == "primary" {
+
+    }@else {
+        .c-footer--#{$key}{
+            --c-footer-strong-color: var( --color-#{$key}-5);
+        }
+    }
+    @if $key == "white" {
+        .c-footer--#{$key}{
+            --c-footer-strong-color: var( --color-white-5);
+            --c-footer-weak-color: var(--color-primary-5);
+        }
+    }
+}

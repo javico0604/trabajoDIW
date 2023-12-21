@@ -1,0 +1,5 @@
+@for $i from 1 to length($font-size) {
+    .g--font-size-#{$i}{
+        font-size:  nth($font-size, $i);
+    }
+}

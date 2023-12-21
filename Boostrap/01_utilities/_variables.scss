@@ -1,0 +1,24 @@
+$colores: (
+    "primary":(#E6EEFE, #B6CDF6, #8DB1E8, #6294D5, #387DC7, #2A659D, #184E77, #092F49, #011019),
+    "secundary":(#FEF4E6, #F6D9B6, #E8BA8D, #D59862, #C77438, #9D562A, #773818, #491C09, #190701),
+    "red":(#FEEAE6, #F5C0B8, #E49790, #D06C67, #BF4040, #98322F, #73231C, #47110A, #190501),
+    "green":(#E6FEE7, #B9F5B8, #96E490, #71D067, #53BF40, #42982F, #30731C, #1B470A, #081901),
+    "blue":(#E6ECFE, #B8C8F5, #90ABE4, #678CD0, #4073BF, #2F5C98, #1C4673, #0A2A47, #010E19),
+    "grey":(#F7F7F7, #D9D9D9, #BDBDBD, #999999, #808080, #636363, #454545, #262626, #000000),
+    "white": (#FFFFFF, #FCFCFC, #FAFAFA, #F7F7F7, #F5F5F5, #F2F2F2, #F0F0F0, #EDEDED, #EBEBEB)
+);
+
+$shadows: (
+    "none": none,
+    "sm": 0 1px 3px hsla(0, 0%, 0%, .2), 
+    "": 0 4px 6px hsla(0, 0%, 0%, .2), 
+    "lg": 0 5px 15px hsla(0, 0%, 0%, .2), 
+    "xlg": 0 10px 24px hsla(0, 0%, 0%, .2), 
+    "xxlg": 0 15px 35px hsla(0, 0%, 0%, .2)
+);
+
+$paddings: (0px, 4px, 6px, 8px, 10px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px, 80px, 96px, 128px, 160px, 192px, 224px, 256px, 320px, 480px, 640px);
+
+$margins: (0px, 4px, 6px, 8px, 10px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px, 80px, 96px, 128px, 160px, 192px, 224px, 256px, 320px, 480px, 640px);
+
+$font-size: (0px, 4px, 6px, 8px, 10px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px);
