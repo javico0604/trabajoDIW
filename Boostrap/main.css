@@ -373,60 +373,70 @@ html {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
 }
-
-.l-columns {
-  display: grid;
+.l-columns--2 {
   grid-template-columns: repeat(2, 1fr);
 }
-
-.l-columns {
-  display: grid;
+.l-columns--3 {
   grid-template-columns: repeat(3, 1fr);
 }
-
-.l-columns {
-  display: grid;
+.l-columns--4 {
   grid-template-columns: repeat(4, 1fr);
 }
-
-.l-columns {
-  display: grid;
+.l-columns--5 {
   grid-template-columns: repeat(5, 1fr);
 }
-
-.l-columns {
-  display: grid;
+.l-columns--6 {
   grid-template-columns: repeat(6, 1fr);
 }
-
-.l-columns {
-  display: grid;
+.l-columns--7 {
   grid-template-columns: repeat(7, 1fr);
 }
-
-.l-columns {
-  display: grid;
+.l-columns--8 {
   grid-template-columns: repeat(8, 1fr);
 }
-
-.l-columns {
-  display: grid;
+.l-columns--9 {
   grid-template-columns: repeat(9, 1fr);
 }
-
-.l-columns {
-  display: grid;
+.l-columns--10 {
   grid-template-columns: repeat(10, 1fr);
 }
-
-.l-columns {
-  display: grid;
+.l-columns--11 {
   grid-template-columns: repeat(11, 1fr);
 }
 
-.l-columns {
+.l-rows {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+.l-rows--2 {
+  grid-template-rows: repeat(2, 1fr);
+}
+.l-rows--3 {
+  grid-template-rows: repeat(3, 1fr);
+}
+.l-rows--4 {
+  grid-template-rows: repeat(4, 1fr);
+}
+.l-rows--5 {
+  grid-template-rows: repeat(5, 1fr);
+}
+.l-rows--6 {
+  grid-template-rows: repeat(6, 1fr);
+}
+.l-rows--7 {
+  grid-template-rows: repeat(7, 1fr);
+}
+.l-rows--8 {
+  grid-template-rows: repeat(8, 1fr);
+}
+.l-rows--9 {
+  grid-template-rows: repeat(9, 1fr);
+}
+.l-rows--10 {
+  grid-template-rows: repeat(10, 1fr);
+}
+.l-rows--11 {
+  grid-template-rows: repeat(11, 1fr);
 }
 
 .c-button {
@@ -578,6 +588,17 @@ html {
 .c-footer--white {
   --c-footer-strong-color: var( --color-white-5);
   --c-footer-weak-color: var(--color-primary-5);
+}
+
+.c-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  margin: 50px auto;
+  padding: 20px;
+}
+.c-form__submit {
+  margin-bottom: 8px;
 }
 
 .g--padding-1 {

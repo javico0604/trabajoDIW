@@ -1,0 +1,15 @@
+.c-form{
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+
+    &__submit{
+        margin-bottom: 8px;
+    }
+}
+
+
+
+
