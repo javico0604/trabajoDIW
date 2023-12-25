@@ -553,12 +553,16 @@ html {
   --c-footer-strong-color: var( --color-primary-5);
   --c-footer-weak-color: var(--color-white-5);
   text-align: center;
-  padding: 10px;
-  position: fixed;
+  margin-top: auto;
   bottom: 0;
+  padding: 10px;
   width: 100%;
   background-color: var(--c-footer-strong-color);
   color: var(--c-footer-weak-color);
+}
+.c-footer--without-scroll {
+  position: absolute;
+  bottom: 0;
 }
 
 .c-footer--secundary {
@@ -594,11 +598,58 @@ html {
   display: flex;
   flex-direction: column;
   max-width: 350px;
-  margin: 50px auto;
+  margin: 25px auto;
   padding: 20px;
 }
 .c-form__submit {
   margin-bottom: 8px;
+}
+
+.c-title {
+  --c-title-color: var( --color-primary-5);
+  color: var(--c-title-color);
+  font-size: 32px;
+  font-weight: bold;
+  padding: 15px;
+}
+.c-title--very-small {
+  font-size: 16px;
+}
+.c-title--small {
+  font-size: 24px;
+}
+.c-title--large {
+  font-size: 48px;
+}
+.c-title--very-large {
+  font-size: 64px;
+}
+.c-title--center {
+  text-align: center;
+}
+
+.c-title--secundary {
+  --c-title-color: var( --color-secundary-5);
+}
+
+.c-title--red {
+  --c-title-color: var( --color-red-5);
+}
+
+.c-title--green {
+  --c-title-color: var( --color-green-5);
+}
+
+.c-title--blue {
+  --c-title-color: var( --color-blue-5);
+}
+
+.c-title--grey {
+  --c-title-color: var( --color-grey-5);
+}
+
+.c-title--white {
+  --c-title-color: var( --color-white-5);
 }
 
 .g--padding-1 {

@@ -3,13 +3,20 @@
     --c-footer-weak-color: var(--color-white-5);
 
     text-align: center;
-    padding: 10px;
-    position: fixed;
+
+    margin-top: auto;
     bottom: 0;
+   
+    padding: 10px;
     width: 100%;
 
     background-color: var(--c-footer-strong-color);
     color: var(--c-footer-weak-color);
+
+    &--without-scroll{
+        position: absolute;
+        bottom: 0;    
+    }
 }
 
 @each $key, $tones in $colores{
