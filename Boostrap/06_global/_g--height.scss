@@ -1,0 +1,5 @@
+@for $i from 1 to length($height){
+    .g--height-#{$i}{
+        height: nth($height, $i);
+    }
+}
