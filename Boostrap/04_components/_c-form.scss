@@ -5,11 +5,18 @@
     margin: 25px auto;
     padding: 20px;
 
-    &__submit{
-        margin-bottom: 8px;
+    @for $i from 1 to length($margins) {
+        &__submit--#{$i}{
+            margin-bottom: nth($margins, $i);
+        }
+    }
+
+    @each $key, $tones in $colores{
+        &__text--#{$key}{
+            color: var( --color-#{$key}-5);    
+        }
     }
 }
-
 
 
 

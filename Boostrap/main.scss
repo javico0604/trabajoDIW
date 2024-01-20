@@ -7,7 +7,8 @@
 
 @import
 '03_layout/_l-columns.scss',
-'03_layout/_l-rows.scss';
+'03_layout/_l-rows.scss',
+'03_layout/_l-flex.scss';
 
 @import
 '04_components/_c-button.scss',
@@ -22,4 +23,8 @@
 '06_global/_g--margin.scss',
 '06_global/_g--box-shadow.scss',
 '06_global/_g--color.scss',
-'06_global/_g--font-size.scss'
+'06_global/_g--font-size.scss',
+'06_global/_g--border-radius.scss',
+'06_global/_g--height.scss',
+'06_global/_g--width.scss',
+'06_global/_g--inset.scss';

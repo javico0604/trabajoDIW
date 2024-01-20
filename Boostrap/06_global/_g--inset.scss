@@ -1,0 +1,24 @@
+@for $i from 1 to length($inset){
+    .g--inset-#{$i}{
+        top: nth($inset, $i);
+        right: nth($inset, $i);
+        bottom: nth($inset, $i);
+        left: nth($inset, $i);
+    }
+
+    .g--inset-top#{$i}{
+        top: nth($inset, $i);
+    }
+
+    .g--inset-right#{$i}{
+        right: nth($inset, $i);
+    }
+
+    .g--inset-bottom#{$i}{
+        bottom: nth($inset, $i);
+    }
+
+    .g--inset-left#{$i}{
+        left: nth($inset, $i);
+    }
+}
