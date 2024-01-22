@@ -1,22 +1,28 @@
-.c-form{
-    display: flex;
-    flex-direction: column;
-    max-width: 350px;
-    margin: 25px auto;
-    padding: 20px;
+@each $key, $value in $breakpoint {
+    @media (min-width: $value){
+        .c-form{
+            display: flex;
+            flex-direction: column;
+            max-width: 350px;
+            margin: 25px auto;
+            padding: 20px;
 
-    @for $i from 1 to length($margins) {
-        &__submit--#{$i}{
-            margin-bottom: nth($margins, $i);
-        }
-    }
+            @for $i from 1 to length($margins) {
+                &__submit--#{$i}{
+                    margin-bottom: nth($margins, $i);
+                }
+            }
 
-    @each $key, $tones in $colores{
-        &__text--#{$key}{
-            color: var( --color-#{$key}-5);    
+            @each $key, $tones in $colores{
+                &__text--#{$key}{
+                    color: var( --color-#{$key}-5);    
+                }
+            }
         }
     }
 }
+
+
 
 
 

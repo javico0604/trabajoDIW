@@ -1,51 +1,57 @@
-@for $i from 1 to length($paddings) {
-    $value: nth($paddings, $i);
-    .g--padding-#{$i}{
-        padding: $value;
+@each $key, $value in $breakpoint {
+    @media (min-width: $value){
+        @for $i from 1 to length($paddings) {
+            $value: nth($paddings, $i);
+            .g--padding-#{$i}{
+                padding: $value;
+            }
+        }
+
+        @for $i from 1 to length($paddings) {
+            $value: nth($paddings, $i);
+            .g--padding-x-#{$i}{
+                padding-right: $value;
+                padding-left: $value;
+            }
+        }
+
+        @for $i from 1 to length($paddings) {
+            $value: nth($paddings, $i);
+            .g--padding-y-#{$i}{
+                padding-top: $value;
+                padding-bottom: $value;
+            }
+        }
+
+        @for $i from 1 to length($paddings) {
+            $value: nth($paddings, $i);
+            .g--padding-left-#{$i}{
+                padding-left: $value;
+            }
+        }
+
+
+        @for $i from 1 to length($paddings) {
+            $value: nth($paddings, $i);
+            .g--padding-right-#{$i}{
+                padding-right: $value;
+            }
+        }
+
+        @for $i from 1 to length($paddings) {
+            $value: nth($paddings, $i);
+            .g--padding-top-#{$i}{
+                padding-top: $value;
+            }
+        }
+
+        @for $i from 1 to length($paddings) {
+            $value: nth($paddings, $i);
+            .g--padding-bottom-#{$i}{
+                padding-bottom: $value;
+            }
+        }
+
     }
 }
 
-@for $i from 1 to length($paddings) {
-    $value: nth($paddings, $i);
-    .g--padding-x-#{$i}{
-        padding-right: $value;
-        padding-left: $value;
-    }
-}
-
-@for $i from 1 to length($paddings) {
-    $value: nth($paddings, $i);
-    .g--padding-y-#{$i}{
-        padding-top: $value;
-        padding-bottom: $value;
-    }
-}
-
-@for $i from 1 to length($paddings) {
-    $value: nth($paddings, $i);
-    .g--padding-left-#{$i}{
-        padding-left: $value;
-    }
-}
-
-
-@for $i from 1 to length($paddings) {
-    $value: nth($paddings, $i);
-    .g--padding-right-#{$i}{
-        padding-right: $value;
-    }
-}
-
-@for $i from 1 to length($paddings) {
-    $value: nth($paddings, $i);
-    .g--padding-top-#{$i}{
-        padding-top: $value;
-    }
-}
-
-@for $i from 1 to length($paddings) {
-    $value: nth($paddings, $i);
-    .g--padding-bottom-#{$i}{
-        padding-bottom: $value;
-    }
-}

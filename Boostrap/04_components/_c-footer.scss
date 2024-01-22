@@ -1,34 +1,39 @@
-.c-footer {
-    --c-footer-strong-color: var( --color-primary-5);
-    --c-footer-weak-color: var(--color-white-5);
+@each $key, $value in $breakpoint {
+    @media (min-width: $value){
+        .c-footer {
+            --c-footer-strong-color: var( --color-primary-5);
+            --c-footer-weak-color: var(--color-white-5);
 
-    text-align: center;
+            text-align: center;
 
-    margin-top: auto;
-    bottom: 0;
-   
-    padding: 10px;
-    width: 100%;
+            margin-top: auto;
+            bottom: 0;
+        
+            padding: 10px;
+            width: 100%;
 
-    background-color: var(--c-footer-strong-color);
-    color: var(--c-footer-weak-color);
+            background-color: var(--c-footer-strong-color);
+            color: var(--c-footer-weak-color);
 
-    &--without-scroll{
-        position: absolute;
-        bottom: 0;    
-    }
-}
+            &--without-scroll{
+                position: absolute;
+                bottom: 0;    
+            }
+        }
 
-@each $key, $tones in $colores{
-    
-    .c-footer--#{$key}{
-        --c-footer-strong-color: var( --color-#{$key}-5);
-        @if $key == "white" {
-            --c-footer-weak-color: var(--color-primary-5);
+        @each $key, $tones in $colores{
+            
+            .c-footer--#{$key}{
+                --c-footer-strong-color: var( --color-#{$key}-5);
+                @if $key == "white" {
+                    --c-footer-weak-color: var(--color-primary-5);
+                }
+            }
+            
+            .c-footer-letter--#{$key}{
+                --c-footer-weak-color: var(--color-#{key}-5);
+            }
         }
     }
-    
-    .c-footer-letter--#{$key}{
-        --c-footer-weak-color: var(--color-#{key}-5);
-    }
 }
+

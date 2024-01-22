@@ -5,19 +5,22 @@
         }   
     }
 }
+@each $key, $value in $breakpoint {
+    @media (min-width: $value){
+        @each $key, $tones in $colores{
+            @for $i from 1 through length($tones){
+                .g--color-#{$key}-#{$i}{
+                    color: var(--color-#{$key}-#{$i});
+                }
 
-@each $key, $tones in $colores{
-    @for $i from 1 through length($tones){
-        .g--color-#{$key}-#{$i}{
-            color: var(--color-#{$key}-#{$i});
-        }
+                .g--background-color-#{$key}-#{$i}{
+                    background-color: var(--color-#{$key}-#{$i});
+                }
 
-        .g--background-color-#{$key}-#{$i}{
-            background-color: var(--color-#{$key}-#{$i});
+                .g--border-color-#{$key}-#{$i}{
+                    border-color: var(--color-#{$key}-#{$i});
+                }
+            }   
         }
-
-        .g--border-color-#{$key}-#{$i}{
-            border-color: var(--color-#{$key}-#{$i});
-        }
-    }   
+    }
 }

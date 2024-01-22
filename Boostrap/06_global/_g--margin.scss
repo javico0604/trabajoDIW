@@ -1,51 +1,57 @@
-@for $i from 1 to length($margins) {
-    $value: nth($margins, $i);
-    .g--margin-#{$i}{
-        margin: $value;
+@each $key, $value in $breakpoint {
+    @media (min-width: $value){
+        @for $i from 1 to length($margins) {
+            $value: nth($margins, $i);
+            .g--margin-#{$i}{
+                margin: $value;
+            }
+        }
+
+        @for $i from 1 to length($margins) {
+            $value: nth($margins, $i);
+            .g--margin-x-#{$i}{
+                margin-right: $value;
+                margin-left: $value;
+            }
+        }
+
+        @for $i from 1 to length($margins) {
+            $value: nth($margins, $i);
+            .g--margin-y-#{$i}{
+                margin-top: $value;
+                margin-bottom: $value;
+            }
+        }
+
+        @for $i from 1 to length($margins) {
+            $value: nth($margins, $i);
+            .g--margin-left-#{$i}{
+                margin-left: $value;
+            }
+        }
+
+
+        @for $i from 1 to length($margins) {
+            $value: nth($margins, $i);
+            .g--margin-right-#{$i}{
+                margin-right: $value;
+            }
+        }
+
+        @for $i from 1 to length($margins) {
+            $value: nth($margins, $i);
+            .g--margin-top-#{$i}{
+                margin-top: $value;
+            }
+        }
+
+        @for $i from 1 to length($margins) {
+            $value: nth($margins, $i);
+            .g--margin-bottom-#{$i}{
+                margin-bottom: $value;
+            }
+        }
+
     }
 }
 
-@for $i from 1 to length($margins) {
-    $value: nth($margins, $i);
-    .g--margin-x-#{$i}{
-        margin-right: $value;
-        margin-left: $value;
-    }
-}
-
-@for $i from 1 to length($margins) {
-    $value: nth($margins, $i);
-    .g--margin-y-#{$i}{
-        margin-top: $value;
-        margin-bottom: $value;
-    }
-}
-
-@for $i from 1 to length($margins) {
-    $value: nth($margins, $i);
-    .g--margin-left-#{$i}{
-        margin-left: $value;
-    }
-}
-
-
-@for $i from 1 to length($margins) {
-    $value: nth($margins, $i);
-    .g--margin-right-#{$i}{
-        margin-right: $value;
-    }
-}
-
-@for $i from 1 to length($margins) {
-    $value: nth($margins, $i);
-    .g--margin-top-#{$i}{
-        margin-top: $value;
-    }
-}
-
-@for $i from 1 to length($margins) {
-    $value: nth($margins, $i);
-    .g--margin-bottom-#{$i}{
-        margin-bottom: $value;
-    }
-}

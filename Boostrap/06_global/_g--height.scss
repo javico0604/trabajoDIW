@@ -1,5 +1,10 @@
-@for $i from 1 to length($height){
-    .g--height-#{$i}{
-        height: nth($height, $i);
+@each $key, $value in $breakpoint {
+    @media (min-width: $value){
+        @for $i from 1 to length($height){
+            .g--height-#{$i}{
+                height: nth($height, $i);
+            }
+        }
     }
 }
+

@@ -1,5 +1,9 @@
-@for $i from 1 to length($font-size) {
-    .g--font-size-#{$i}{
-        font-size:  nth($font-size, $i);
+@each $key, $value in $breakpoint {
+    @media (min-width: $value){
+        @for $i from 1 to length($font-size) {
+            .g--font-size-#{$i}{
+                font-size:  nth($font-size, $i);
+            }
+        }
     }
 }

@@ -1,36 +1,42 @@
-.c-header{
-    --c-header-color: var( --color-primary-5);
+@each $key, $value in $breakpoint {
+    @media (min-width: $value){
+        .c-header{
+            --c-header-color: var( --color-primary-5);
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
 
-    text-decoration: none;
-    font-family: sans-serif;
-    font-size: 16px;
-    padding: 10px 20px;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-size: 16px;
+            padding: 10px 20px;
 
-    background-color: var(--c-header-color);
+            background-color: var(--c-header-color);
 
-    &__logo {
-        font-size: 24px;
-    }
+            &__logo {
+                font-size: 24px;
+            }
 
-    &__links {
-        display: flex;
-        gap: 20px;
-    }
-    
-}
+            &__links {
+                display: flex;
+                gap: 20px;
+            }
+            
+        }
 
-@each $key, $tones in $colores{
+        @each $key, $tones in $colores{
 
-    @if $key == "primary" {
+            @if $key == "primary" {
 
-    }@else {
-        .c-header--#{$key}{
-            --c-header-color: var( --color-#{$key}-5);
+            }@else {
+                .c-header--#{$key}{
+                    --c-header-color: var( --color-#{$key}-5);
+                }
+            }
         }
     }
 }
+
+
 

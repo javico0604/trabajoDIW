@@ -1,21 +1,25 @@
-@for $i from 1 to length($border-radius){
-    .g--border-radius-#{$i}{
-        border-radius:  nth($border-radius, $i);
-    }
+@each $key, $value in $breakpoint {
+    @media (min-width: $value){
+        @for $i from 1 to length($border-radius){
+            .g--border-radius-#{$i}{
+                border-radius:  nth($border-radius, $i);
+            }
 
-    .g--border-top-right-radius-#{i}{
-        border-top-right-radius: nth($border-radius, $i);
-    }
+            .g--border-top-right-radius-#{i}{
+                border-top-right-radius: nth($border-radius, $i);
+            }
 
-    .g--border-bottom-left-radius-#{i}{
-        border-bottom-left-radius: nth($border-radius, $i);
-    }
+            .g--border-bottom-left-radius-#{i}{
+                border-bottom-left-radius: nth($border-radius, $i);
+            }
 
-    .g--border-bottom-right-radius-#{i}{
-       border-bottom-right-radius: nth($border-radius, $i);
-    }
+            .g--border-bottom-right-radius-#{i}{
+            border-bottom-right-radius: nth($border-radius, $i);
+            }
 
-    .g--border-top-left-radius-#{i}{
-        border-top-left-radius: nth($border-radius, $i);
+            .g--border-top-left-radius-#{i}{
+                border-top-left-radius: nth($border-radius, $i);
+            }
+        }
     }
 }
