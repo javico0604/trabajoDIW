@@ -1,0 +1,36 @@
+@each $key, $value in $breakpoint {
+    @media (min-width: $value){
+        .l-structure{
+            display: grid;
+            grid-template-areas: 
+            "left-side body body body right-side";
+
+            &__body{
+                grid-area: body;
+            }
+
+            &__right-side{
+                grid-area: right-side;
+            }
+
+            &__left-side{
+                grid-area: left-side;
+            }
+
+            &--left-side{
+                grid-template-areas: 
+                "left-side body body body";
+            }
+
+            &--right-side{
+                grid-template-areas: 
+                "body body body right-side ";
+            }
+
+            &--equal-side{
+                grid-template-areas: 
+                "left-side body right-side ";
+            }
+        }
+    }
+}
