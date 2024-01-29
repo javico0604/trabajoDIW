@@ -1,6 +1,17 @@
 @each $key, $value in $breakpoint {
     @media (min-width: $value){
-        .l-order{
+        $right-side: \@#{$key};
+        
+        @if($key == ""){
+            $size: "";
+        }
+
+        @if($left-side == true){
+            $right-side: "";
+            $left-side: #{key}\@;
+        }
+
+        .#{$left-side}l-order#{$right-side}{
             display: grid;
             grid-template-areas: 
             "1"
