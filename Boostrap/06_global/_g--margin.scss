@@ -1,57 +1,51 @@
 @each $key, $value in $breakpoint {
     @media (min-width: $value){
+        $right-side: \@#{$key};
+        $left-side: "";
+
+        @if($initially-breackpoint == true){
+            $right-side: "";
+            $left-side: #{$key}\@;
+        }
+
+        @if($key == ""){
+            $right-side: "";
+            $left-side: "";
+        }
+        
         @for $i from 1 to length($margins) {
             $value: nth($margins, $i);
-            .g--margin-#{$i}{
+            .#{$left-side}g--margin-#{$i}#{$right-side}{
                 margin: $value;
             }
-        }
-
-        @for $i from 1 to length($margins) {
-            $value: nth($margins, $i);
-            .g--margin-x-#{$i}{
+        
+            .#{$left-side}g--margin-x-#{$i}#{$right-side}{
                 margin-right: $value;
                 margin-left: $value;
             }
-        }
-
-        @for $i from 1 to length($margins) {
-            $value: nth($margins, $i);
-            .g--margin-y-#{$i}{
+        
+            .#{$left-side}g--margin-y-#{$i}#{$right-side}{
                 margin-top: $value;
                 margin-bottom: $value;
             }
-        }
-
-        @for $i from 1 to length($margins) {
-            $value: nth($margins, $i);
-            .g--margin-left-#{$i}{
+        
+            .#{$left-side}g--margin-left-#{$i}#{$right-side}{
                 margin-left: $value;
             }
-        }
-
-
-        @for $i from 1 to length($margins) {
-            $value: nth($margins, $i);
-            .g--margin-right-#{$i}{
+        
+            .#{$left-side}g--margin-right-#{$i}#{$right-side}{
                 margin-right: $value;
+            
             }
-        }
 
-        @for $i from 1 to length($margins) {
-            $value: nth($margins, $i);
-            .g--margin-top-#{$i}{
+            .#{$left-side}g--margin-top-#{$i}#{$right-side}{
                 margin-top: $value;
             }
-        }
-
-        @for $i from 1 to length($margins) {
-            $value: nth($margins, $i);
-            .g--margin-bottom-#{$i}{
+    
+            .#{$left-side}g--margin-bottom-#{$i}#{$right-side}{
                 margin-bottom: $value;
-            }
-        }
+            } 
 
+        }
     }
 }
-

@@ -1,33 +1,46 @@
 @each $key, $value in $breakpoint {
     @media (min-width: $value){
-        .l-structure{
+        $right-side: \@#{$key};
+        $left-side: "";
+
+        @if($initially-breackpoint == true){
+            $right-side: "";
+            $left-side: #{$key}\@;
+        }
+
+        @if($key == ""){
+            $right-side: "";
+            $left-side: "";
+        }
+
+        .#{$left-side}l-structure#{$right-side}{
             display: grid;
             grid-template-areas: 
             "left-side body body body right-side";
 
-            &__body{
+            &__body#{$right-side}{
                 grid-area: body;
             }
 
-            &__right-side{
+            &__right-side#{$right-side}{
                 grid-area: right-side;
             }
 
-            &__left-side{
+            &__left-side#{$right-side}{
                 grid-area: left-side;
             }
 
-            &--left-side{
+            &--left-side#{$right-side}{
                 grid-template-areas: 
                 "left-side body body body";
             }
 
-            &--right-side{
+            &--right-side#{$right-side}{
                 grid-template-areas: 
                 "body body body right-side ";
             }
 
-            &--equal-side{
+            &--equal-side#{$right-side}{
                 grid-template-areas: 
                 "left-side body right-side ";
             }

@@ -1,14 +1,16 @@
 @each $key, $value in $breakpoint {
     @media (min-width: $value){
         $right-side: \@#{$key};
-        
-        @if($key == ""){
-            $size: "";
+        $left-side: "";
+
+        @if($initially-breackpoint == true){
+            $right-side: "";
+            $left-side: #{$key}\@;
         }
 
-        @if($left-side == true){
+        @if($key == ""){
             $right-side: "";
-            $left-side: #{key}\@;
+            $left-side: "";
         }
 
         .#{$left-side}l-order#{$right-side}{

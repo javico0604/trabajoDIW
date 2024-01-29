@@ -1,7 +1,20 @@
 @each $key, $value in $breakpoint {
     @media (min-width: $value){
+        $right-side: \@#{$key};
+        $left-side: "";
+
+        @if($initially-breackpoint == true){
+            $right-side: "";
+            $left-side: #{$key}\@;
+        }
+
+        @if($key == ""){
+            $right-side: "";
+            $left-side: "";
+        }
+
         @for $i from 1 to length($font-size) {
-            .g--font-size-#{$i}{
+            .#{$left-side}g--font-size-#{$i}#{$right-side}{
                 font-size:  nth($font-size, $i);
             }
         }

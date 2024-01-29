@@ -1,6 +1,19 @@
 @each $key, $value in $breakpoint {
     @media (min-width: $value){
-        .c-header{
+        $right-side: \@#{$key};
+        $left-side: "";
+
+        @if($initially-breackpoint == true){
+            $right-side: "";
+            $left-side: #{$key}\@;
+        }
+
+        @if($key == ""){
+            $right-side: "";
+            $left-side: "";
+        }
+
+        .#{$left-side}c-header#{$right-side}{
             --c-header-color: var( --color-primary-5);
 
             display: flex;
@@ -14,11 +27,11 @@
 
             background-color: var(--c-header-color);
 
-            &__logo {
+            &__logo#{$right-side} {
                 font-size: 24px;
             }
 
-            &__links {
+            &__links#{$right-side} {
                 display: flex;
                 gap: 20px;
             }
@@ -30,7 +43,7 @@
             @if $key == "primary" {
 
             }@else {
-                .c-header--#{$key}{
+                .#{$left-side}c-header--#{$key}#{$right-side}{
                     --c-header-color: var( --color-#{$key}-5);
                 }
             }

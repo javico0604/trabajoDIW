@@ -1,6 +1,19 @@
 @each $key, $value in $breakpoint {
   @media (min-width: $value) {
-    .l-columns {
+    $right-side: \@#{$key};
+    $left-side: "";
+
+    @if($initially-breackpoint == true){
+        $right-side: "";
+        $left-side: #{$key}\@;
+    }
+
+    @if($key == ""){
+      $right-side: \@#{$key};
+      $left-side: "";
+    }
+
+    .#{$left-side}l-columns#{$right-side} {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
 
@@ -10,7 +23,7 @@
         }
       }
 
-      &--infinite {
+      &--infinite #{$right-side}{
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
       }
     }

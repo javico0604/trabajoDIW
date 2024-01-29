@@ -1,6 +1,19 @@
 @each $key, $value in $breakpoint {
     @media (min-width: $value){
-        .c-footer {
+        $right-side: \@#{$key};
+        $left-side: "";
+
+        @if($initially-breackpoint == true){
+            $right-side: "";
+            $left-side: #{$key}\@;
+        }
+
+        @if($key == ""){
+            $right-side: "";
+            $left-side: "";
+        }
+
+        .#{$left-side}c-footer#{$right-side} {
             --c-footer-strong-color: var( --color-primary-5);
             --c-footer-weak-color: var(--color-white-5);
 
@@ -15,7 +28,7 @@
             background-color: var(--c-footer-strong-color);
             color: var(--c-footer-weak-color);
 
-            &--without-scroll{
+            &--without-scroll#{$right-side}{
                 position: absolute;
                 bottom: 0;    
             }
@@ -23,14 +36,14 @@
 
         @each $key, $tones in $colores{
             
-            .c-footer--#{$key}{
+            .#{$left-side}c-footer--#{$key}#{$right-side}{
                 --c-footer-strong-color: var( --color-#{$key}-5);
                 @if $key == "white" {
                     --c-footer-weak-color: var(--color-primary-5);
                 }
             }
             
-            .c-footer-letter--#{$key}{
+            .#{$left-side}c-footer-letter--#{$key}#{$right-side}{
                 --c-footer-weak-color: var(--color-#{key}-5);
             }
         }

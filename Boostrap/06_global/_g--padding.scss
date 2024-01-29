@@ -1,53 +1,47 @@
 @each $key, $value in $breakpoint {
     @media (min-width: $value){
-        @for $i from 1 to length($paddings) {
-            $value: nth($paddings, $i);
-            .g--padding-#{$i}{
-                padding: $value;
-            }
+        $right-side: \@#{$key};
+        $left-side: "";
+
+        @if($initially-breackpoint == true){
+            $right-side: "";
+            $left-side: #{$key}\@;
+        }
+
+        @if($key == ""){
+            $right-side: "";
+            $left-side: "";
         }
 
         @for $i from 1 to length($paddings) {
             $value: nth($paddings, $i);
-            .g--padding-x-#{$i}{
+            .#{$left-side}g--padding-#{$i}#{$right-side}{
+                padding: $value;
+            }
+        
+            .#{$left-side}g--padding-x-#{$i}#{$right-side}{
                 padding-right: $value;
                 padding-left: $value;
             }
-        }
 
-        @for $i from 1 to length($paddings) {
-            $value: nth($paddings, $i);
-            .g--padding-y-#{$i}{
+            .#{$left-side}g--padding-y-#{$i}#{$right-side}{
                 padding-top: $value;
                 padding-bottom: $value;
             }
-        }
 
-        @for $i from 1 to length($paddings) {
-            $value: nth($paddings, $i);
-            .g--padding-left-#{$i}{
+            .#{$left-side}g--padding-left-#{$i}#{$right-side}{
                 padding-left: $value;
             }
-        }
 
-
-        @for $i from 1 to length($paddings) {
-            $value: nth($paddings, $i);
-            .g--padding-right-#{$i}{
+            .#{$left-side}g--padding-right-#{$i}#{$right-side}{
                 padding-right: $value;
             }
-        }
 
-        @for $i from 1 to length($paddings) {
-            $value: nth($paddings, $i);
-            .g--padding-top-#{$i}{
+            .#{$left-side}g--padding-top-#{$i}#{$right-side}{
                 padding-top: $value;
             }
-        }
 
-        @for $i from 1 to length($paddings) {
-            $value: nth($paddings, $i);
-            .g--padding-bottom-#{$i}{
+            .#{$left-side}g--padding-bottom-#{$i}#{$right-side}{
                 padding-bottom: $value;
             }
         }

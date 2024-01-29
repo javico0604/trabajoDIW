@@ -1,6 +1,19 @@
 @each $key, $value in $breakpoint {
     @media (min-width: $value){
-        .c-form{
+        $right-side: \@#{$key};
+        $left-side: "";
+
+        @if($initially-breackpoint == true){
+            $right-side: "";
+            $left-side: #{$key}\@;
+        }
+
+        @if($key == ""){
+            $right-side: "";
+            $left-side: "";
+        }
+
+        .#{$left-side}c-form#{$right-side}{
             display: flex;
             flex-direction: column;
             max-width: 350px;

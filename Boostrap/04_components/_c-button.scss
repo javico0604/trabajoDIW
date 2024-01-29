@@ -1,6 +1,19 @@
 @each $key, $value in $breakpoint {
     @media (min-width: $value){
-        .c-button{
+        $right-side: \@#{$key};
+        $left-side: "";
+
+        @if($initially-breackpoint == true){
+            $right-side: "";
+            $left-side: #{$key}\@;
+        }
+
+        @if($key == ""){
+            $right-side: "";
+            $left-side: "";
+        }
+
+        .#{$left-side}c-button#{$right-side}{
             --c-button-strong-color: var( --color-primary-5);
             --c-button-weak-color: var(--color-white-5);
         
@@ -21,21 +34,21 @@
             color: var(--c-button-weak-color);
         }
 
-        .c-button--funcion-secundary{
+        .#{$left-side}c-button--funcion-secundary#{$right-side}{
             --c-button-strong-color: var(--color-secundary-5);
         }
 
-        .c-button--funcion-peligrosa{
+        .#{$left-side}c-button--funcion-peligrosa#{$right-side}{
             --c-button-strong-color: var(--color-red-5);
         }
 
-        .c-button--importancia-secundary{
+        .#{$left-side}c-button--importancia-secundary#{$right-side}{
             border-color: var(--c-button-strong-color);
             background-color: var(--c-button-weak-color);
             color: var(--c-button-strong-color);
         }
 
-        .c-button--importancia-tertiary{
+        .#{$left-side}c-button--importancia-tertiary#{$right-side}{
             border-color: transparent;
             background-color: transparent;
             color: var(--c-button-strong-color);

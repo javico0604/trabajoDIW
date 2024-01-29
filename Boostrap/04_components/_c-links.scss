@@ -1,6 +1,19 @@
 @each $key, $value in $breakpoint {
     @media (min-width: $value){
-       .c-links {
+        $right-side: \@#{$key};
+        $left-side: "";
+
+        @if($initially-breackpoint == true){
+            $right-side: "";
+            $left-side: #{$key}\@;
+        }
+
+        @if($key == ""){
+            $right-side: "";
+            $left-side: "";
+        }
+
+       .#{$left-side}c-links#{$right-side} {
             --c-links-color: var( --color-primary-5);
             
             color: var(--c-links-color);
@@ -13,7 +26,7 @@
             @if $key == "primary" {
 
             }@else {
-                .c-links--#{$key}{
+                .#{$left-side}c-links--#{$key}#{$right-side}{
                     --c-links-color: var( --color-#{$key}-5);
                 }
             }

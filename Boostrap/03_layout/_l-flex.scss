@@ -1,124 +1,137 @@
 @each $key, $value in $breakpoint {
     @media (min-width: $value){
-        .l-flex{
+        $right-side: \@#{$key};
+        $left-side: "";
+
+        @if($initially-breackpoint == true){
+            $right-side: "";
+            $left-side: #{$key}\@;
+        }
+
+        @if($key == ""){
+            $right-side: "";
+            $left-side: "";
+        }
+
+        .#{$left-side}l-flex#{$right-side}{
             display: flex;
 
-            &--flex-direction{
+            &--flex-direction#{$right-side}{
                 flex-direction: row ;
 
-                &--row-reverse{
+                &--row-reverse#{$right-side}{
                     flex-direction: row-reverse;
                 }
 
-                &--column{
+                &--column#{$right-side}{
                     flex-direction: column;
                 }
 
-                &--column-reverse{
+                &--column-reverse#{$right-side}{
                     flex-direction: column-reverse;
                 }
             }
 
-            &--flex-wrap{
+            &--flex-wrap#{$right-side}{
                 flex-wrap: nowrap;
 
-                &--wrap {
+                &--wrap#{$right-side} {
                     flex-wrap: wrap;
                 }
 
-                &--wrap-reverse{
+                &--wrap-reverse#{$right-side}{
                     flex-wrap: wrap-reverse;
                 }
             }
 
-            &--flex-flow{
+            &--flex-flow#{$right-side}{
                 flex-flow: column wrap;
             }
 
-            &--justify-content{
+            &--justify-content#{$right-side}{
                 justify-content:flex-start;
 
-                &--flex-end{
+                &--flex-end#{$right-side}{
                     justify-content: flex-end;
                 }
 
-                &--center {
+                &--center#{$right-side} {
                     justify-content: center ;
                 }
 
-                &--space-between{
+                &--space-between#{$right-side}{
                     justify-content: space-between;
                 }
 
-                &--space-around{
+                &--space-around#{$right-side}{
                     justify-content: space-around;
                 }
 
-                &--space-evenly{
+                &--space-evenly#{$right-side}{
                     justify-content: space-evenly;
                 }
             }
 
-            &--align-items{
+            &--align-items#{$right-side}{
                 align-items: stretch ;
 
-                &--flex-start{
+                &--flex-start#{$right-side}{
                     align-items: flex-start;
                 }
 
-                &--flex-end{
+                &--flex-end#{$right-side}{
                     align-items: flex-end;
                 }
 
-                &--center {
+                &--center#{$right-side} {
                     align-items: center ;
                 }
 
-                &--baseline {
+                &--baseline#{$right-side} {
                     align-items: baseline ;
                 }
             }
 
-            &--align-content{
+            &--align-content#{$right-side}{
                 align-content:flex-start;
 
-                &--flex-end{
+                &--flex-end#{$right-side}{
                     align-content: flex-end;
                 }
 
-                &--center {
+                &--center#{$right-side} {
                     align-content: center ;
                 }
 
-                &--space-between{
+                &--space-between#{$right-side}{
                     align-content: space-between;
                 }
 
-                &--space-around{
+                &--space-around#{$right-side}{
                     align-content: space-around;
                 }
             }
 
-            &--align-self{
+            &--align-self#{$right-side}{
                 align-self:auto ;
 
-                &--flex-start{
+                &--flex-start#{$right-side}{
                     align-self: flex-start;
                 }
 
-                &--flex-end{
+                &--flex-end#{$right-side}{
                     align-self: flex-end;
                 }
 
-                &--center {
+                &--center#{$right-side} {
                     align-self: center ;
                 }
 
-                &-baseline {
+                &-baseline#{$right-side} {
                     align-self: baseline ;
                 }
 
-                &--stretch{
+                &--stretch#{$right-side}{
                     align-self: stretch;
                 }
             }

@@ -1,7 +1,20 @@
 @each $key, $value in $breakpoint {
     @media (min-width: $value){
+        $right-side: \@#{$key};
+        $left-side: "";
+
+        @if($initially-breackpoint == true){
+            $right-side: "";
+            $left-side: #{$key}\@;
+        }
+
+        @if($key == ""){
+            $right-side: "";
+            $left-side: "";
+        }
+
         @for $i from 1 to length($height){
-            .g--height-#{$i}{
+            .#{$left-side}g--height-#{$i}#{$right-side}{
                 height: nth($height, $i);
             }
         }

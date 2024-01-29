@@ -7,13 +7,26 @@
 $shadowsMap:map-keys($shadows);
 @each $key, $value in $breakpoint {
     @media (min-width: $value){
+        $right-side: \@#{$key};
+        $left-side: "";
+
+        @if($initially-breackpoint == true){
+            $right-side: "";
+            $left-side: #{$key}\@;
+        }
+
+        @if($key == ""){
+            $right-side: "";
+            $left-side: "";
+        }
+
         @each $value in $shadowsMap{
             @if $value == ""{
-                .g--box-shadow{
+                .#{$left-side}g--box-shadow#{$right-side}{
                     @include box-shadow(map-get($shadows, $value));
                 }
             } @else{
-                .g--box-shadow-#{$value}{
+                .#{$left-side}g--box-shadow-#{$value}#{$right-side}{
                     @include box-shadow(map-get($shadows, $value))
                 }
             }

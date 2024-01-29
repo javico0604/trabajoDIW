@@ -12,10 +12,12 @@
             $right-side: "";
             $left-side: "";
         }
-
-        @for $i from 1 to length($width){
-            .#{$left-side}g--width-#{$i}#{$right-side}{
-                width: nth($width, $i);
+        
+        @each $key, $value in $font-family{
+            @for $i from 1 through length($value){
+                .#{$left-side}g--font-family-#{$key}--#{$i}#{$right-side}{
+                    font-family: #{nth($value, $i)};
+                }
             }
         }
     }
