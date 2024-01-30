@@ -19,5 +19,18 @@
         .g--border-color-#{$key}-#{$i}{
             border-color: var(--color-#{$key}-#{$i});
         }
-    }   
+        @media (prefers-color-scheme: dark) {
+            .dark\@g--color-#{$key}-#{$i}{
+                color: var(--color-#{$key}-#{$i});
+            }
+
+            .dark\@g--background-color-#{$key}-#{$i}{
+                background-color: var(--color-#{$key}-#{$i});
+            }
+
+            .dark\@g--border-color-#{$key}-#{$i}{
+                border-color: var(--color-#{$key}-#{$i});
+            }
+        }   
+    }
 }
