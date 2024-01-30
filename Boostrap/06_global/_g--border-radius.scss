@@ -18,19 +18,19 @@
                 border-radius:  nth($border-radius, $i);
             }
 
-            .#{$left-side}g--border-top-right-radius-#{i}#{$right-side}{
+            .#{$left-side}g--border-top-right-radius-#{$i}#{$right-side}{
                 border-top-right-radius: nth($border-radius, $i);
             }
 
-            .#{$left-side}g--border-bottom-left-radius-#{i}#{$right-side}{
+            .#{$left-side}g--border-bottom-left-radius-#{$i}#{$right-side}{
                 border-bottom-left-radius: nth($border-radius, $i);
             }
 
-            .#{$left-side}g--border-bottom-right-radius-#{i}#{$right-side}{
+            .#{$left-side}g--border-bottom-right-radius-#{$i}#{$right-side}{
                 border-bottom-right-radius: nth($border-radius, $i);
             }
 
-            .#{$left-side}g--border-top-left-radius-#{i}#{$right-side}{
+            .#{$left-side}g--border-top-left-radius-#{$i}#{$right-side}{
                 border-top-left-radius: nth($border-radius, $i);
             }
         }

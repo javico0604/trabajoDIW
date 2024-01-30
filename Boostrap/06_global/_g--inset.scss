@@ -10,30 +10,35 @@
             }
 
             @if($key == ""){
-                $right-side: \@#{$key};
+                $right-side: "";
                 $left-side: "";
             }
 
             .#{$left-side}g--inset-#{$i}#{$right-side}{
+                position: relative;
                 top: nth($inset, $i);
                 right: nth($inset, $i);
                 bottom: nth($inset, $i);
                 left: nth($inset, $i);
             }
 
-            .#{$left-side}g--inset-top#{$i}#{$right-side}{
+            .#{$left-side}g--inset-top-#{$i}#{$right-side}{
+                position: relative;
                 top: nth($inset, $i);
             }
 
-            .#{$left-side}g--inset-right#{$i}#{$right-side}{
+            .#{$left-side}g--inset-right-#{$i}#{$right-side}{
+                position: relative;
                 right: nth($inset, $i);
             }
 
-            .#{$left-side}g--inset-bottom#{$i}#{$right-side}{
+            .#{$left-side}g--inset-bottom-#{$i}#{$right-side}{
+                position: relative;
                 bottom: nth($inset, $i);
             }
 
-            .#{$left-side}g--inset-left#{$i}#{$right-side}{
+            .#{$left-side}g--inset-left#{$i}-#{$right-side}{
+                position: relative;
                 left: nth($inset, $i);
             }
         }
