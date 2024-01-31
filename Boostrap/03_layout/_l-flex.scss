@@ -33,10 +33,10 @@
             }
 
             &--flex-wrap#{$right-side}{
-                flex-wrap: nowrap;
+                flex-wrap: wrap;
 
-                &--wrap#{$right-side} {
-                    flex-wrap: wrap;
+                &--nowrap#{$right-side} {
+                    flex-wrap: nowrap;
                 }
 
                 &--wrap-reverse#{$right-side}{

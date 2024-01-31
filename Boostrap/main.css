@@ -370,41 +370,41 @@ html {
 }
 
 @media (min-width: 0px) {
-  .l-columns\@ {
+  .l-columns {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-  .l-columns\@--2 {
+  .l-columns--2 {
     grid-template-columns: repeat(2, 1fr);
   }
-  .l-columns\@--3 {
+  .l-columns--3 {
     grid-template-columns: repeat(3, 1fr);
   }
-  .l-columns\@--4 {
+  .l-columns--4 {
     grid-template-columns: repeat(4, 1fr);
   }
-  .l-columns\@--5 {
+  .l-columns--5 {
     grid-template-columns: repeat(5, 1fr);
   }
-  .l-columns\@--6 {
+  .l-columns--6 {
     grid-template-columns: repeat(6, 1fr);
   }
-  .l-columns\@--7 {
+  .l-columns--7 {
     grid-template-columns: repeat(7, 1fr);
   }
-  .l-columns\@--8 {
+  .l-columns--8 {
     grid-template-columns: repeat(8, 1fr);
   }
-  .l-columns\@--9 {
+  .l-columns--9 {
     grid-template-columns: repeat(9, 1fr);
   }
-  .l-columns\@--10 {
+  .l-columns--10 {
     grid-template-columns: repeat(10, 1fr);
   }
-  .l-columns\@--11 {
+  .l-columns--11 {
     grid-template-columns: repeat(11, 1fr);
   }
-  .l-columns\@--infinite \@ {
+  .l-columns--infinite {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 }
@@ -487,38 +487,38 @@ html {
   }
 }
 @media (min-width: 0px) {
-  .l-rows\@ {
+  .l-rows {
     display: grid;
     grid-template-rows: repeat(1, 1fr);
   }
-  .l-rows\@--2 \@ {
+  .l-rows--2 {
     grid-template-rows: repeat(2, 1fr);
   }
-  .l-rows\@--3 \@ {
+  .l-rows--3 {
     grid-template-rows: repeat(3, 1fr);
   }
-  .l-rows\@--4 \@ {
+  .l-rows--4 {
     grid-template-rows: repeat(4, 1fr);
   }
-  .l-rows\@--5 \@ {
+  .l-rows--5 {
     grid-template-rows: repeat(5, 1fr);
   }
-  .l-rows\@--6 \@ {
+  .l-rows--6 {
     grid-template-rows: repeat(6, 1fr);
   }
-  .l-rows\@--7 \@ {
+  .l-rows--7 {
     grid-template-rows: repeat(7, 1fr);
   }
-  .l-rows\@--8 \@ {
+  .l-rows--8 {
     grid-template-rows: repeat(8, 1fr);
   }
-  .l-rows\@--9 \@ {
+  .l-rows--9 {
     grid-template-rows: repeat(9, 1fr);
   }
-  .l-rows\@--10 \@ {
+  .l-rows--10 {
     grid-template-rows: repeat(10, 1fr);
   }
-  .l-rows\@--11 \@ {
+  .l-rows--11 {
     grid-template-rows: repeat(11, 1fr);
   }
 }
@@ -611,10 +611,10 @@ html {
     flex-direction: column-reverse;
   }
   .l-flex--flex-wrap {
-    flex-wrap: nowrap;
-  }
-  .l-flex--flex-wrap--wrap {
     flex-wrap: wrap;
+  }
+  .l-flex--flex-wrap--nowrap {
+    flex-wrap: nowrap;
   }
   .l-flex--flex-wrap--wrap-reverse {
     flex-wrap: wrap-reverse;
@@ -706,10 +706,10 @@ html {
     flex-direction: column-reverse;
   }
   .tablet\@l-flex--flex-wrap {
-    flex-wrap: nowrap;
-  }
-  .tablet\@l-flex--flex-wrap--wrap {
     flex-wrap: wrap;
+  }
+  .tablet\@l-flex--flex-wrap--nowrap {
+    flex-wrap: nowrap;
   }
   .tablet\@l-flex--flex-wrap--wrap-reverse {
     flex-wrap: wrap-reverse;
@@ -801,10 +801,10 @@ html {
     flex-direction: column-reverse;
   }
   .desktop\@l-flex--flex-wrap {
-    flex-wrap: nowrap;
-  }
-  .desktop\@l-flex--flex-wrap--wrap {
     flex-wrap: wrap;
+  }
+  .desktop\@l-flex--flex-wrap--nowrap {
+    flex-wrap: nowrap;
   }
   .desktop\@l-flex--flex-wrap--wrap-reverse {
     flex-wrap: wrap-reverse;
@@ -954,136 +954,136 @@ html {
 @media (min-width: 0px) {
   .l-order {
     display: grid;
-    grid-template-areas: "1" "2" "3";
+    grid-template-areas: "a" "b" "c";
   }
-  .l-order__1 {
-    grid-area: 1;
+  .l-order__a {
+    grid-area: a;
   }
-  .l-order__2 {
-    grid-area: 2;
+  .l-order__b {
+    grid-area: b;
   }
-  .l-order__3 {
-    grid-area: 3;
+  .l-order__c {
+    grid-area: c;
   }
-  .l-order--132 {
-    grid-template-areas: "1" "3" "2";
+  .l-order--acb {
+    grid-template-areas: "a" "c" "b";
   }
-  .l-order--231 {
-    grid-template-areas: "2" "3" "1";
+  .l-order--bca {
+    grid-template-areas: "b" "c" "a";
   }
-  .l-order--213 {
-    grid-template-areas: "2" "1" "3";
+  .l-order--bac {
+    grid-template-areas: "b" "a" "c";
   }
-  .l-order--312 {
-    grid-template-areas: "3" "1" "2";
+  .l-order--cab {
+    grid-template-areas: "c" "a" "b";
   }
-  .l-order--321 {
-    grid-template-areas: "3" "2" "1";
+  .l-order--cba {
+    grid-template-areas: "c" "b" "a";
   }
-  .l-order-horizontal--132 {
-    grid-template-areas: "1 3 2";
+  .l-order-horizontal--acb {
+    grid-template-areas: "a c b";
   }
-  .l-order-horizontal--231 {
-    grid-template-areas: "2 3 1";
+  .l-order-horizontal--bca {
+    grid-template-areas: "b c a";
   }
-  .l-order-horizontal--213 {
-    grid-template-areas: "2 1 3";
+  .l-order-horizontal--bac {
+    grid-template-areas: "b a c";
   }
-  .l-order-horizontal--312 {
-    grid-template-areas: "3 1 2";
+  .l-order-horizontal--cab {
+    grid-template-areas: "c a b";
   }
-  .l-order-horizontal--321 {
-    grid-template-areas: "3 2 1";
+  .l-order-horizontal--cba {
+    grid-template-areas: "c b a";
   }
 }
 @media (min-width: 768px) {
   .tablet\@l-order {
     display: grid;
-    grid-template-areas: "1" "2" "3";
+    grid-template-areas: "a" "b" "c";
   }
-  .tablet\@l-order__1 {
-    grid-area: 1;
+  .tablet\@l-order__a {
+    grid-area: a;
   }
-  .tablet\@l-order__2 {
-    grid-area: 2;
+  .tablet\@l-order__b {
+    grid-area: b;
   }
-  .tablet\@l-order__3 {
-    grid-area: 3;
+  .tablet\@l-order__c {
+    grid-area: c;
   }
-  .tablet\@l-order--132 {
-    grid-template-areas: "1" "3" "2";
+  .tablet\@l-order--acb {
+    grid-template-areas: "a" "c" "b";
   }
-  .tablet\@l-order--231 {
-    grid-template-areas: "2" "3" "1";
+  .tablet\@l-order--bca {
+    grid-template-areas: "b" "c" "a";
   }
-  .tablet\@l-order--213 {
-    grid-template-areas: "2" "1" "3";
+  .tablet\@l-order--bac {
+    grid-template-areas: "b" "a" "c";
   }
-  .tablet\@l-order--312 {
-    grid-template-areas: "3" "1" "2";
+  .tablet\@l-order--cab {
+    grid-template-areas: "c" "a" "b";
   }
-  .tablet\@l-order--321 {
-    grid-template-areas: "3" "2" "1";
+  .tablet\@l-order--cba {
+    grid-template-areas: "c" "b" "a";
   }
-  .tablet\@l-order-horizontal--132 {
-    grid-template-areas: "1 3 2";
+  .tablet\@l-order-horizontal--acb {
+    grid-template-areas: "a c b";
   }
-  .tablet\@l-order-horizontal--231 {
-    grid-template-areas: "2 3 1";
+  .tablet\@l-order-horizontal--bca {
+    grid-template-areas: "b c a";
   }
-  .tablet\@l-order-horizontal--213 {
-    grid-template-areas: "2 1 3";
+  .tablet\@l-order-horizontal--bac {
+    grid-template-areas: "b a c";
   }
-  .tablet\@l-order-horizontal--312 {
-    grid-template-areas: "3 1 2";
+  .tablet\@l-order-horizontal--cab {
+    grid-template-areas: "c a b";
   }
-  .tablet\@l-order-horizontal--321 {
-    grid-template-areas: "3 2 1";
+  .tablet\@l-order-horizontal--cba {
+    grid-template-areas: "c b a";
   }
 }
 @media (min-width: 992px) {
   .desktop\@l-order {
     display: grid;
-    grid-template-areas: "1" "2" "3";
+    grid-template-areas: "a" "b" "c";
   }
-  .desktop\@l-order__1 {
-    grid-area: 1;
+  .desktop\@l-order__a {
+    grid-area: a;
   }
-  .desktop\@l-order__2 {
-    grid-area: 2;
+  .desktop\@l-order__b {
+    grid-area: b;
   }
-  .desktop\@l-order__3 {
-    grid-area: 3;
+  .desktop\@l-order__c {
+    grid-area: c;
   }
-  .desktop\@l-order--132 {
-    grid-template-areas: "1" "3" "2";
+  .desktop\@l-order--acb {
+    grid-template-areas: "a" "c" "b";
   }
-  .desktop\@l-order--231 {
-    grid-template-areas: "2" "3" "1";
+  .desktop\@l-order--bca {
+    grid-template-areas: "b" "c" "a";
   }
-  .desktop\@l-order--213 {
-    grid-template-areas: "2" "1" "3";
+  .desktop\@l-order--bac {
+    grid-template-areas: "b" "a" "c";
   }
-  .desktop\@l-order--312 {
-    grid-template-areas: "3" "1" "2";
+  .desktop\@l-order--cab {
+    grid-template-areas: "c" "a" "b";
   }
-  .desktop\@l-order--321 {
-    grid-template-areas: "3" "2" "1";
+  .desktop\@l-order--cba {
+    grid-template-areas: "c" "b" "a";
   }
-  .desktop\@l-order-horizontal--132 {
-    grid-template-areas: "1 3 2";
+  .desktop\@l-order-horizontal--acb {
+    grid-template-areas: "a c b";
   }
-  .desktop\@l-order-horizontal--231 {
-    grid-template-areas: "2 3 1";
+  .desktop\@l-order-horizontal--bca {
+    grid-template-areas: "b c a";
   }
-  .desktop\@l-order-horizontal--213 {
-    grid-template-areas: "2 1 3";
+  .desktop\@l-order-horizontal--bac {
+    grid-template-areas: "b a c";
   }
-  .desktop\@l-order-horizontal--312 {
-    grid-template-areas: "3 1 2";
+  .desktop\@l-order-horizontal--cab {
+    grid-template-areas: "c a b";
   }
-  .desktop\@l-order-horizontal--321 {
-    grid-template-areas: "3 2 1";
+  .desktop\@l-order-horizontal--cba {
+    grid-template-areas: "c b a";
   }
 }
 @media (min-width: 0px) {

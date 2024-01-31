@@ -9,7 +9,7 @@
         }
 
         @if($key == ""){
-          $right-side: \@#{$key};
+          $right-side: "";
           $left-side: "";
         }
 

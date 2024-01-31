@@ -16,80 +16,80 @@
         .#{$left-side}l-order#{$right-side}{
             display: grid;
             grid-template-areas: 
-            "1"
-            "2"
-            "3";
+            "a"
+            "b"
+            "c";
             
-            &__1{
-                grid-area: 1;
+            &__a{
+                grid-area: a;
             }
 
-            &__2{
-                grid-area: 2;
+            &__b{
+                grid-area: b;
             }
 
-            &__3{
-                grid-area: 3;
+            &__c{
+                grid-area: c;
             }
 
-            &--132{
+            &--acb{
                 grid-template-areas: 
-                "1"
-                "3"
-                "2";
+                "a"
+                "c"
+                "b";
             }
 
-            &--231{
+            &--bca{
                 grid-template-areas: 
-                "2"
-                "3"
-                "1";
-            }
-            
-            &--213{
-                grid-template-areas: 
-                "2"
-                "1"
-                "3";
-            }
-
-            &--312{
-                grid-template-areas: 
-                "3"
-                "1"
-                "2";
-            }
-
-            &--321{
-                grid-template-areas: 
-                "3"
-                "2"
-                "1";
-            }
-
-            &-horizontal--132{
-                grid-template-areas: 
-                "1 3 2";
-            }
-
-            &-horizontal--231{
-                grid-template-areas: 
-                "2 3 1";
+                "b"
+                "c"
+                "a";
             }
             
-            &-horizontal--213{
+            &--bac{
                 grid-template-areas: 
-                "2 1 3";
+                "b"
+                "a"
+                "c";
             }
 
-            &-horizontal--312{
+            &--cab{
                 grid-template-areas: 
-                "3 1 2";
+                "c"
+                "a"
+                "b";
             }
 
-            &-horizontal--321{
+            &--cba{
                 grid-template-areas: 
-                "3 2 1";
+                "c"
+                "b"
+                "a";
+            }
+
+            &-horizontal--acb{
+                grid-template-areas: 
+                "a c b";
+            }
+
+            &-horizontal--bca{
+                grid-template-areas: 
+                "b c a";
+            }
+            
+            &-horizontal--bac{
+                grid-template-areas: 
+                "b a c";
+            }
+
+            &-horizontal--cab{
+                grid-template-areas: 
+                "c a b";
+            }
+
+            &-horizontal--cba{
+                grid-template-areas: 
+                "c b a";
             }
         }
     }
