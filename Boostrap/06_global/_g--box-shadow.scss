@@ -3,8 +3,14 @@
   -moz-box-shadow: $box-shadow;
   box-shadow: $box-shadow;
 }
-
 $shadowsMap:map-keys($shadows);
+:root{
+    @each $value in $shadowsMap{
+        --shadow-#{$value}: map-get($shadows, $value);
+    }
+}
+
+
 @each $key, $value in $breakpoint {
     @media (min-width: $value){
         $right-side: \@#{$key};

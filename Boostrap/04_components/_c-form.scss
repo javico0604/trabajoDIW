@@ -1,3 +1,11 @@
+.c-form{
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    margin: var(--margins-9) auto;
+    padding: var(--padding-8);
+}
+
 @each $key, $value in $breakpoint {
     @media (min-width: $value){
         $right-side: \@#{$key};
@@ -13,27 +21,20 @@
             $left-side: "";
         }
 
-        .#{$left-side}c-form#{$right-side}{
-            display: flex;
-            flex-direction: column;
-            max-width: 350px;
-            margin: 25px auto;
-            padding: 20px;
-
             @for $i from 1 to length($margins) {
-                &__submit--#{$i}{
+                #{$left-side}__submit--#{$i}{
                     margin-bottom: nth($margins, $i);
                 }
             }
 
             @each $key, $tones in $colores{
-                &__text--#{$key}{
+                #{$left-side}__text--#{$key}{
                     color: var( --color-#{$key}-5);    
                 }
             }
         }
     }
-}
+
 
 
 

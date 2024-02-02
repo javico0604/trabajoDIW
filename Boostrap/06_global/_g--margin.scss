@@ -1,3 +1,9 @@
+:root{
+    @for $i from 1 to length($margins){
+        --margins-#{$i}: nth($margins, $i);
+    }
+}
+
 @each $key, $value in $breakpoint {
     @media (min-width: $value){
         $right-side: \@#{$key};

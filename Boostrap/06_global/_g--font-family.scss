@@ -1,3 +1,11 @@
+:root{
+    @each $key, $value in $font-family{
+        @for $i from 1 through length($value){
+            --font-family-#{$key}-#{$i}: #{nth($value, $i)};
+        }
+    }
+}
+
 @each $key, $value in $breakpoint {
     @media (min-width: $value){
         $right-side: \@#{$key};

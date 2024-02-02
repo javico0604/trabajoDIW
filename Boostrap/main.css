@@ -1086,23 +1086,24 @@ html {
     grid-template-areas: "c b a";
   }
 }
+.c-button {
+  --c-button-strong-color: var( --color-primary-5);
+  --c-button-weak-color: var(--color-white-5);
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 12px;
+  border-radius: var(--border-radius-2);
+  border-width: 1px;
+  border-style: solid;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  border-color: var(--c-button-strong-color);
+  background-color: var(--c-button-strong-color);
+  color: var(--c-button-weak-color);
+}
+
 @media (min-width: 0px) {
-  .c-button {
-    --c-button-strong-color: var( --color-primary-5);
-    --c-button-weak-color: var(--color-white-5);
-    font-family: sans-serif;
-    font-size: 16px;
-    padding: 12px;
-    border-radius: 6px;
-    border-width: 1px;
-    border-style: solid;
-    display: inline-block;
-    cursor: pointer;
-    text-decoration: none;
-    border-color: var(--c-button-strong-color);
-    background-color: var(--c-button-strong-color);
-    color: var(--c-button-weak-color);
-  }
   .c-button--funcion-secundary {
     --c-button-strong-color: var(--color-secundary-5);
   }
@@ -1121,22 +1122,6 @@ html {
   }
 }
 @media (min-width: 768px) {
-  .tablet\@c-button {
-    --c-button-strong-color: var( --color-primary-5);
-    --c-button-weak-color: var(--color-white-5);
-    font-family: sans-serif;
-    font-size: 16px;
-    padding: 12px;
-    border-radius: 6px;
-    border-width: 1px;
-    border-style: solid;
-    display: inline-block;
-    cursor: pointer;
-    text-decoration: none;
-    border-color: var(--c-button-strong-color);
-    background-color: var(--c-button-strong-color);
-    color: var(--c-button-weak-color);
-  }
   .tablet\@c-button--funcion-secundary {
     --c-button-strong-color: var(--color-secundary-5);
   }
@@ -1155,22 +1140,6 @@ html {
   }
 }
 @media (min-width: 992px) {
-  .desktop\@c-button {
-    --c-button-strong-color: var( --color-primary-5);
-    --c-button-weak-color: var(--color-white-5);
-    font-family: sans-serif;
-    font-size: 16px;
-    padding: 12px;
-    border-radius: 6px;
-    border-width: 1px;
-    border-style: solid;
-    display: inline-block;
-    cursor: pointer;
-    text-decoration: none;
-    border-color: var(--c-button-strong-color);
-    background-color: var(--c-button-strong-color);
-    color: var(--c-button-weak-color);
-  }
   .desktop\@c-button--funcion-secundary {
     --c-button-strong-color: var(--color-secundary-5);
   }
@@ -1188,22 +1157,23 @@ html {
     color: var(--c-button-strong-color);
   }
 }
+.c-header {
+  --c-header-color: var( --color-primary-5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: var(--font-size-7);
+  padding: var(--padding-5) var(--padding-8);
+  background-color: var(--c-header-color);
+}
+
 @media (min-width: 0px) {
-  .c-header {
-    --c-header-color: var( --color-primary-5);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-    font-family: sans-serif;
-    font-size: 16px;
-    padding: 10px 20px;
-    background-color: var(--c-header-color);
+  c-header__logo {
+    font-size: var(--font-size-9);
   }
-  .c-header__logo {
-    font-size: 24px;
-  }
-  .c-header__links {
+  __links {
     display: flex;
     gap: 20px;
   }
@@ -1227,21 +1197,10 @@ html {
   }
 }
 @media (min-width: 768px) {
-  .tablet\@c-header {
-    --c-header-color: var( --color-primary-5);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-    font-family: sans-serif;
-    font-size: 16px;
-    padding: 10px 20px;
-    background-color: var(--c-header-color);
+  tablet\@c-header__logo {
+    font-size: var(--font-size-9);
   }
-  .tablet\@c-header__logo {
-    font-size: 24px;
-  }
-  .tablet\@c-header__links {
+  tablet\@__links {
     display: flex;
     gap: 20px;
   }
@@ -1265,21 +1224,10 @@ html {
   }
 }
 @media (min-width: 992px) {
-  .desktop\@c-header {
-    --c-header-color: var( --color-primary-5);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-    font-family: sans-serif;
-    font-size: 16px;
-    padding: 10px 20px;
-    background-color: var(--c-header-color);
+  desktop\@c-header__logo {
+    font-size: var(--font-size-9);
   }
-  .desktop\@c-header__logo {
-    font-size: 24px;
-  }
-  .desktop\@c-header__links {
+  desktop\@__links {
     display: flex;
     gap: 20px;
   }
@@ -1377,19 +1325,20 @@ html {
     --c-links-color: var( --color-white-5);
   }
 }
+.c-footer {
+  --c-footer-strong-color: var( --color-primary-5);
+  --c-footer-weak-color: var(--color-white-5);
+  text-align: center;
+  margin-top: auto;
+  bottom: 0;
+  padding: var(--padding-5);
+  width: 100%;
+  background-color: var(--c-footer-strong-color);
+  color: var(--c-footer-weak-color);
+}
+
 @media (min-width: 0px) {
-  .c-footer {
-    --c-footer-strong-color: var( --color-primary-5);
-    --c-footer-weak-color: var(--color-white-5);
-    text-align: center;
-    margin-top: auto;
-    bottom: 0;
-    padding: 10px;
-    width: 100%;
-    background-color: var(--c-footer-strong-color);
-    color: var(--c-footer-weak-color);
-  }
-  .c-footer--without-scroll {
+  --without-scroll {
     position: absolute;
     bottom: 0;
   }
@@ -1438,18 +1387,7 @@ html {
   }
 }
 @media (min-width: 768px) {
-  .tablet\@c-footer {
-    --c-footer-strong-color: var( --color-primary-5);
-    --c-footer-weak-color: var(--color-white-5);
-    text-align: center;
-    margin-top: auto;
-    bottom: 0;
-    padding: 10px;
-    width: 100%;
-    background-color: var(--c-footer-strong-color);
-    color: var(--c-footer-weak-color);
-  }
-  .tablet\@c-footer--without-scroll {
+  tablet\@--without-scroll {
     position: absolute;
     bottom: 0;
   }
@@ -1498,18 +1436,7 @@ html {
   }
 }
 @media (min-width: 992px) {
-  .desktop\@c-footer {
-    --c-footer-strong-color: var( --color-primary-5);
-    --c-footer-weak-color: var(--color-white-5);
-    text-align: center;
-    margin-top: auto;
-    bottom: 0;
-    padding: 10px;
-    width: 100%;
-    background-color: var(--c-footer-strong-color);
-    color: var(--c-footer-weak-color);
-  }
-  .desktop\@c-footer--without-scroll {
+  desktop\@--without-scroll {
     position: absolute;
     bottom: 0;
   }
@@ -1557,315 +1484,303 @@ html {
     --c-footer-weak-color: var(--color-key-5);
   }
 }
+.c-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  margin: var(--margins-9) auto;
+  padding: var(--padding-8);
+}
+
 @media (min-width: 0px) {
-  .c-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 350px;
-    margin: 25px auto;
-    padding: 20px;
-  }
-  .c-form__submit--1 {
+  __submit--1 {
     margin-bottom: 0px;
   }
-  .c-form__submit--2 {
+  __submit--2 {
     margin-bottom: 4px;
   }
-  .c-form__submit--3 {
+  __submit--3 {
     margin-bottom: 6px;
   }
-  .c-form__submit--4 {
+  __submit--4 {
     margin-bottom: 8px;
   }
-  .c-form__submit--5 {
+  __submit--5 {
     margin-bottom: 10px;
   }
-  .c-form__submit--6 {
+  __submit--6 {
     margin-bottom: 12px;
   }
-  .c-form__submit--7 {
+  __submit--7 {
     margin-bottom: 16px;
   }
-  .c-form__submit--8 {
+  __submit--8 {
     margin-bottom: 20px;
   }
-  .c-form__submit--9 {
+  __submit--9 {
     margin-bottom: 24px;
   }
-  .c-form__submit--10 {
+  __submit--10 {
     margin-bottom: 32px;
   }
-  .c-form__submit--11 {
+  __submit--11 {
     margin-bottom: 40px;
   }
-  .c-form__submit--12 {
+  __submit--12 {
     margin-bottom: 48px;
   }
-  .c-form__submit--13 {
+  __submit--13 {
     margin-bottom: 64px;
   }
-  .c-form__submit--14 {
+  __submit--14 {
     margin-bottom: 80px;
   }
-  .c-form__submit--15 {
+  __submit--15 {
     margin-bottom: 96px;
   }
-  .c-form__submit--16 {
+  __submit--16 {
     margin-bottom: 128px;
   }
-  .c-form__submit--17 {
+  __submit--17 {
     margin-bottom: 160px;
   }
-  .c-form__submit--18 {
+  __submit--18 {
     margin-bottom: 192px;
   }
-  .c-form__submit--19 {
+  __submit--19 {
     margin-bottom: 224px;
   }
-  .c-form__submit--20 {
+  __submit--20 {
     margin-bottom: 256px;
   }
-  .c-form__submit--21 {
+  __submit--21 {
     margin-bottom: 320px;
   }
-  .c-form__submit--22 {
+  __submit--22 {
     margin-bottom: 480px;
   }
-  .c-form__text--primary {
+  __text--primary {
     color: var(--color-primary-5);
   }
-  .c-form__text--secundary {
+  __text--secundary {
     color: var(--color-secundary-5);
   }
-  .c-form__text--red {
+  __text--red {
     color: var(--color-red-5);
   }
-  .c-form__text--green {
+  __text--green {
     color: var(--color-green-5);
   }
-  .c-form__text--blue {
+  __text--blue {
     color: var(--color-blue-5);
   }
-  .c-form__text--grey {
+  __text--grey {
     color: var(--color-grey-5);
   }
-  .c-form__text--white {
+  __text--white {
     color: var(--color-white-5);
   }
 }
 @media (min-width: 768px) {
-  .tablet\@c-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 350px;
-    margin: 25px auto;
-    padding: 20px;
-  }
-  .tablet\@c-form__submit--1 {
+  tablet\@__submit--1 {
     margin-bottom: 0px;
   }
-  .tablet\@c-form__submit--2 {
+  tablet\@__submit--2 {
     margin-bottom: 4px;
   }
-  .tablet\@c-form__submit--3 {
+  tablet\@__submit--3 {
     margin-bottom: 6px;
   }
-  .tablet\@c-form__submit--4 {
+  tablet\@__submit--4 {
     margin-bottom: 8px;
   }
-  .tablet\@c-form__submit--5 {
+  tablet\@__submit--5 {
     margin-bottom: 10px;
   }
-  .tablet\@c-form__submit--6 {
+  tablet\@__submit--6 {
     margin-bottom: 12px;
   }
-  .tablet\@c-form__submit--7 {
+  tablet\@__submit--7 {
     margin-bottom: 16px;
   }
-  .tablet\@c-form__submit--8 {
+  tablet\@__submit--8 {
     margin-bottom: 20px;
   }
-  .tablet\@c-form__submit--9 {
+  tablet\@__submit--9 {
     margin-bottom: 24px;
   }
-  .tablet\@c-form__submit--10 {
+  tablet\@__submit--10 {
     margin-bottom: 32px;
   }
-  .tablet\@c-form__submit--11 {
+  tablet\@__submit--11 {
     margin-bottom: 40px;
   }
-  .tablet\@c-form__submit--12 {
+  tablet\@__submit--12 {
     margin-bottom: 48px;
   }
-  .tablet\@c-form__submit--13 {
+  tablet\@__submit--13 {
     margin-bottom: 64px;
   }
-  .tablet\@c-form__submit--14 {
+  tablet\@__submit--14 {
     margin-bottom: 80px;
   }
-  .tablet\@c-form__submit--15 {
+  tablet\@__submit--15 {
     margin-bottom: 96px;
   }
-  .tablet\@c-form__submit--16 {
+  tablet\@__submit--16 {
     margin-bottom: 128px;
   }
-  .tablet\@c-form__submit--17 {
+  tablet\@__submit--17 {
     margin-bottom: 160px;
   }
-  .tablet\@c-form__submit--18 {
+  tablet\@__submit--18 {
     margin-bottom: 192px;
   }
-  .tablet\@c-form__submit--19 {
+  tablet\@__submit--19 {
     margin-bottom: 224px;
   }
-  .tablet\@c-form__submit--20 {
+  tablet\@__submit--20 {
     margin-bottom: 256px;
   }
-  .tablet\@c-form__submit--21 {
+  tablet\@__submit--21 {
     margin-bottom: 320px;
   }
-  .tablet\@c-form__submit--22 {
+  tablet\@__submit--22 {
     margin-bottom: 480px;
   }
-  .tablet\@c-form__text--primary {
+  tablet\@__text--primary {
     color: var(--color-primary-5);
   }
-  .tablet\@c-form__text--secundary {
+  tablet\@__text--secundary {
     color: var(--color-secundary-5);
   }
-  .tablet\@c-form__text--red {
+  tablet\@__text--red {
     color: var(--color-red-5);
   }
-  .tablet\@c-form__text--green {
+  tablet\@__text--green {
     color: var(--color-green-5);
   }
-  .tablet\@c-form__text--blue {
+  tablet\@__text--blue {
     color: var(--color-blue-5);
   }
-  .tablet\@c-form__text--grey {
+  tablet\@__text--grey {
     color: var(--color-grey-5);
   }
-  .tablet\@c-form__text--white {
+  tablet\@__text--white {
     color: var(--color-white-5);
   }
 }
 @media (min-width: 992px) {
-  .desktop\@c-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 350px;
-    margin: 25px auto;
-    padding: 20px;
-  }
-  .desktop\@c-form__submit--1 {
+  desktop\@__submit--1 {
     margin-bottom: 0px;
   }
-  .desktop\@c-form__submit--2 {
+  desktop\@__submit--2 {
     margin-bottom: 4px;
   }
-  .desktop\@c-form__submit--3 {
+  desktop\@__submit--3 {
     margin-bottom: 6px;
   }
-  .desktop\@c-form__submit--4 {
+  desktop\@__submit--4 {
     margin-bottom: 8px;
   }
-  .desktop\@c-form__submit--5 {
+  desktop\@__submit--5 {
     margin-bottom: 10px;
   }
-  .desktop\@c-form__submit--6 {
+  desktop\@__submit--6 {
     margin-bottom: 12px;
   }
-  .desktop\@c-form__submit--7 {
+  desktop\@__submit--7 {
     margin-bottom: 16px;
   }
-  .desktop\@c-form__submit--8 {
+  desktop\@__submit--8 {
     margin-bottom: 20px;
   }
-  .desktop\@c-form__submit--9 {
+  desktop\@__submit--9 {
     margin-bottom: 24px;
   }
-  .desktop\@c-form__submit--10 {
+  desktop\@__submit--10 {
     margin-bottom: 32px;
   }
-  .desktop\@c-form__submit--11 {
+  desktop\@__submit--11 {
     margin-bottom: 40px;
   }
-  .desktop\@c-form__submit--12 {
+  desktop\@__submit--12 {
     margin-bottom: 48px;
   }
-  .desktop\@c-form__submit--13 {
+  desktop\@__submit--13 {
     margin-bottom: 64px;
   }
-  .desktop\@c-form__submit--14 {
+  desktop\@__submit--14 {
     margin-bottom: 80px;
   }
-  .desktop\@c-form__submit--15 {
+  desktop\@__submit--15 {
     margin-bottom: 96px;
   }
-  .desktop\@c-form__submit--16 {
+  desktop\@__submit--16 {
     margin-bottom: 128px;
   }
-  .desktop\@c-form__submit--17 {
+  desktop\@__submit--17 {
     margin-bottom: 160px;
   }
-  .desktop\@c-form__submit--18 {
+  desktop\@__submit--18 {
     margin-bottom: 192px;
   }
-  .desktop\@c-form__submit--19 {
+  desktop\@__submit--19 {
     margin-bottom: 224px;
   }
-  .desktop\@c-form__submit--20 {
+  desktop\@__submit--20 {
     margin-bottom: 256px;
   }
-  .desktop\@c-form__submit--21 {
+  desktop\@__submit--21 {
     margin-bottom: 320px;
   }
-  .desktop\@c-form__submit--22 {
+  desktop\@__submit--22 {
     margin-bottom: 480px;
   }
-  .desktop\@c-form__text--primary {
+  desktop\@__text--primary {
     color: var(--color-primary-5);
   }
-  .desktop\@c-form__text--secundary {
+  desktop\@__text--secundary {
     color: var(--color-secundary-5);
   }
-  .desktop\@c-form__text--red {
+  desktop\@__text--red {
     color: var(--color-red-5);
   }
-  .desktop\@c-form__text--green {
+  desktop\@__text--green {
     color: var(--color-green-5);
   }
-  .desktop\@c-form__text--blue {
+  desktop\@__text--blue {
     color: var(--color-blue-5);
   }
-  .desktop\@c-form__text--grey {
+  desktop\@__text--grey {
     color: var(--color-grey-5);
   }
-  .desktop\@c-form__text--white {
+  desktop\@__text--white {
     color: var(--color-white-5);
   }
 }
+.c-title {
+  --c-title-color: var( --color-primary-5);
+  color: var(--c-title-color);
+  font-size: var(--font-size-10);
+  font-weight: bold;
+  padding: var(--padding-7);
+}
+
 @media (min-width: 0px) {
-  .c-title {
-    --c-title-color: var( --color-primary-5);
-    color: var(--c-title-color);
-    font-size: 32px;
-    font-weight: bold;
-    padding: 15px;
+  c-title--very-small {
+    font-size: var(--font-size-7);
   }
-  .c-title--very-small {
-    font-size: 16px;
+  c-title--small {
+    font-size: var(--font-size-9);
   }
-  .c-title--small {
-    font-size: 24px;
+  c-title--large {
+    font-size: var(--padding-12);
   }
-  .c-title--large {
-    font-size: 48px;
+  c-title--very-large {
+    font-size: var(--padding-13);
   }
-  .c-title--very-large {
-    font-size: 64px;
-  }
-  .c-title--center {
+  c-title--center {
     text-align: center;
   }
   .c-title--secundary {
@@ -1888,26 +1803,19 @@ html {
   }
 }
 @media (min-width: 768px) {
-  .tablet\@c-title {
-    --c-title-color: var( --color-primary-5);
-    color: var(--c-title-color);
-    font-size: 32px;
-    font-weight: bold;
-    padding: 15px;
+  tablet\@c-title--very-small {
+    font-size: var(--font-size-7);
   }
-  .tablet\@c-title--very-small {
-    font-size: 16px;
+  tablet\@c-title--small {
+    font-size: var(--font-size-9);
   }
-  .tablet\@c-title--small {
-    font-size: 24px;
+  tablet\@c-title--large {
+    font-size: var(--padding-12);
   }
-  .tablet\@c-title--large {
-    font-size: 48px;
+  tablet\@c-title--very-large {
+    font-size: var(--padding-13);
   }
-  .tablet\@c-title--very-large {
-    font-size: 64px;
-  }
-  .tablet\@c-title--center {
+  tablet\@c-title--center {
     text-align: center;
   }
   .tablet\@c-title--secundary {
@@ -1930,26 +1838,19 @@ html {
   }
 }
 @media (min-width: 992px) {
-  .desktop\@c-title {
-    --c-title-color: var( --color-primary-5);
-    color: var(--c-title-color);
-    font-size: 32px;
-    font-weight: bold;
-    padding: 15px;
+  desktop\@c-title--very-small {
+    font-size: var(--font-size-7);
   }
-  .desktop\@c-title--very-small {
-    font-size: 16px;
+  desktop\@c-title--small {
+    font-size: var(--font-size-9);
   }
-  .desktop\@c-title--small {
-    font-size: 24px;
+  desktop\@c-title--large {
+    font-size: var(--padding-12);
   }
-  .desktop\@c-title--large {
-    font-size: 48px;
+  desktop\@c-title--very-large {
+    font-size: var(--padding-13);
   }
-  .desktop\@c-title--very-large {
-    font-size: 64px;
-  }
-  .desktop\@c-title--center {
+  desktop\@c-title--center {
     text-align: center;
   }
   .desktop\@c-title--secundary {
@@ -1971,6 +1872,31 @@ html {
     --c-title-color: var( --color-white-5);
   }
 }
+:root {
+  --padding-1: nth($paddings, $i);
+  --padding-2: nth($paddings, $i);
+  --padding-3: nth($paddings, $i);
+  --padding-4: nth($paddings, $i);
+  --padding-5: nth($paddings, $i);
+  --padding-6: nth($paddings, $i);
+  --padding-7: nth($paddings, $i);
+  --padding-8: nth($paddings, $i);
+  --padding-9: nth($paddings, $i);
+  --padding-10: nth($paddings, $i);
+  --padding-11: nth($paddings, $i);
+  --padding-12: nth($paddings, $i);
+  --padding-13: nth($paddings, $i);
+  --padding-14: nth($paddings, $i);
+  --padding-15: nth($paddings, $i);
+  --padding-16: nth($paddings, $i);
+  --padding-17: nth($paddings, $i);
+  --padding-18: nth($paddings, $i);
+  --padding-19: nth($paddings, $i);
+  --padding-20: nth($paddings, $i);
+  --padding-21: nth($paddings, $i);
+  --padding-22: nth($paddings, $i);
+}
+
 @media (min-width: 0px) {
   .g--padding-1 {
     padding: 0px;
@@ -3495,6 +3421,31 @@ html {
     padding-bottom: 480px;
   }
 }
+:root {
+  --margins-1: nth($margins, $i);
+  --margins-2: nth($margins, $i);
+  --margins-3: nth($margins, $i);
+  --margins-4: nth($margins, $i);
+  --margins-5: nth($margins, $i);
+  --margins-6: nth($margins, $i);
+  --margins-7: nth($margins, $i);
+  --margins-8: nth($margins, $i);
+  --margins-9: nth($margins, $i);
+  --margins-10: nth($margins, $i);
+  --margins-11: nth($margins, $i);
+  --margins-12: nth($margins, $i);
+  --margins-13: nth($margins, $i);
+  --margins-14: nth($margins, $i);
+  --margins-15: nth($margins, $i);
+  --margins-16: nth($margins, $i);
+  --margins-17: nth($margins, $i);
+  --margins-18: nth($margins, $i);
+  --margins-19: nth($margins, $i);
+  --margins-20: nth($margins, $i);
+  --margins-21: nth($margins, $i);
+  --margins-22: nth($margins, $i);
+}
+
 @media (min-width: 0px) {
   .g--margin-1 {
     margin: 0px;
@@ -5019,6 +4970,15 @@ html {
     margin-bottom: 480px;
   }
 }
+:root {
+  --shadow-none: map-get($shadows, $value);
+  --shadow-sm: map-get($shadows, $value);
+  --shadow-: map-get($shadows, $value);
+  --shadow-lg: map-get($shadows, $value);
+  --shadow-xlg: map-get($shadows, $value);
+  --shadow-xxlg: map-get($shadows, $value);
+}
+
 @media (min-width: 0px) {
   .g--box-shadow-none {
     -webkit-box-shadow: none;
@@ -6630,6 +6590,21 @@ html {
     border-color: var(--color-white-9);
   }
 }
+:root {
+  --font-zize-1: nth($font-size, $i);
+  --font-zize-2: nth($font-size, $i);
+  --font-zize-3: nth($font-size, $i);
+  --font-zize-4: nth($font-size, $i);
+  --font-zize-5: nth($font-size, $i);
+  --font-zize-6: nth($font-size, $i);
+  --font-zize-7: nth($font-size, $i);
+  --font-zize-8: nth($font-size, $i);
+  --font-zize-9: nth($font-size, $i);
+  --font-zize-10: nth($font-size, $i);
+  --font-zize-11: nth($font-size, $i);
+  --font-zize-12: nth($font-size, $i);
+}
+
 @media (min-width: 0px) {
   .g--font-size-1 {
     font-size: 0px;
@@ -6744,6 +6719,16 @@ html {
     font-size: 48px;
   }
 }
+:root {
+  --border-radius-1: nth($border-radius, $i);
+  --border-radius-2: nth($border-radius, $i);
+  --border-radius-3: nth($border-radius, $i);
+  --border-radius-4: nth($border-radius, $i);
+  --border-radius-5: nth($border-radius, $i);
+  --border-radius-6: nth($border-radius, $i);
+  --border-radius-7: nth($border-radius, $i);
+}
+
 @media (min-width: 0px) {
   .g--border-radius-1 {
     border-radius: 0px;
@@ -7065,6 +7050,31 @@ html {
     border-top-left-radius: 16px;
   }
 }
+:root {
+  --height-1: nth($height, $i);
+  --height-2: nth($height, $i);
+  --height-3: nth($height, $i);
+  --height-4: nth($height, $i);
+  --height-5: nth($height, $i);
+  --height-6: nth($height, $i);
+  --height-7: nth($height, $i);
+  --height-8: nth($height, $i);
+  --height-9: nth($height, $i);
+  --height-10: nth($height, $i);
+  --height-11: nth($height, $i);
+  --height-12: nth($height, $i);
+  --height-13: nth($height, $i);
+  --height-14: nth($height, $i);
+  --height-15: nth($height, $i);
+  --height-16: nth($height, $i);
+  --height-17: nth($height, $i);
+  --height-18: nth($height, $i);
+  --height-19: nth($height, $i);
+  --height-20: nth($height, $i);
+  --height-21: nth($height, $i);
+  --height-22: nth($height, $i);
+}
+
 @media (min-width: 0px) {
   .g--height-1 {
     height: 0px;
@@ -7269,6 +7279,31 @@ html {
     height: 480px;
   }
 }
+:root {
+  --width-1: nth($width, $i);
+  --width-2: nth($width, $i);
+  --width-3: nth($width, $i);
+  --width-4: nth($width, $i);
+  --width-5: nth($width, $i);
+  --width-6: nth($width, $i);
+  --width-7: nth($width, $i);
+  --width-8: nth($width, $i);
+  --width-9: nth($width, $i);
+  --width-10: nth($width, $i);
+  --width-11: nth($width, $i);
+  --width-12: nth($width, $i);
+  --width-13: nth($width, $i);
+  --width-14: nth($width, $i);
+  --width-15: nth($width, $i);
+  --width-16: nth($width, $i);
+  --width-17: nth($width, $i);
+  --width-18: nth($width, $i);
+  --width-19: nth($width, $i);
+  --width-20: nth($width, $i);
+  --width-21: nth($width, $i);
+  --width-22: nth($width, $i);
+}
+
 @media (min-width: 0px) {
   .g--width-1 {
     width: 0px;
@@ -7473,6 +7508,31 @@ html {
     width: 480px;
   }
 }
+:root {
+  --inset-1: nth($inset, $i);
+  --inset-2: nth($inset, $i);
+  --inset-3: nth($inset, $i);
+  --inset-4: nth($inset, $i);
+  --inset-5: nth($inset, $i);
+  --inset-6: nth($inset, $i);
+  --inset-7: nth($inset, $i);
+  --inset-8: nth($inset, $i);
+  --inset-9: nth($inset, $i);
+  --inset-10: nth($inset, $i);
+  --inset-11: nth($inset, $i);
+  --inset-12: nth($inset, $i);
+  --inset-13: nth($inset, $i);
+  --inset-14: nth($inset, $i);
+  --inset-15: nth($inset, $i);
+  --inset-16: nth($inset, $i);
+  --inset-17: nth($inset, $i);
+  --inset-18: nth($inset, $i);
+  --inset-19: nth($inset, $i);
+  --inset-20: nth($inset, $i);
+  --inset-21: nth($inset, $i);
+  --inset-22: nth($inset, $i);
+}
+
 @media (min-width: 0px) {
   .g--inset-1 {
     position: relative;
@@ -8997,6 +9057,47 @@ html {
     left: 480px;
   }
 }
+:root {
+  --font-family-sans-1: system-ui;
+  --font-family-sans-2:  -apple-system;
+  --font-family-sans-3: BlinkMacSystemFont;
+  --font-family-sans-4:  "Segoe UI";
+  --font-family-sans-5: Roboto;
+  --font-family-sans-6: "Helvetica Neue";
+  --font-family-sans-7: Arial;
+  --font-family-sans-8: "Noto Sans";
+  --font-family-sans-9: sans-serif;
+  --font-family-sans-10: "Apple Color Emoji";
+  --font-family-sans-11: "Segoe UI Emoji";
+  --font-family-sans-12: "Segoe UI Symbol";
+  --font-family-sans-13: "Noto Color Emoji" ;
+  --font-family-default-1: system-ui;
+  --font-family-default-2: -apple-system;
+  --font-family-default-3: BlinkMacSystemFont;
+  --font-family-default-4: "Segoe UI";
+  --font-family-default-5: Roboto;
+  --font-family-default-6: "Helvetica Neue";
+  --font-family-default-7: Arial;
+  --font-family-default-8: "Noto Sans";
+  --font-family-default-9: sans-serif;
+  --font-family-default-10: "Apple Color Emoji";
+  --font-family-default-11: "Segoe UI Emoji";
+  --font-family-default-12: "Segoe UI Symbol";
+  --font-family-default-13: "Noto Color Emoji";
+  --font-family-serif-1: Georgia;
+  --font-family-serif-2: Cambria;
+  --font-family-serif-3: "Times New Roman";
+  --font-family-serif-4: Times;
+  --font-family-serif-5: serif;
+  --font-family-mono-1: "Roboto Mono";
+  --font-family-mono-2: Menlo;
+  --font-family-mono-3: Monaco;
+  --font-family-mono-4: Consolas;
+  --font-family-mono-5: "Liberation Mono";
+  --font-family-mono-6: "Courier New";
+  --font-family-mono-7: monospace;
+}
+
 @media (min-width: 0px) {
   .g--font-family-sans--1 {
     font-family: system-ui;

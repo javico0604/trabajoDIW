@@ -1,3 +1,18 @@
+.c-header{
+    --c-header-color: var( --color-primary-5);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: var(--font-size-7);
+    padding: var(--padding-5) var(--padding-8);
+
+    background-color: var(--c-header-color);
+}
+
 @each $key, $value in $breakpoint {
     @media (min-width: $value){
         $right-side: \@#{$key};
@@ -13,43 +28,28 @@
             $left-side: "";
         }
 
-        .#{$left-side}c-header#{$right-side}{
-            --c-header-color: var( --color-primary-5);
-
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            text-decoration: none;
-            font-family: sans-serif;
-            font-size: 16px;
-            padding: 10px 20px;
-
-            background-color: var(--c-header-color);
-
-            &__logo#{$right-side} {
-                font-size: 24px;
+            #{$left-side}c-header__logo#{$right-side} {
+                font-size: var(--font-size-9);
             }
 
-            &__links#{$right-side} {
+            #{$left-side}__links#{$right-side} {
                 display: flex;
                 gap: 20px;
             }
             
-        }
+            @each $key, $tones in $colores{
 
-        @each $key, $tones in $colores{
-
-            @if $key == "primary" {
-
-            }@else {
-                .#{$left-side}c-header--#{$key}#{$right-side}{
-                    --c-header-color: var( --color-#{$key}-5);
+                @if $key == "primary" {
+    
+                }@else {
+                    .#{$left-side}c-header--#{$key}#{$right-side}{
+                        --c-header-color: var( --color-#{$key}-5);
+                    }
                 }
             }
         }
-    }
 }
+
 
 
 

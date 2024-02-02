@@ -1,3 +1,13 @@
+.c-title{
+    --c-title-color: var( --color-primary-5);
+    color: var(--c-title-color);
+    
+    font-size: var(--font-size-10);
+    font-weight: bold;
+    
+    padding: var(--padding-7);
+}
+
 @each $key, $value in $breakpoint {
     @media (min-width: $value){
         $right-side: \@#{$key};
@@ -13,37 +23,25 @@
             $left-side: "";
         }
 
-        .#{$left-side}c-title#{$right-side}{
-            --c-title-color: var( --color-primary-5);
-            color: var(--c-title-color);
-            
-            font-size: 32px;
-            font-weight: bold;
-            
-            padding: 15px;
-
-            &--very-small#{$right-side}{
-                font-size: 16px;
-            }
-
-            &--small#{$right-side}{
-                font-size: 24px;
-            }
-
-            &--large#{$right-side}{
-                font-size: 48px;
-            }
-
-            &--very-large#{$right-side}{
-                font-size: 64px;
-            }
-
-            &--center#{$right-side}{
-                text-align: center;
-            }
-
+        #{$left-side}c-title--very-small#{$right-side}{
+            font-size: var(--font-size-7);;
         }
 
+        #{$left-side}c-title--small#{$right-side}{
+            font-size: var(--font-size-9);
+        }
+
+        #{$left-side}c-title--large#{$right-side}{
+            font-size: var(--padding-12);
+        }
+
+        #{$left-side}c-title--very-large#{$right-side}{
+            font-size: var(--padding-13);
+        }
+
+        #{$left-side}c-title--center#{$right-side}{
+            text-align: center;
+        }
         @each $key, $tones in $colores{
 
             @if $key == "primary" {
@@ -56,6 +54,7 @@
         }
     }
 }
+
 
 
 
