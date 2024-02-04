@@ -1,6 +1,6 @@
 :root{
-    @for $i from 1 to length($height){
-        --height-#{$i}: nth($height, $i);
+    @for $i from 1 through length($height){
+        --height-#{$i}: #{nth($height, $i)};
     }
 }
 
@@ -19,9 +19,9 @@
             $left-side: "";
         }
 
-        @for $i from 1 to length($height){
+        @for $i from 1 through length($height){
             .#{$left-side}g--height-#{$i}#{$right-side}{
-                height: nth($height, $i);
+                height: var(--height-#{$i});
             }
         }
     }

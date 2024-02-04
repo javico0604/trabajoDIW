@@ -1,6 +1,6 @@
 :root{
-    @for $i from 1 to length($width){
-        --width-#{$i}: nth($width, $i);
+    @for $i from 1 through length($width){
+        --width-#{$i}: #{nth($list: $width, $n: $i)};
     }
 }
 
@@ -19,9 +19,9 @@
             $left-side: "";
         }
 
-        @for $i from 1 to length($width){
+        @for $i from 1 through length($width){
             .#{$left-side}g--width-#{$i}#{$right-side}{
-                width: nth($width, $i);
+                width: var(--width-#{$i});
             }
         }
     }

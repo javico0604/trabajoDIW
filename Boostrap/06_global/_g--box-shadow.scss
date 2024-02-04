@@ -6,7 +6,7 @@
 $shadowsMap:map-keys($shadows);
 :root{
     @each $value in $shadowsMap{
-        --shadow-#{$value}: map-get($shadows, $value);
+        --shadow-#{$value}:#{map-get($shadows, $value)};
     }
 }
 
@@ -29,11 +29,11 @@ $shadowsMap:map-keys($shadows);
         @each $value in $shadowsMap{
             @if $value == ""{
                 .#{$left-side}g--box-shadow#{$right-side}{
-                    @include box-shadow(map-get($shadows, $value));
+                    @include box-shadow(var(--shadow-#{$value}));
                 }
             } @else{
                 .#{$left-side}g--box-shadow-#{$value}#{$right-side}{
-                    @include box-shadow(map-get($shadows, $value))
+                    @include box-shadow(var(--shadow-#{$value}))
                 }
             }
         }

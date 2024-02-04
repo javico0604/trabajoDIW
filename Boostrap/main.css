@@ -1559,6 +1559,9 @@ html {
   __submit--22 {
     margin-bottom: 480px;
   }
+  __submit--23 {
+    margin-bottom: 640px;
+  }
   __text--primary {
     color: var(--color-primary-5);
   }
@@ -1648,6 +1651,9 @@ html {
   tablet\@__submit--22 {
     margin-bottom: 480px;
   }
+  tablet\@__submit--23 {
+    margin-bottom: 640px;
+  }
   tablet\@__text--primary {
     color: var(--color-primary-5);
   }
@@ -1736,6 +1742,9 @@ html {
   }
   desktop\@__submit--22 {
     margin-bottom: 480px;
+  }
+  desktop\@__submit--23 {
+    margin-bottom: 640px;
   }
   desktop\@__text--primary {
     color: var(--color-primary-5);
@@ -1873,3206 +1882,3346 @@ html {
   }
 }
 :root {
-  --padding-1: nth($paddings, $i);
-  --padding-2: nth($paddings, $i);
-  --padding-3: nth($paddings, $i);
-  --padding-4: nth($paddings, $i);
-  --padding-5: nth($paddings, $i);
-  --padding-6: nth($paddings, $i);
-  --padding-7: nth($paddings, $i);
-  --padding-8: nth($paddings, $i);
-  --padding-9: nth($paddings, $i);
-  --padding-10: nth($paddings, $i);
-  --padding-11: nth($paddings, $i);
-  --padding-12: nth($paddings, $i);
-  --padding-13: nth($paddings, $i);
-  --padding-14: nth($paddings, $i);
-  --padding-15: nth($paddings, $i);
-  --padding-16: nth($paddings, $i);
-  --padding-17: nth($paddings, $i);
-  --padding-18: nth($paddings, $i);
-  --padding-19: nth($paddings, $i);
-  --padding-20: nth($paddings, $i);
-  --padding-21: nth($paddings, $i);
-  --padding-22: nth($paddings, $i);
+  --padding-1: 0px;
+  --padding-2: 4px;
+  --padding-3: 6px;
+  --padding-4: 8px;
+  --padding-5: 10px;
+  --padding-6: 12px;
+  --padding-7: 16px;
+  --padding-8: 20px;
+  --padding-9: 24px;
+  --padding-10: 32px;
+  --padding-11: 40px;
+  --padding-12: 48px;
+  --padding-13: 64px;
+  --padding-14: 80px;
+  --padding-15: 96px;
+  --padding-16: 128px;
+  --padding-17: 160px;
+  --padding-18: 192px;
+  --padding-19: 224px;
+  --padding-20: 256px;
+  --padding-21: 320px;
+  --padding-22: 480px;
+  --padding-23: 640px;
 }
 
 @media (min-width: 0px) {
   .g--padding-1 {
-    padding: 0px;
+    padding: var(--padding-1);
   }
   .g--padding-x-1 {
-    padding-right: 0px;
-    padding-left: 0px;
+    padding-right: var(--padding-1);
+    padding-left: var(--padding-1);
   }
   .g--padding-y-1 {
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: var(--padding-1);
+    padding-bottom: var(--padding-1);
   }
   .g--padding-left-1 {
-    padding-left: 0px;
+    padding-left: var(--padding-1);
   }
   .g--padding-right-1 {
-    padding-right: 0px;
+    padding-right: var(--padding-1);
   }
   .g--padding-top-1 {
-    padding-top: 0px;
+    padding-top: var(--padding-1);
   }
   .g--padding-bottom-1 {
-    padding-bottom: 0px;
+    padding-bottom: var(--padding-1);
   }
   .g--padding-2 {
-    padding: 4px;
+    padding: var(--padding-2);
   }
   .g--padding-x-2 {
-    padding-right: 4px;
-    padding-left: 4px;
+    padding-right: var(--padding-2);
+    padding-left: var(--padding-2);
   }
   .g--padding-y-2 {
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-top: var(--padding-2);
+    padding-bottom: var(--padding-2);
   }
   .g--padding-left-2 {
-    padding-left: 4px;
+    padding-left: var(--padding-2);
   }
   .g--padding-right-2 {
-    padding-right: 4px;
+    padding-right: var(--padding-2);
   }
   .g--padding-top-2 {
-    padding-top: 4px;
+    padding-top: var(--padding-2);
   }
   .g--padding-bottom-2 {
-    padding-bottom: 4px;
+    padding-bottom: var(--padding-2);
   }
   .g--padding-3 {
-    padding: 6px;
+    padding: var(--padding-3);
   }
   .g--padding-x-3 {
-    padding-right: 6px;
-    padding-left: 6px;
+    padding-right: var(--padding-3);
+    padding-left: var(--padding-3);
   }
   .g--padding-y-3 {
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: var(--padding-3);
+    padding-bottom: var(--padding-3);
   }
   .g--padding-left-3 {
-    padding-left: 6px;
+    padding-left: var(--padding-3);
   }
   .g--padding-right-3 {
-    padding-right: 6px;
+    padding-right: var(--padding-3);
   }
   .g--padding-top-3 {
-    padding-top: 6px;
+    padding-top: var(--padding-3);
   }
   .g--padding-bottom-3 {
-    padding-bottom: 6px;
+    padding-bottom: var(--padding-3);
   }
   .g--padding-4 {
-    padding: 8px;
+    padding: var(--padding-4);
   }
   .g--padding-x-4 {
-    padding-right: 8px;
-    padding-left: 8px;
+    padding-right: var(--padding-4);
+    padding-left: var(--padding-4);
   }
   .g--padding-y-4 {
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: var(--padding-4);
+    padding-bottom: var(--padding-4);
   }
   .g--padding-left-4 {
-    padding-left: 8px;
+    padding-left: var(--padding-4);
   }
   .g--padding-right-4 {
-    padding-right: 8px;
+    padding-right: var(--padding-4);
   }
   .g--padding-top-4 {
-    padding-top: 8px;
+    padding-top: var(--padding-4);
   }
   .g--padding-bottom-4 {
-    padding-bottom: 8px;
+    padding-bottom: var(--padding-4);
   }
   .g--padding-5 {
-    padding: 10px;
+    padding: var(--padding-5);
   }
   .g--padding-x-5 {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: var(--padding-5);
+    padding-left: var(--padding-5);
   }
   .g--padding-y-5 {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: var(--padding-5);
+    padding-bottom: var(--padding-5);
   }
   .g--padding-left-5 {
-    padding-left: 10px;
+    padding-left: var(--padding-5);
   }
   .g--padding-right-5 {
-    padding-right: 10px;
+    padding-right: var(--padding-5);
   }
   .g--padding-top-5 {
-    padding-top: 10px;
+    padding-top: var(--padding-5);
   }
   .g--padding-bottom-5 {
-    padding-bottom: 10px;
+    padding-bottom: var(--padding-5);
   }
   .g--padding-6 {
-    padding: 12px;
+    padding: var(--padding-6);
   }
   .g--padding-x-6 {
-    padding-right: 12px;
-    padding-left: 12px;
+    padding-right: var(--padding-6);
+    padding-left: var(--padding-6);
   }
   .g--padding-y-6 {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: var(--padding-6);
+    padding-bottom: var(--padding-6);
   }
   .g--padding-left-6 {
-    padding-left: 12px;
+    padding-left: var(--padding-6);
   }
   .g--padding-right-6 {
-    padding-right: 12px;
+    padding-right: var(--padding-6);
   }
   .g--padding-top-6 {
-    padding-top: 12px;
+    padding-top: var(--padding-6);
   }
   .g--padding-bottom-6 {
-    padding-bottom: 12px;
+    padding-bottom: var(--padding-6);
   }
   .g--padding-7 {
-    padding: 16px;
+    padding: var(--padding-7);
   }
   .g--padding-x-7 {
-    padding-right: 16px;
-    padding-left: 16px;
+    padding-right: var(--padding-7);
+    padding-left: var(--padding-7);
   }
   .g--padding-y-7 {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: var(--padding-7);
+    padding-bottom: var(--padding-7);
   }
   .g--padding-left-7 {
-    padding-left: 16px;
+    padding-left: var(--padding-7);
   }
   .g--padding-right-7 {
-    padding-right: 16px;
+    padding-right: var(--padding-7);
   }
   .g--padding-top-7 {
-    padding-top: 16px;
+    padding-top: var(--padding-7);
   }
   .g--padding-bottom-7 {
-    padding-bottom: 16px;
+    padding-bottom: var(--padding-7);
   }
   .g--padding-8 {
-    padding: 20px;
+    padding: var(--padding-8);
   }
   .g--padding-x-8 {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: var(--padding-8);
+    padding-left: var(--padding-8);
   }
   .g--padding-y-8 {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: var(--padding-8);
+    padding-bottom: var(--padding-8);
   }
   .g--padding-left-8 {
-    padding-left: 20px;
+    padding-left: var(--padding-8);
   }
   .g--padding-right-8 {
-    padding-right: 20px;
+    padding-right: var(--padding-8);
   }
   .g--padding-top-8 {
-    padding-top: 20px;
+    padding-top: var(--padding-8);
   }
   .g--padding-bottom-8 {
-    padding-bottom: 20px;
+    padding-bottom: var(--padding-8);
   }
   .g--padding-9 {
-    padding: 24px;
+    padding: var(--padding-9);
   }
   .g--padding-x-9 {
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: var(--padding-9);
+    padding-left: var(--padding-9);
   }
   .g--padding-y-9 {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: var(--padding-9);
+    padding-bottom: var(--padding-9);
   }
   .g--padding-left-9 {
-    padding-left: 24px;
+    padding-left: var(--padding-9);
   }
   .g--padding-right-9 {
-    padding-right: 24px;
+    padding-right: var(--padding-9);
   }
   .g--padding-top-9 {
-    padding-top: 24px;
+    padding-top: var(--padding-9);
   }
   .g--padding-bottom-9 {
-    padding-bottom: 24px;
+    padding-bottom: var(--padding-9);
   }
   .g--padding-10 {
-    padding: 32px;
+    padding: var(--padding-10);
   }
   .g--padding-x-10 {
-    padding-right: 32px;
-    padding-left: 32px;
+    padding-right: var(--padding-10);
+    padding-left: var(--padding-10);
   }
   .g--padding-y-10 {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: var(--padding-10);
+    padding-bottom: var(--padding-10);
   }
   .g--padding-left-10 {
-    padding-left: 32px;
+    padding-left: var(--padding-10);
   }
   .g--padding-right-10 {
-    padding-right: 32px;
+    padding-right: var(--padding-10);
   }
   .g--padding-top-10 {
-    padding-top: 32px;
+    padding-top: var(--padding-10);
   }
   .g--padding-bottom-10 {
-    padding-bottom: 32px;
+    padding-bottom: var(--padding-10);
   }
   .g--padding-11 {
-    padding: 40px;
+    padding: var(--padding-11);
   }
   .g--padding-x-11 {
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: var(--padding-11);
+    padding-left: var(--padding-11);
   }
   .g--padding-y-11 {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: var(--padding-11);
+    padding-bottom: var(--padding-11);
   }
   .g--padding-left-11 {
-    padding-left: 40px;
+    padding-left: var(--padding-11);
   }
   .g--padding-right-11 {
-    padding-right: 40px;
+    padding-right: var(--padding-11);
   }
   .g--padding-top-11 {
-    padding-top: 40px;
+    padding-top: var(--padding-11);
   }
   .g--padding-bottom-11 {
-    padding-bottom: 40px;
+    padding-bottom: var(--padding-11);
   }
   .g--padding-12 {
-    padding: 48px;
+    padding: var(--padding-12);
   }
   .g--padding-x-12 {
-    padding-right: 48px;
-    padding-left: 48px;
+    padding-right: var(--padding-12);
+    padding-left: var(--padding-12);
   }
   .g--padding-y-12 {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: var(--padding-12);
+    padding-bottom: var(--padding-12);
   }
   .g--padding-left-12 {
-    padding-left: 48px;
+    padding-left: var(--padding-12);
   }
   .g--padding-right-12 {
-    padding-right: 48px;
+    padding-right: var(--padding-12);
   }
   .g--padding-top-12 {
-    padding-top: 48px;
+    padding-top: var(--padding-12);
   }
   .g--padding-bottom-12 {
-    padding-bottom: 48px;
+    padding-bottom: var(--padding-12);
   }
   .g--padding-13 {
-    padding: 64px;
+    padding: var(--padding-13);
   }
   .g--padding-x-13 {
-    padding-right: 64px;
-    padding-left: 64px;
+    padding-right: var(--padding-13);
+    padding-left: var(--padding-13);
   }
   .g--padding-y-13 {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: var(--padding-13);
+    padding-bottom: var(--padding-13);
   }
   .g--padding-left-13 {
-    padding-left: 64px;
+    padding-left: var(--padding-13);
   }
   .g--padding-right-13 {
-    padding-right: 64px;
+    padding-right: var(--padding-13);
   }
   .g--padding-top-13 {
-    padding-top: 64px;
+    padding-top: var(--padding-13);
   }
   .g--padding-bottom-13 {
-    padding-bottom: 64px;
+    padding-bottom: var(--padding-13);
   }
   .g--padding-14 {
-    padding: 80px;
+    padding: var(--padding-14);
   }
   .g--padding-x-14 {
-    padding-right: 80px;
-    padding-left: 80px;
+    padding-right: var(--padding-14);
+    padding-left: var(--padding-14);
   }
   .g--padding-y-14 {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: var(--padding-14);
+    padding-bottom: var(--padding-14);
   }
   .g--padding-left-14 {
-    padding-left: 80px;
+    padding-left: var(--padding-14);
   }
   .g--padding-right-14 {
-    padding-right: 80px;
+    padding-right: var(--padding-14);
   }
   .g--padding-top-14 {
-    padding-top: 80px;
+    padding-top: var(--padding-14);
   }
   .g--padding-bottom-14 {
-    padding-bottom: 80px;
+    padding-bottom: var(--padding-14);
   }
   .g--padding-15 {
-    padding: 96px;
+    padding: var(--padding-15);
   }
   .g--padding-x-15 {
-    padding-right: 96px;
-    padding-left: 96px;
+    padding-right: var(--padding-15);
+    padding-left: var(--padding-15);
   }
   .g--padding-y-15 {
-    padding-top: 96px;
-    padding-bottom: 96px;
+    padding-top: var(--padding-15);
+    padding-bottom: var(--padding-15);
   }
   .g--padding-left-15 {
-    padding-left: 96px;
+    padding-left: var(--padding-15);
   }
   .g--padding-right-15 {
-    padding-right: 96px;
+    padding-right: var(--padding-15);
   }
   .g--padding-top-15 {
-    padding-top: 96px;
+    padding-top: var(--padding-15);
   }
   .g--padding-bottom-15 {
-    padding-bottom: 96px;
+    padding-bottom: var(--padding-15);
   }
   .g--padding-16 {
-    padding: 128px;
+    padding: var(--padding-16);
   }
   .g--padding-x-16 {
-    padding-right: 128px;
-    padding-left: 128px;
+    padding-right: var(--padding-16);
+    padding-left: var(--padding-16);
   }
   .g--padding-y-16 {
-    padding-top: 128px;
-    padding-bottom: 128px;
+    padding-top: var(--padding-16);
+    padding-bottom: var(--padding-16);
   }
   .g--padding-left-16 {
-    padding-left: 128px;
+    padding-left: var(--padding-16);
   }
   .g--padding-right-16 {
-    padding-right: 128px;
+    padding-right: var(--padding-16);
   }
   .g--padding-top-16 {
-    padding-top: 128px;
+    padding-top: var(--padding-16);
   }
   .g--padding-bottom-16 {
-    padding-bottom: 128px;
+    padding-bottom: var(--padding-16);
   }
   .g--padding-17 {
-    padding: 160px;
+    padding: var(--padding-17);
   }
   .g--padding-x-17 {
-    padding-right: 160px;
-    padding-left: 160px;
+    padding-right: var(--padding-17);
+    padding-left: var(--padding-17);
   }
   .g--padding-y-17 {
-    padding-top: 160px;
-    padding-bottom: 160px;
+    padding-top: var(--padding-17);
+    padding-bottom: var(--padding-17);
   }
   .g--padding-left-17 {
-    padding-left: 160px;
+    padding-left: var(--padding-17);
   }
   .g--padding-right-17 {
-    padding-right: 160px;
+    padding-right: var(--padding-17);
   }
   .g--padding-top-17 {
-    padding-top: 160px;
+    padding-top: var(--padding-17);
   }
   .g--padding-bottom-17 {
-    padding-bottom: 160px;
+    padding-bottom: var(--padding-17);
   }
   .g--padding-18 {
-    padding: 192px;
+    padding: var(--padding-18);
   }
   .g--padding-x-18 {
-    padding-right: 192px;
-    padding-left: 192px;
+    padding-right: var(--padding-18);
+    padding-left: var(--padding-18);
   }
   .g--padding-y-18 {
-    padding-top: 192px;
-    padding-bottom: 192px;
+    padding-top: var(--padding-18);
+    padding-bottom: var(--padding-18);
   }
   .g--padding-left-18 {
-    padding-left: 192px;
+    padding-left: var(--padding-18);
   }
   .g--padding-right-18 {
-    padding-right: 192px;
+    padding-right: var(--padding-18);
   }
   .g--padding-top-18 {
-    padding-top: 192px;
+    padding-top: var(--padding-18);
   }
   .g--padding-bottom-18 {
-    padding-bottom: 192px;
+    padding-bottom: var(--padding-18);
   }
   .g--padding-19 {
-    padding: 224px;
+    padding: var(--padding-19);
   }
   .g--padding-x-19 {
-    padding-right: 224px;
-    padding-left: 224px;
+    padding-right: var(--padding-19);
+    padding-left: var(--padding-19);
   }
   .g--padding-y-19 {
-    padding-top: 224px;
-    padding-bottom: 224px;
+    padding-top: var(--padding-19);
+    padding-bottom: var(--padding-19);
   }
   .g--padding-left-19 {
-    padding-left: 224px;
+    padding-left: var(--padding-19);
   }
   .g--padding-right-19 {
-    padding-right: 224px;
+    padding-right: var(--padding-19);
   }
   .g--padding-top-19 {
-    padding-top: 224px;
+    padding-top: var(--padding-19);
   }
   .g--padding-bottom-19 {
-    padding-bottom: 224px;
+    padding-bottom: var(--padding-19);
   }
   .g--padding-20 {
-    padding: 256px;
+    padding: var(--padding-20);
   }
   .g--padding-x-20 {
-    padding-right: 256px;
-    padding-left: 256px;
+    padding-right: var(--padding-20);
+    padding-left: var(--padding-20);
   }
   .g--padding-y-20 {
-    padding-top: 256px;
-    padding-bottom: 256px;
+    padding-top: var(--padding-20);
+    padding-bottom: var(--padding-20);
   }
   .g--padding-left-20 {
-    padding-left: 256px;
+    padding-left: var(--padding-20);
   }
   .g--padding-right-20 {
-    padding-right: 256px;
+    padding-right: var(--padding-20);
   }
   .g--padding-top-20 {
-    padding-top: 256px;
+    padding-top: var(--padding-20);
   }
   .g--padding-bottom-20 {
-    padding-bottom: 256px;
+    padding-bottom: var(--padding-20);
   }
   .g--padding-21 {
-    padding: 320px;
+    padding: var(--padding-21);
   }
   .g--padding-x-21 {
-    padding-right: 320px;
-    padding-left: 320px;
+    padding-right: var(--padding-21);
+    padding-left: var(--padding-21);
   }
   .g--padding-y-21 {
-    padding-top: 320px;
-    padding-bottom: 320px;
+    padding-top: var(--padding-21);
+    padding-bottom: var(--padding-21);
   }
   .g--padding-left-21 {
-    padding-left: 320px;
+    padding-left: var(--padding-21);
   }
   .g--padding-right-21 {
-    padding-right: 320px;
+    padding-right: var(--padding-21);
   }
   .g--padding-top-21 {
-    padding-top: 320px;
+    padding-top: var(--padding-21);
   }
   .g--padding-bottom-21 {
-    padding-bottom: 320px;
+    padding-bottom: var(--padding-21);
   }
   .g--padding-22 {
-    padding: 480px;
+    padding: var(--padding-22);
   }
   .g--padding-x-22 {
-    padding-right: 480px;
-    padding-left: 480px;
+    padding-right: var(--padding-22);
+    padding-left: var(--padding-22);
   }
   .g--padding-y-22 {
-    padding-top: 480px;
-    padding-bottom: 480px;
+    padding-top: var(--padding-22);
+    padding-bottom: var(--padding-22);
   }
   .g--padding-left-22 {
-    padding-left: 480px;
+    padding-left: var(--padding-22);
   }
   .g--padding-right-22 {
-    padding-right: 480px;
+    padding-right: var(--padding-22);
   }
   .g--padding-top-22 {
-    padding-top: 480px;
+    padding-top: var(--padding-22);
   }
   .g--padding-bottom-22 {
-    padding-bottom: 480px;
+    padding-bottom: var(--padding-22);
+  }
+  .g--padding-23 {
+    padding: var(--padding-23);
+  }
+  .g--padding-x-23 {
+    padding-right: var(--padding-23);
+    padding-left: var(--padding-23);
+  }
+  .g--padding-y-23 {
+    padding-top: var(--padding-23);
+    padding-bottom: var(--padding-23);
+  }
+  .g--padding-left-23 {
+    padding-left: var(--padding-23);
+  }
+  .g--padding-right-23 {
+    padding-right: var(--padding-23);
+  }
+  .g--padding-top-23 {
+    padding-top: var(--padding-23);
+  }
+  .g--padding-bottom-23 {
+    padding-bottom: var(--padding-23);
   }
 }
 @media (min-width: 768px) {
   .tablet\@g--padding-1 {
-    padding: 0px;
+    padding: var(--padding-1);
   }
   .tablet\@g--padding-x-1 {
-    padding-right: 0px;
-    padding-left: 0px;
+    padding-right: var(--padding-1);
+    padding-left: var(--padding-1);
   }
   .tablet\@g--padding-y-1 {
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: var(--padding-1);
+    padding-bottom: var(--padding-1);
   }
   .tablet\@g--padding-left-1 {
-    padding-left: 0px;
+    padding-left: var(--padding-1);
   }
   .tablet\@g--padding-right-1 {
-    padding-right: 0px;
+    padding-right: var(--padding-1);
   }
   .tablet\@g--padding-top-1 {
-    padding-top: 0px;
+    padding-top: var(--padding-1);
   }
   .tablet\@g--padding-bottom-1 {
-    padding-bottom: 0px;
+    padding-bottom: var(--padding-1);
   }
   .tablet\@g--padding-2 {
-    padding: 4px;
+    padding: var(--padding-2);
   }
   .tablet\@g--padding-x-2 {
-    padding-right: 4px;
-    padding-left: 4px;
+    padding-right: var(--padding-2);
+    padding-left: var(--padding-2);
   }
   .tablet\@g--padding-y-2 {
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-top: var(--padding-2);
+    padding-bottom: var(--padding-2);
   }
   .tablet\@g--padding-left-2 {
-    padding-left: 4px;
+    padding-left: var(--padding-2);
   }
   .tablet\@g--padding-right-2 {
-    padding-right: 4px;
+    padding-right: var(--padding-2);
   }
   .tablet\@g--padding-top-2 {
-    padding-top: 4px;
+    padding-top: var(--padding-2);
   }
   .tablet\@g--padding-bottom-2 {
-    padding-bottom: 4px;
+    padding-bottom: var(--padding-2);
   }
   .tablet\@g--padding-3 {
-    padding: 6px;
+    padding: var(--padding-3);
   }
   .tablet\@g--padding-x-3 {
-    padding-right: 6px;
-    padding-left: 6px;
+    padding-right: var(--padding-3);
+    padding-left: var(--padding-3);
   }
   .tablet\@g--padding-y-3 {
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: var(--padding-3);
+    padding-bottom: var(--padding-3);
   }
   .tablet\@g--padding-left-3 {
-    padding-left: 6px;
+    padding-left: var(--padding-3);
   }
   .tablet\@g--padding-right-3 {
-    padding-right: 6px;
+    padding-right: var(--padding-3);
   }
   .tablet\@g--padding-top-3 {
-    padding-top: 6px;
+    padding-top: var(--padding-3);
   }
   .tablet\@g--padding-bottom-3 {
-    padding-bottom: 6px;
+    padding-bottom: var(--padding-3);
   }
   .tablet\@g--padding-4 {
-    padding: 8px;
+    padding: var(--padding-4);
   }
   .tablet\@g--padding-x-4 {
-    padding-right: 8px;
-    padding-left: 8px;
+    padding-right: var(--padding-4);
+    padding-left: var(--padding-4);
   }
   .tablet\@g--padding-y-4 {
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: var(--padding-4);
+    padding-bottom: var(--padding-4);
   }
   .tablet\@g--padding-left-4 {
-    padding-left: 8px;
+    padding-left: var(--padding-4);
   }
   .tablet\@g--padding-right-4 {
-    padding-right: 8px;
+    padding-right: var(--padding-4);
   }
   .tablet\@g--padding-top-4 {
-    padding-top: 8px;
+    padding-top: var(--padding-4);
   }
   .tablet\@g--padding-bottom-4 {
-    padding-bottom: 8px;
+    padding-bottom: var(--padding-4);
   }
   .tablet\@g--padding-5 {
-    padding: 10px;
+    padding: var(--padding-5);
   }
   .tablet\@g--padding-x-5 {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: var(--padding-5);
+    padding-left: var(--padding-5);
   }
   .tablet\@g--padding-y-5 {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: var(--padding-5);
+    padding-bottom: var(--padding-5);
   }
   .tablet\@g--padding-left-5 {
-    padding-left: 10px;
+    padding-left: var(--padding-5);
   }
   .tablet\@g--padding-right-5 {
-    padding-right: 10px;
+    padding-right: var(--padding-5);
   }
   .tablet\@g--padding-top-5 {
-    padding-top: 10px;
+    padding-top: var(--padding-5);
   }
   .tablet\@g--padding-bottom-5 {
-    padding-bottom: 10px;
+    padding-bottom: var(--padding-5);
   }
   .tablet\@g--padding-6 {
-    padding: 12px;
+    padding: var(--padding-6);
   }
   .tablet\@g--padding-x-6 {
-    padding-right: 12px;
-    padding-left: 12px;
+    padding-right: var(--padding-6);
+    padding-left: var(--padding-6);
   }
   .tablet\@g--padding-y-6 {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: var(--padding-6);
+    padding-bottom: var(--padding-6);
   }
   .tablet\@g--padding-left-6 {
-    padding-left: 12px;
+    padding-left: var(--padding-6);
   }
   .tablet\@g--padding-right-6 {
-    padding-right: 12px;
+    padding-right: var(--padding-6);
   }
   .tablet\@g--padding-top-6 {
-    padding-top: 12px;
+    padding-top: var(--padding-6);
   }
   .tablet\@g--padding-bottom-6 {
-    padding-bottom: 12px;
+    padding-bottom: var(--padding-6);
   }
   .tablet\@g--padding-7 {
-    padding: 16px;
+    padding: var(--padding-7);
   }
   .tablet\@g--padding-x-7 {
-    padding-right: 16px;
-    padding-left: 16px;
+    padding-right: var(--padding-7);
+    padding-left: var(--padding-7);
   }
   .tablet\@g--padding-y-7 {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: var(--padding-7);
+    padding-bottom: var(--padding-7);
   }
   .tablet\@g--padding-left-7 {
-    padding-left: 16px;
+    padding-left: var(--padding-7);
   }
   .tablet\@g--padding-right-7 {
-    padding-right: 16px;
+    padding-right: var(--padding-7);
   }
   .tablet\@g--padding-top-7 {
-    padding-top: 16px;
+    padding-top: var(--padding-7);
   }
   .tablet\@g--padding-bottom-7 {
-    padding-bottom: 16px;
+    padding-bottom: var(--padding-7);
   }
   .tablet\@g--padding-8 {
-    padding: 20px;
+    padding: var(--padding-8);
   }
   .tablet\@g--padding-x-8 {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: var(--padding-8);
+    padding-left: var(--padding-8);
   }
   .tablet\@g--padding-y-8 {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: var(--padding-8);
+    padding-bottom: var(--padding-8);
   }
   .tablet\@g--padding-left-8 {
-    padding-left: 20px;
+    padding-left: var(--padding-8);
   }
   .tablet\@g--padding-right-8 {
-    padding-right: 20px;
+    padding-right: var(--padding-8);
   }
   .tablet\@g--padding-top-8 {
-    padding-top: 20px;
+    padding-top: var(--padding-8);
   }
   .tablet\@g--padding-bottom-8 {
-    padding-bottom: 20px;
+    padding-bottom: var(--padding-8);
   }
   .tablet\@g--padding-9 {
-    padding: 24px;
+    padding: var(--padding-9);
   }
   .tablet\@g--padding-x-9 {
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: var(--padding-9);
+    padding-left: var(--padding-9);
   }
   .tablet\@g--padding-y-9 {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: var(--padding-9);
+    padding-bottom: var(--padding-9);
   }
   .tablet\@g--padding-left-9 {
-    padding-left: 24px;
+    padding-left: var(--padding-9);
   }
   .tablet\@g--padding-right-9 {
-    padding-right: 24px;
+    padding-right: var(--padding-9);
   }
   .tablet\@g--padding-top-9 {
-    padding-top: 24px;
+    padding-top: var(--padding-9);
   }
   .tablet\@g--padding-bottom-9 {
-    padding-bottom: 24px;
+    padding-bottom: var(--padding-9);
   }
   .tablet\@g--padding-10 {
-    padding: 32px;
+    padding: var(--padding-10);
   }
   .tablet\@g--padding-x-10 {
-    padding-right: 32px;
-    padding-left: 32px;
+    padding-right: var(--padding-10);
+    padding-left: var(--padding-10);
   }
   .tablet\@g--padding-y-10 {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: var(--padding-10);
+    padding-bottom: var(--padding-10);
   }
   .tablet\@g--padding-left-10 {
-    padding-left: 32px;
+    padding-left: var(--padding-10);
   }
   .tablet\@g--padding-right-10 {
-    padding-right: 32px;
+    padding-right: var(--padding-10);
   }
   .tablet\@g--padding-top-10 {
-    padding-top: 32px;
+    padding-top: var(--padding-10);
   }
   .tablet\@g--padding-bottom-10 {
-    padding-bottom: 32px;
+    padding-bottom: var(--padding-10);
   }
   .tablet\@g--padding-11 {
-    padding: 40px;
+    padding: var(--padding-11);
   }
   .tablet\@g--padding-x-11 {
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: var(--padding-11);
+    padding-left: var(--padding-11);
   }
   .tablet\@g--padding-y-11 {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: var(--padding-11);
+    padding-bottom: var(--padding-11);
   }
   .tablet\@g--padding-left-11 {
-    padding-left: 40px;
+    padding-left: var(--padding-11);
   }
   .tablet\@g--padding-right-11 {
-    padding-right: 40px;
+    padding-right: var(--padding-11);
   }
   .tablet\@g--padding-top-11 {
-    padding-top: 40px;
+    padding-top: var(--padding-11);
   }
   .tablet\@g--padding-bottom-11 {
-    padding-bottom: 40px;
+    padding-bottom: var(--padding-11);
   }
   .tablet\@g--padding-12 {
-    padding: 48px;
+    padding: var(--padding-12);
   }
   .tablet\@g--padding-x-12 {
-    padding-right: 48px;
-    padding-left: 48px;
+    padding-right: var(--padding-12);
+    padding-left: var(--padding-12);
   }
   .tablet\@g--padding-y-12 {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: var(--padding-12);
+    padding-bottom: var(--padding-12);
   }
   .tablet\@g--padding-left-12 {
-    padding-left: 48px;
+    padding-left: var(--padding-12);
   }
   .tablet\@g--padding-right-12 {
-    padding-right: 48px;
+    padding-right: var(--padding-12);
   }
   .tablet\@g--padding-top-12 {
-    padding-top: 48px;
+    padding-top: var(--padding-12);
   }
   .tablet\@g--padding-bottom-12 {
-    padding-bottom: 48px;
+    padding-bottom: var(--padding-12);
   }
   .tablet\@g--padding-13 {
-    padding: 64px;
+    padding: var(--padding-13);
   }
   .tablet\@g--padding-x-13 {
-    padding-right: 64px;
-    padding-left: 64px;
+    padding-right: var(--padding-13);
+    padding-left: var(--padding-13);
   }
   .tablet\@g--padding-y-13 {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: var(--padding-13);
+    padding-bottom: var(--padding-13);
   }
   .tablet\@g--padding-left-13 {
-    padding-left: 64px;
+    padding-left: var(--padding-13);
   }
   .tablet\@g--padding-right-13 {
-    padding-right: 64px;
+    padding-right: var(--padding-13);
   }
   .tablet\@g--padding-top-13 {
-    padding-top: 64px;
+    padding-top: var(--padding-13);
   }
   .tablet\@g--padding-bottom-13 {
-    padding-bottom: 64px;
+    padding-bottom: var(--padding-13);
   }
   .tablet\@g--padding-14 {
-    padding: 80px;
+    padding: var(--padding-14);
   }
   .tablet\@g--padding-x-14 {
-    padding-right: 80px;
-    padding-left: 80px;
+    padding-right: var(--padding-14);
+    padding-left: var(--padding-14);
   }
   .tablet\@g--padding-y-14 {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: var(--padding-14);
+    padding-bottom: var(--padding-14);
   }
   .tablet\@g--padding-left-14 {
-    padding-left: 80px;
+    padding-left: var(--padding-14);
   }
   .tablet\@g--padding-right-14 {
-    padding-right: 80px;
+    padding-right: var(--padding-14);
   }
   .tablet\@g--padding-top-14 {
-    padding-top: 80px;
+    padding-top: var(--padding-14);
   }
   .tablet\@g--padding-bottom-14 {
-    padding-bottom: 80px;
+    padding-bottom: var(--padding-14);
   }
   .tablet\@g--padding-15 {
-    padding: 96px;
+    padding: var(--padding-15);
   }
   .tablet\@g--padding-x-15 {
-    padding-right: 96px;
-    padding-left: 96px;
+    padding-right: var(--padding-15);
+    padding-left: var(--padding-15);
   }
   .tablet\@g--padding-y-15 {
-    padding-top: 96px;
-    padding-bottom: 96px;
+    padding-top: var(--padding-15);
+    padding-bottom: var(--padding-15);
   }
   .tablet\@g--padding-left-15 {
-    padding-left: 96px;
+    padding-left: var(--padding-15);
   }
   .tablet\@g--padding-right-15 {
-    padding-right: 96px;
+    padding-right: var(--padding-15);
   }
   .tablet\@g--padding-top-15 {
-    padding-top: 96px;
+    padding-top: var(--padding-15);
   }
   .tablet\@g--padding-bottom-15 {
-    padding-bottom: 96px;
+    padding-bottom: var(--padding-15);
   }
   .tablet\@g--padding-16 {
-    padding: 128px;
+    padding: var(--padding-16);
   }
   .tablet\@g--padding-x-16 {
-    padding-right: 128px;
-    padding-left: 128px;
+    padding-right: var(--padding-16);
+    padding-left: var(--padding-16);
   }
   .tablet\@g--padding-y-16 {
-    padding-top: 128px;
-    padding-bottom: 128px;
+    padding-top: var(--padding-16);
+    padding-bottom: var(--padding-16);
   }
   .tablet\@g--padding-left-16 {
-    padding-left: 128px;
+    padding-left: var(--padding-16);
   }
   .tablet\@g--padding-right-16 {
-    padding-right: 128px;
+    padding-right: var(--padding-16);
   }
   .tablet\@g--padding-top-16 {
-    padding-top: 128px;
+    padding-top: var(--padding-16);
   }
   .tablet\@g--padding-bottom-16 {
-    padding-bottom: 128px;
+    padding-bottom: var(--padding-16);
   }
   .tablet\@g--padding-17 {
-    padding: 160px;
+    padding: var(--padding-17);
   }
   .tablet\@g--padding-x-17 {
-    padding-right: 160px;
-    padding-left: 160px;
+    padding-right: var(--padding-17);
+    padding-left: var(--padding-17);
   }
   .tablet\@g--padding-y-17 {
-    padding-top: 160px;
-    padding-bottom: 160px;
+    padding-top: var(--padding-17);
+    padding-bottom: var(--padding-17);
   }
   .tablet\@g--padding-left-17 {
-    padding-left: 160px;
+    padding-left: var(--padding-17);
   }
   .tablet\@g--padding-right-17 {
-    padding-right: 160px;
+    padding-right: var(--padding-17);
   }
   .tablet\@g--padding-top-17 {
-    padding-top: 160px;
+    padding-top: var(--padding-17);
   }
   .tablet\@g--padding-bottom-17 {
-    padding-bottom: 160px;
+    padding-bottom: var(--padding-17);
   }
   .tablet\@g--padding-18 {
-    padding: 192px;
+    padding: var(--padding-18);
   }
   .tablet\@g--padding-x-18 {
-    padding-right: 192px;
-    padding-left: 192px;
+    padding-right: var(--padding-18);
+    padding-left: var(--padding-18);
   }
   .tablet\@g--padding-y-18 {
-    padding-top: 192px;
-    padding-bottom: 192px;
+    padding-top: var(--padding-18);
+    padding-bottom: var(--padding-18);
   }
   .tablet\@g--padding-left-18 {
-    padding-left: 192px;
+    padding-left: var(--padding-18);
   }
   .tablet\@g--padding-right-18 {
-    padding-right: 192px;
+    padding-right: var(--padding-18);
   }
   .tablet\@g--padding-top-18 {
-    padding-top: 192px;
+    padding-top: var(--padding-18);
   }
   .tablet\@g--padding-bottom-18 {
-    padding-bottom: 192px;
+    padding-bottom: var(--padding-18);
   }
   .tablet\@g--padding-19 {
-    padding: 224px;
+    padding: var(--padding-19);
   }
   .tablet\@g--padding-x-19 {
-    padding-right: 224px;
-    padding-left: 224px;
+    padding-right: var(--padding-19);
+    padding-left: var(--padding-19);
   }
   .tablet\@g--padding-y-19 {
-    padding-top: 224px;
-    padding-bottom: 224px;
+    padding-top: var(--padding-19);
+    padding-bottom: var(--padding-19);
   }
   .tablet\@g--padding-left-19 {
-    padding-left: 224px;
+    padding-left: var(--padding-19);
   }
   .tablet\@g--padding-right-19 {
-    padding-right: 224px;
+    padding-right: var(--padding-19);
   }
   .tablet\@g--padding-top-19 {
-    padding-top: 224px;
+    padding-top: var(--padding-19);
   }
   .tablet\@g--padding-bottom-19 {
-    padding-bottom: 224px;
+    padding-bottom: var(--padding-19);
   }
   .tablet\@g--padding-20 {
-    padding: 256px;
+    padding: var(--padding-20);
   }
   .tablet\@g--padding-x-20 {
-    padding-right: 256px;
-    padding-left: 256px;
+    padding-right: var(--padding-20);
+    padding-left: var(--padding-20);
   }
   .tablet\@g--padding-y-20 {
-    padding-top: 256px;
-    padding-bottom: 256px;
+    padding-top: var(--padding-20);
+    padding-bottom: var(--padding-20);
   }
   .tablet\@g--padding-left-20 {
-    padding-left: 256px;
+    padding-left: var(--padding-20);
   }
   .tablet\@g--padding-right-20 {
-    padding-right: 256px;
+    padding-right: var(--padding-20);
   }
   .tablet\@g--padding-top-20 {
-    padding-top: 256px;
+    padding-top: var(--padding-20);
   }
   .tablet\@g--padding-bottom-20 {
-    padding-bottom: 256px;
+    padding-bottom: var(--padding-20);
   }
   .tablet\@g--padding-21 {
-    padding: 320px;
+    padding: var(--padding-21);
   }
   .tablet\@g--padding-x-21 {
-    padding-right: 320px;
-    padding-left: 320px;
+    padding-right: var(--padding-21);
+    padding-left: var(--padding-21);
   }
   .tablet\@g--padding-y-21 {
-    padding-top: 320px;
-    padding-bottom: 320px;
+    padding-top: var(--padding-21);
+    padding-bottom: var(--padding-21);
   }
   .tablet\@g--padding-left-21 {
-    padding-left: 320px;
+    padding-left: var(--padding-21);
   }
   .tablet\@g--padding-right-21 {
-    padding-right: 320px;
+    padding-right: var(--padding-21);
   }
   .tablet\@g--padding-top-21 {
-    padding-top: 320px;
+    padding-top: var(--padding-21);
   }
   .tablet\@g--padding-bottom-21 {
-    padding-bottom: 320px;
+    padding-bottom: var(--padding-21);
   }
   .tablet\@g--padding-22 {
-    padding: 480px;
+    padding: var(--padding-22);
   }
   .tablet\@g--padding-x-22 {
-    padding-right: 480px;
-    padding-left: 480px;
+    padding-right: var(--padding-22);
+    padding-left: var(--padding-22);
   }
   .tablet\@g--padding-y-22 {
-    padding-top: 480px;
-    padding-bottom: 480px;
+    padding-top: var(--padding-22);
+    padding-bottom: var(--padding-22);
   }
   .tablet\@g--padding-left-22 {
-    padding-left: 480px;
+    padding-left: var(--padding-22);
   }
   .tablet\@g--padding-right-22 {
-    padding-right: 480px;
+    padding-right: var(--padding-22);
   }
   .tablet\@g--padding-top-22 {
-    padding-top: 480px;
+    padding-top: var(--padding-22);
   }
   .tablet\@g--padding-bottom-22 {
-    padding-bottom: 480px;
+    padding-bottom: var(--padding-22);
+  }
+  .tablet\@g--padding-23 {
+    padding: var(--padding-23);
+  }
+  .tablet\@g--padding-x-23 {
+    padding-right: var(--padding-23);
+    padding-left: var(--padding-23);
+  }
+  .tablet\@g--padding-y-23 {
+    padding-top: var(--padding-23);
+    padding-bottom: var(--padding-23);
+  }
+  .tablet\@g--padding-left-23 {
+    padding-left: var(--padding-23);
+  }
+  .tablet\@g--padding-right-23 {
+    padding-right: var(--padding-23);
+  }
+  .tablet\@g--padding-top-23 {
+    padding-top: var(--padding-23);
+  }
+  .tablet\@g--padding-bottom-23 {
+    padding-bottom: var(--padding-23);
   }
 }
 @media (min-width: 992px) {
   .desktop\@g--padding-1 {
-    padding: 0px;
+    padding: var(--padding-1);
   }
   .desktop\@g--padding-x-1 {
-    padding-right: 0px;
-    padding-left: 0px;
+    padding-right: var(--padding-1);
+    padding-left: var(--padding-1);
   }
   .desktop\@g--padding-y-1 {
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: var(--padding-1);
+    padding-bottom: var(--padding-1);
   }
   .desktop\@g--padding-left-1 {
-    padding-left: 0px;
+    padding-left: var(--padding-1);
   }
   .desktop\@g--padding-right-1 {
-    padding-right: 0px;
+    padding-right: var(--padding-1);
   }
   .desktop\@g--padding-top-1 {
-    padding-top: 0px;
+    padding-top: var(--padding-1);
   }
   .desktop\@g--padding-bottom-1 {
-    padding-bottom: 0px;
+    padding-bottom: var(--padding-1);
   }
   .desktop\@g--padding-2 {
-    padding: 4px;
+    padding: var(--padding-2);
   }
   .desktop\@g--padding-x-2 {
-    padding-right: 4px;
-    padding-left: 4px;
+    padding-right: var(--padding-2);
+    padding-left: var(--padding-2);
   }
   .desktop\@g--padding-y-2 {
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-top: var(--padding-2);
+    padding-bottom: var(--padding-2);
   }
   .desktop\@g--padding-left-2 {
-    padding-left: 4px;
+    padding-left: var(--padding-2);
   }
   .desktop\@g--padding-right-2 {
-    padding-right: 4px;
+    padding-right: var(--padding-2);
   }
   .desktop\@g--padding-top-2 {
-    padding-top: 4px;
+    padding-top: var(--padding-2);
   }
   .desktop\@g--padding-bottom-2 {
-    padding-bottom: 4px;
+    padding-bottom: var(--padding-2);
   }
   .desktop\@g--padding-3 {
-    padding: 6px;
+    padding: var(--padding-3);
   }
   .desktop\@g--padding-x-3 {
-    padding-right: 6px;
-    padding-left: 6px;
+    padding-right: var(--padding-3);
+    padding-left: var(--padding-3);
   }
   .desktop\@g--padding-y-3 {
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: var(--padding-3);
+    padding-bottom: var(--padding-3);
   }
   .desktop\@g--padding-left-3 {
-    padding-left: 6px;
+    padding-left: var(--padding-3);
   }
   .desktop\@g--padding-right-3 {
-    padding-right: 6px;
+    padding-right: var(--padding-3);
   }
   .desktop\@g--padding-top-3 {
-    padding-top: 6px;
+    padding-top: var(--padding-3);
   }
   .desktop\@g--padding-bottom-3 {
-    padding-bottom: 6px;
+    padding-bottom: var(--padding-3);
   }
   .desktop\@g--padding-4 {
-    padding: 8px;
+    padding: var(--padding-4);
   }
   .desktop\@g--padding-x-4 {
-    padding-right: 8px;
-    padding-left: 8px;
+    padding-right: var(--padding-4);
+    padding-left: var(--padding-4);
   }
   .desktop\@g--padding-y-4 {
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: var(--padding-4);
+    padding-bottom: var(--padding-4);
   }
   .desktop\@g--padding-left-4 {
-    padding-left: 8px;
+    padding-left: var(--padding-4);
   }
   .desktop\@g--padding-right-4 {
-    padding-right: 8px;
+    padding-right: var(--padding-4);
   }
   .desktop\@g--padding-top-4 {
-    padding-top: 8px;
+    padding-top: var(--padding-4);
   }
   .desktop\@g--padding-bottom-4 {
-    padding-bottom: 8px;
+    padding-bottom: var(--padding-4);
   }
   .desktop\@g--padding-5 {
-    padding: 10px;
+    padding: var(--padding-5);
   }
   .desktop\@g--padding-x-5 {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: var(--padding-5);
+    padding-left: var(--padding-5);
   }
   .desktop\@g--padding-y-5 {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: var(--padding-5);
+    padding-bottom: var(--padding-5);
   }
   .desktop\@g--padding-left-5 {
-    padding-left: 10px;
+    padding-left: var(--padding-5);
   }
   .desktop\@g--padding-right-5 {
-    padding-right: 10px;
+    padding-right: var(--padding-5);
   }
   .desktop\@g--padding-top-5 {
-    padding-top: 10px;
+    padding-top: var(--padding-5);
   }
   .desktop\@g--padding-bottom-5 {
-    padding-bottom: 10px;
+    padding-bottom: var(--padding-5);
   }
   .desktop\@g--padding-6 {
-    padding: 12px;
+    padding: var(--padding-6);
   }
   .desktop\@g--padding-x-6 {
-    padding-right: 12px;
-    padding-left: 12px;
+    padding-right: var(--padding-6);
+    padding-left: var(--padding-6);
   }
   .desktop\@g--padding-y-6 {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: var(--padding-6);
+    padding-bottom: var(--padding-6);
   }
   .desktop\@g--padding-left-6 {
-    padding-left: 12px;
+    padding-left: var(--padding-6);
   }
   .desktop\@g--padding-right-6 {
-    padding-right: 12px;
+    padding-right: var(--padding-6);
   }
   .desktop\@g--padding-top-6 {
-    padding-top: 12px;
+    padding-top: var(--padding-6);
   }
   .desktop\@g--padding-bottom-6 {
-    padding-bottom: 12px;
+    padding-bottom: var(--padding-6);
   }
   .desktop\@g--padding-7 {
-    padding: 16px;
+    padding: var(--padding-7);
   }
   .desktop\@g--padding-x-7 {
-    padding-right: 16px;
-    padding-left: 16px;
+    padding-right: var(--padding-7);
+    padding-left: var(--padding-7);
   }
   .desktop\@g--padding-y-7 {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: var(--padding-7);
+    padding-bottom: var(--padding-7);
   }
   .desktop\@g--padding-left-7 {
-    padding-left: 16px;
+    padding-left: var(--padding-7);
   }
   .desktop\@g--padding-right-7 {
-    padding-right: 16px;
+    padding-right: var(--padding-7);
   }
   .desktop\@g--padding-top-7 {
-    padding-top: 16px;
+    padding-top: var(--padding-7);
   }
   .desktop\@g--padding-bottom-7 {
-    padding-bottom: 16px;
+    padding-bottom: var(--padding-7);
   }
   .desktop\@g--padding-8 {
-    padding: 20px;
+    padding: var(--padding-8);
   }
   .desktop\@g--padding-x-8 {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: var(--padding-8);
+    padding-left: var(--padding-8);
   }
   .desktop\@g--padding-y-8 {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: var(--padding-8);
+    padding-bottom: var(--padding-8);
   }
   .desktop\@g--padding-left-8 {
-    padding-left: 20px;
+    padding-left: var(--padding-8);
   }
   .desktop\@g--padding-right-8 {
-    padding-right: 20px;
+    padding-right: var(--padding-8);
   }
   .desktop\@g--padding-top-8 {
-    padding-top: 20px;
+    padding-top: var(--padding-8);
   }
   .desktop\@g--padding-bottom-8 {
-    padding-bottom: 20px;
+    padding-bottom: var(--padding-8);
   }
   .desktop\@g--padding-9 {
-    padding: 24px;
+    padding: var(--padding-9);
   }
   .desktop\@g--padding-x-9 {
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: var(--padding-9);
+    padding-left: var(--padding-9);
   }
   .desktop\@g--padding-y-9 {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: var(--padding-9);
+    padding-bottom: var(--padding-9);
   }
   .desktop\@g--padding-left-9 {
-    padding-left: 24px;
+    padding-left: var(--padding-9);
   }
   .desktop\@g--padding-right-9 {
-    padding-right: 24px;
+    padding-right: var(--padding-9);
   }
   .desktop\@g--padding-top-9 {
-    padding-top: 24px;
+    padding-top: var(--padding-9);
   }
   .desktop\@g--padding-bottom-9 {
-    padding-bottom: 24px;
+    padding-bottom: var(--padding-9);
   }
   .desktop\@g--padding-10 {
-    padding: 32px;
+    padding: var(--padding-10);
   }
   .desktop\@g--padding-x-10 {
-    padding-right: 32px;
-    padding-left: 32px;
+    padding-right: var(--padding-10);
+    padding-left: var(--padding-10);
   }
   .desktop\@g--padding-y-10 {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: var(--padding-10);
+    padding-bottom: var(--padding-10);
   }
   .desktop\@g--padding-left-10 {
-    padding-left: 32px;
+    padding-left: var(--padding-10);
   }
   .desktop\@g--padding-right-10 {
-    padding-right: 32px;
+    padding-right: var(--padding-10);
   }
   .desktop\@g--padding-top-10 {
-    padding-top: 32px;
+    padding-top: var(--padding-10);
   }
   .desktop\@g--padding-bottom-10 {
-    padding-bottom: 32px;
+    padding-bottom: var(--padding-10);
   }
   .desktop\@g--padding-11 {
-    padding: 40px;
+    padding: var(--padding-11);
   }
   .desktop\@g--padding-x-11 {
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: var(--padding-11);
+    padding-left: var(--padding-11);
   }
   .desktop\@g--padding-y-11 {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: var(--padding-11);
+    padding-bottom: var(--padding-11);
   }
   .desktop\@g--padding-left-11 {
-    padding-left: 40px;
+    padding-left: var(--padding-11);
   }
   .desktop\@g--padding-right-11 {
-    padding-right: 40px;
+    padding-right: var(--padding-11);
   }
   .desktop\@g--padding-top-11 {
-    padding-top: 40px;
+    padding-top: var(--padding-11);
   }
   .desktop\@g--padding-bottom-11 {
-    padding-bottom: 40px;
+    padding-bottom: var(--padding-11);
   }
   .desktop\@g--padding-12 {
-    padding: 48px;
+    padding: var(--padding-12);
   }
   .desktop\@g--padding-x-12 {
-    padding-right: 48px;
-    padding-left: 48px;
+    padding-right: var(--padding-12);
+    padding-left: var(--padding-12);
   }
   .desktop\@g--padding-y-12 {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: var(--padding-12);
+    padding-bottom: var(--padding-12);
   }
   .desktop\@g--padding-left-12 {
-    padding-left: 48px;
+    padding-left: var(--padding-12);
   }
   .desktop\@g--padding-right-12 {
-    padding-right: 48px;
+    padding-right: var(--padding-12);
   }
   .desktop\@g--padding-top-12 {
-    padding-top: 48px;
+    padding-top: var(--padding-12);
   }
   .desktop\@g--padding-bottom-12 {
-    padding-bottom: 48px;
+    padding-bottom: var(--padding-12);
   }
   .desktop\@g--padding-13 {
-    padding: 64px;
+    padding: var(--padding-13);
   }
   .desktop\@g--padding-x-13 {
-    padding-right: 64px;
-    padding-left: 64px;
+    padding-right: var(--padding-13);
+    padding-left: var(--padding-13);
   }
   .desktop\@g--padding-y-13 {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: var(--padding-13);
+    padding-bottom: var(--padding-13);
   }
   .desktop\@g--padding-left-13 {
-    padding-left: 64px;
+    padding-left: var(--padding-13);
   }
   .desktop\@g--padding-right-13 {
-    padding-right: 64px;
+    padding-right: var(--padding-13);
   }
   .desktop\@g--padding-top-13 {
-    padding-top: 64px;
+    padding-top: var(--padding-13);
   }
   .desktop\@g--padding-bottom-13 {
-    padding-bottom: 64px;
+    padding-bottom: var(--padding-13);
   }
   .desktop\@g--padding-14 {
-    padding: 80px;
+    padding: var(--padding-14);
   }
   .desktop\@g--padding-x-14 {
-    padding-right: 80px;
-    padding-left: 80px;
+    padding-right: var(--padding-14);
+    padding-left: var(--padding-14);
   }
   .desktop\@g--padding-y-14 {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: var(--padding-14);
+    padding-bottom: var(--padding-14);
   }
   .desktop\@g--padding-left-14 {
-    padding-left: 80px;
+    padding-left: var(--padding-14);
   }
   .desktop\@g--padding-right-14 {
-    padding-right: 80px;
+    padding-right: var(--padding-14);
   }
   .desktop\@g--padding-top-14 {
-    padding-top: 80px;
+    padding-top: var(--padding-14);
   }
   .desktop\@g--padding-bottom-14 {
-    padding-bottom: 80px;
+    padding-bottom: var(--padding-14);
   }
   .desktop\@g--padding-15 {
-    padding: 96px;
+    padding: var(--padding-15);
   }
   .desktop\@g--padding-x-15 {
-    padding-right: 96px;
-    padding-left: 96px;
+    padding-right: var(--padding-15);
+    padding-left: var(--padding-15);
   }
   .desktop\@g--padding-y-15 {
-    padding-top: 96px;
-    padding-bottom: 96px;
+    padding-top: var(--padding-15);
+    padding-bottom: var(--padding-15);
   }
   .desktop\@g--padding-left-15 {
-    padding-left: 96px;
+    padding-left: var(--padding-15);
   }
   .desktop\@g--padding-right-15 {
-    padding-right: 96px;
+    padding-right: var(--padding-15);
   }
   .desktop\@g--padding-top-15 {
-    padding-top: 96px;
+    padding-top: var(--padding-15);
   }
   .desktop\@g--padding-bottom-15 {
-    padding-bottom: 96px;
+    padding-bottom: var(--padding-15);
   }
   .desktop\@g--padding-16 {
-    padding: 128px;
+    padding: var(--padding-16);
   }
   .desktop\@g--padding-x-16 {
-    padding-right: 128px;
-    padding-left: 128px;
+    padding-right: var(--padding-16);
+    padding-left: var(--padding-16);
   }
   .desktop\@g--padding-y-16 {
-    padding-top: 128px;
-    padding-bottom: 128px;
+    padding-top: var(--padding-16);
+    padding-bottom: var(--padding-16);
   }
   .desktop\@g--padding-left-16 {
-    padding-left: 128px;
+    padding-left: var(--padding-16);
   }
   .desktop\@g--padding-right-16 {
-    padding-right: 128px;
+    padding-right: var(--padding-16);
   }
   .desktop\@g--padding-top-16 {
-    padding-top: 128px;
+    padding-top: var(--padding-16);
   }
   .desktop\@g--padding-bottom-16 {
-    padding-bottom: 128px;
+    padding-bottom: var(--padding-16);
   }
   .desktop\@g--padding-17 {
-    padding: 160px;
+    padding: var(--padding-17);
   }
   .desktop\@g--padding-x-17 {
-    padding-right: 160px;
-    padding-left: 160px;
+    padding-right: var(--padding-17);
+    padding-left: var(--padding-17);
   }
   .desktop\@g--padding-y-17 {
-    padding-top: 160px;
-    padding-bottom: 160px;
+    padding-top: var(--padding-17);
+    padding-bottom: var(--padding-17);
   }
   .desktop\@g--padding-left-17 {
-    padding-left: 160px;
+    padding-left: var(--padding-17);
   }
   .desktop\@g--padding-right-17 {
-    padding-right: 160px;
+    padding-right: var(--padding-17);
   }
   .desktop\@g--padding-top-17 {
-    padding-top: 160px;
+    padding-top: var(--padding-17);
   }
   .desktop\@g--padding-bottom-17 {
-    padding-bottom: 160px;
+    padding-bottom: var(--padding-17);
   }
   .desktop\@g--padding-18 {
-    padding: 192px;
+    padding: var(--padding-18);
   }
   .desktop\@g--padding-x-18 {
-    padding-right: 192px;
-    padding-left: 192px;
+    padding-right: var(--padding-18);
+    padding-left: var(--padding-18);
   }
   .desktop\@g--padding-y-18 {
-    padding-top: 192px;
-    padding-bottom: 192px;
+    padding-top: var(--padding-18);
+    padding-bottom: var(--padding-18);
   }
   .desktop\@g--padding-left-18 {
-    padding-left: 192px;
+    padding-left: var(--padding-18);
   }
   .desktop\@g--padding-right-18 {
-    padding-right: 192px;
+    padding-right: var(--padding-18);
   }
   .desktop\@g--padding-top-18 {
-    padding-top: 192px;
+    padding-top: var(--padding-18);
   }
   .desktop\@g--padding-bottom-18 {
-    padding-bottom: 192px;
+    padding-bottom: var(--padding-18);
   }
   .desktop\@g--padding-19 {
-    padding: 224px;
+    padding: var(--padding-19);
   }
   .desktop\@g--padding-x-19 {
-    padding-right: 224px;
-    padding-left: 224px;
+    padding-right: var(--padding-19);
+    padding-left: var(--padding-19);
   }
   .desktop\@g--padding-y-19 {
-    padding-top: 224px;
-    padding-bottom: 224px;
+    padding-top: var(--padding-19);
+    padding-bottom: var(--padding-19);
   }
   .desktop\@g--padding-left-19 {
-    padding-left: 224px;
+    padding-left: var(--padding-19);
   }
   .desktop\@g--padding-right-19 {
-    padding-right: 224px;
+    padding-right: var(--padding-19);
   }
   .desktop\@g--padding-top-19 {
-    padding-top: 224px;
+    padding-top: var(--padding-19);
   }
   .desktop\@g--padding-bottom-19 {
-    padding-bottom: 224px;
+    padding-bottom: var(--padding-19);
   }
   .desktop\@g--padding-20 {
-    padding: 256px;
+    padding: var(--padding-20);
   }
   .desktop\@g--padding-x-20 {
-    padding-right: 256px;
-    padding-left: 256px;
+    padding-right: var(--padding-20);
+    padding-left: var(--padding-20);
   }
   .desktop\@g--padding-y-20 {
-    padding-top: 256px;
-    padding-bottom: 256px;
+    padding-top: var(--padding-20);
+    padding-bottom: var(--padding-20);
   }
   .desktop\@g--padding-left-20 {
-    padding-left: 256px;
+    padding-left: var(--padding-20);
   }
   .desktop\@g--padding-right-20 {
-    padding-right: 256px;
+    padding-right: var(--padding-20);
   }
   .desktop\@g--padding-top-20 {
-    padding-top: 256px;
+    padding-top: var(--padding-20);
   }
   .desktop\@g--padding-bottom-20 {
-    padding-bottom: 256px;
+    padding-bottom: var(--padding-20);
   }
   .desktop\@g--padding-21 {
-    padding: 320px;
+    padding: var(--padding-21);
   }
   .desktop\@g--padding-x-21 {
-    padding-right: 320px;
-    padding-left: 320px;
+    padding-right: var(--padding-21);
+    padding-left: var(--padding-21);
   }
   .desktop\@g--padding-y-21 {
-    padding-top: 320px;
-    padding-bottom: 320px;
+    padding-top: var(--padding-21);
+    padding-bottom: var(--padding-21);
   }
   .desktop\@g--padding-left-21 {
-    padding-left: 320px;
+    padding-left: var(--padding-21);
   }
   .desktop\@g--padding-right-21 {
-    padding-right: 320px;
+    padding-right: var(--padding-21);
   }
   .desktop\@g--padding-top-21 {
-    padding-top: 320px;
+    padding-top: var(--padding-21);
   }
   .desktop\@g--padding-bottom-21 {
-    padding-bottom: 320px;
+    padding-bottom: var(--padding-21);
   }
   .desktop\@g--padding-22 {
-    padding: 480px;
+    padding: var(--padding-22);
   }
   .desktop\@g--padding-x-22 {
-    padding-right: 480px;
-    padding-left: 480px;
+    padding-right: var(--padding-22);
+    padding-left: var(--padding-22);
   }
   .desktop\@g--padding-y-22 {
-    padding-top: 480px;
-    padding-bottom: 480px;
+    padding-top: var(--padding-22);
+    padding-bottom: var(--padding-22);
   }
   .desktop\@g--padding-left-22 {
-    padding-left: 480px;
+    padding-left: var(--padding-22);
   }
   .desktop\@g--padding-right-22 {
-    padding-right: 480px;
+    padding-right: var(--padding-22);
   }
   .desktop\@g--padding-top-22 {
-    padding-top: 480px;
+    padding-top: var(--padding-22);
   }
   .desktop\@g--padding-bottom-22 {
-    padding-bottom: 480px;
+    padding-bottom: var(--padding-22);
+  }
+  .desktop\@g--padding-23 {
+    padding: var(--padding-23);
+  }
+  .desktop\@g--padding-x-23 {
+    padding-right: var(--padding-23);
+    padding-left: var(--padding-23);
+  }
+  .desktop\@g--padding-y-23 {
+    padding-top: var(--padding-23);
+    padding-bottom: var(--padding-23);
+  }
+  .desktop\@g--padding-left-23 {
+    padding-left: var(--padding-23);
+  }
+  .desktop\@g--padding-right-23 {
+    padding-right: var(--padding-23);
+  }
+  .desktop\@g--padding-top-23 {
+    padding-top: var(--padding-23);
+  }
+  .desktop\@g--padding-bottom-23 {
+    padding-bottom: var(--padding-23);
   }
 }
 :root {
-  --margins-1: nth($margins, $i);
-  --margins-2: nth($margins, $i);
-  --margins-3: nth($margins, $i);
-  --margins-4: nth($margins, $i);
-  --margins-5: nth($margins, $i);
-  --margins-6: nth($margins, $i);
-  --margins-7: nth($margins, $i);
-  --margins-8: nth($margins, $i);
-  --margins-9: nth($margins, $i);
-  --margins-10: nth($margins, $i);
-  --margins-11: nth($margins, $i);
-  --margins-12: nth($margins, $i);
-  --margins-13: nth($margins, $i);
-  --margins-14: nth($margins, $i);
-  --margins-15: nth($margins, $i);
-  --margins-16: nth($margins, $i);
-  --margins-17: nth($margins, $i);
-  --margins-18: nth($margins, $i);
-  --margins-19: nth($margins, $i);
-  --margins-20: nth($margins, $i);
-  --margins-21: nth($margins, $i);
-  --margins-22: nth($margins, $i);
+  --margins-1: 0px;
+  --margins-2: 4px;
+  --margins-3: 6px;
+  --margins-4: 8px;
+  --margins-5: 10px;
+  --margins-6: 12px;
+  --margins-7: 16px;
+  --margins-8: 20px;
+  --margins-9: 24px;
+  --margins-10: 32px;
+  --margins-11: 40px;
+  --margins-12: 48px;
+  --margins-13: 64px;
+  --margins-14: 80px;
+  --margins-15: 96px;
+  --margins-16: 128px;
+  --margins-17: 160px;
+  --margins-18: 192px;
+  --margins-19: 224px;
+  --margins-20: 256px;
+  --margins-21: 320px;
+  --margins-22: 480px;
+  --margins-23: 640px;
 }
 
 @media (min-width: 0px) {
   .g--margin-1 {
-    margin: 0px;
+    margin: var(--margins-1);
   }
   .g--margin-x-1 {
-    margin-right: 0px;
-    margin-left: 0px;
+    margin-right: var(--margins-1);
+    margin-left: var(--margins-1);
   }
   .g--margin-y-1 {
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: var(--margins-1);
+    margin-bottom: var(--margins-1);
   }
   .g--margin-left-1 {
-    margin-left: 0px;
+    margin-left: var(--margins-1);
   }
   .g--margin-right-1 {
-    margin-right: 0px;
+    margin-right: var(--margins-1);
   }
   .g--margin-top-1 {
-    margin-top: 0px;
+    margin-top: var(--margins-1);
   }
   .g--margin-bottom-1 {
-    margin-bottom: 0px;
+    margin-bottom: var(--margins-1);
   }
   .g--margin-2 {
-    margin: 4px;
+    margin: var(--margins-2);
   }
   .g--margin-x-2 {
-    margin-right: 4px;
-    margin-left: 4px;
+    margin-right: var(--margins-2);
+    margin-left: var(--margins-2);
   }
   .g--margin-y-2 {
-    margin-top: 4px;
-    margin-bottom: 4px;
+    margin-top: var(--margins-2);
+    margin-bottom: var(--margins-2);
   }
   .g--margin-left-2 {
-    margin-left: 4px;
+    margin-left: var(--margins-2);
   }
   .g--margin-right-2 {
-    margin-right: 4px;
+    margin-right: var(--margins-2);
   }
   .g--margin-top-2 {
-    margin-top: 4px;
+    margin-top: var(--margins-2);
   }
   .g--margin-bottom-2 {
-    margin-bottom: 4px;
+    margin-bottom: var(--margins-2);
   }
   .g--margin-3 {
-    margin: 6px;
+    margin: var(--margins-3);
   }
   .g--margin-x-3 {
-    margin-right: 6px;
-    margin-left: 6px;
+    margin-right: var(--margins-3);
+    margin-left: var(--margins-3);
   }
   .g--margin-y-3 {
-    margin-top: 6px;
-    margin-bottom: 6px;
+    margin-top: var(--margins-3);
+    margin-bottom: var(--margins-3);
   }
   .g--margin-left-3 {
-    margin-left: 6px;
+    margin-left: var(--margins-3);
   }
   .g--margin-right-3 {
-    margin-right: 6px;
+    margin-right: var(--margins-3);
   }
   .g--margin-top-3 {
-    margin-top: 6px;
+    margin-top: var(--margins-3);
   }
   .g--margin-bottom-3 {
-    margin-bottom: 6px;
+    margin-bottom: var(--margins-3);
   }
   .g--margin-4 {
-    margin: 8px;
+    margin: var(--margins-4);
   }
   .g--margin-x-4 {
-    margin-right: 8px;
-    margin-left: 8px;
+    margin-right: var(--margins-4);
+    margin-left: var(--margins-4);
   }
   .g--margin-y-4 {
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: var(--margins-4);
+    margin-bottom: var(--margins-4);
   }
   .g--margin-left-4 {
-    margin-left: 8px;
+    margin-left: var(--margins-4);
   }
   .g--margin-right-4 {
-    margin-right: 8px;
+    margin-right: var(--margins-4);
   }
   .g--margin-top-4 {
-    margin-top: 8px;
+    margin-top: var(--margins-4);
   }
   .g--margin-bottom-4 {
-    margin-bottom: 8px;
+    margin-bottom: var(--margins-4);
   }
   .g--margin-5 {
-    margin: 10px;
+    margin: var(--margins-5);
   }
   .g--margin-x-5 {
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: var(--margins-5);
+    margin-left: var(--margins-5);
   }
   .g--margin-y-5 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: var(--margins-5);
+    margin-bottom: var(--margins-5);
   }
   .g--margin-left-5 {
-    margin-left: 10px;
+    margin-left: var(--margins-5);
   }
   .g--margin-right-5 {
-    margin-right: 10px;
+    margin-right: var(--margins-5);
   }
   .g--margin-top-5 {
-    margin-top: 10px;
+    margin-top: var(--margins-5);
   }
   .g--margin-bottom-5 {
-    margin-bottom: 10px;
+    margin-bottom: var(--margins-5);
   }
   .g--margin-6 {
-    margin: 12px;
+    margin: var(--margins-6);
   }
   .g--margin-x-6 {
-    margin-right: 12px;
-    margin-left: 12px;
+    margin-right: var(--margins-6);
+    margin-left: var(--margins-6);
   }
   .g--margin-y-6 {
-    margin-top: 12px;
-    margin-bottom: 12px;
+    margin-top: var(--margins-6);
+    margin-bottom: var(--margins-6);
   }
   .g--margin-left-6 {
-    margin-left: 12px;
+    margin-left: var(--margins-6);
   }
   .g--margin-right-6 {
-    margin-right: 12px;
+    margin-right: var(--margins-6);
   }
   .g--margin-top-6 {
-    margin-top: 12px;
+    margin-top: var(--margins-6);
   }
   .g--margin-bottom-6 {
-    margin-bottom: 12px;
+    margin-bottom: var(--margins-6);
   }
   .g--margin-7 {
-    margin: 16px;
+    margin: var(--margins-7);
   }
   .g--margin-x-7 {
-    margin-right: 16px;
-    margin-left: 16px;
+    margin-right: var(--margins-7);
+    margin-left: var(--margins-7);
   }
   .g--margin-y-7 {
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin-top: var(--margins-7);
+    margin-bottom: var(--margins-7);
   }
   .g--margin-left-7 {
-    margin-left: 16px;
+    margin-left: var(--margins-7);
   }
   .g--margin-right-7 {
-    margin-right: 16px;
+    margin-right: var(--margins-7);
   }
   .g--margin-top-7 {
-    margin-top: 16px;
+    margin-top: var(--margins-7);
   }
   .g--margin-bottom-7 {
-    margin-bottom: 16px;
+    margin-bottom: var(--margins-7);
   }
   .g--margin-8 {
-    margin: 20px;
+    margin: var(--margins-8);
   }
   .g--margin-x-8 {
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: var(--margins-8);
+    margin-left: var(--margins-8);
   }
   .g--margin-y-8 {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: var(--margins-8);
+    margin-bottom: var(--margins-8);
   }
   .g--margin-left-8 {
-    margin-left: 20px;
+    margin-left: var(--margins-8);
   }
   .g--margin-right-8 {
-    margin-right: 20px;
+    margin-right: var(--margins-8);
   }
   .g--margin-top-8 {
-    margin-top: 20px;
+    margin-top: var(--margins-8);
   }
   .g--margin-bottom-8 {
-    margin-bottom: 20px;
+    margin-bottom: var(--margins-8);
   }
   .g--margin-9 {
-    margin: 24px;
+    margin: var(--margins-9);
   }
   .g--margin-x-9 {
-    margin-right: 24px;
-    margin-left: 24px;
+    margin-right: var(--margins-9);
+    margin-left: var(--margins-9);
   }
   .g--margin-y-9 {
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin-top: var(--margins-9);
+    margin-bottom: var(--margins-9);
   }
   .g--margin-left-9 {
-    margin-left: 24px;
+    margin-left: var(--margins-9);
   }
   .g--margin-right-9 {
-    margin-right: 24px;
+    margin-right: var(--margins-9);
   }
   .g--margin-top-9 {
-    margin-top: 24px;
+    margin-top: var(--margins-9);
   }
   .g--margin-bottom-9 {
-    margin-bottom: 24px;
+    margin-bottom: var(--margins-9);
   }
   .g--margin-10 {
-    margin: 32px;
+    margin: var(--margins-10);
   }
   .g--margin-x-10 {
-    margin-right: 32px;
-    margin-left: 32px;
+    margin-right: var(--margins-10);
+    margin-left: var(--margins-10);
   }
   .g--margin-y-10 {
-    margin-top: 32px;
-    margin-bottom: 32px;
+    margin-top: var(--margins-10);
+    margin-bottom: var(--margins-10);
   }
   .g--margin-left-10 {
-    margin-left: 32px;
+    margin-left: var(--margins-10);
   }
   .g--margin-right-10 {
-    margin-right: 32px;
+    margin-right: var(--margins-10);
   }
   .g--margin-top-10 {
-    margin-top: 32px;
+    margin-top: var(--margins-10);
   }
   .g--margin-bottom-10 {
-    margin-bottom: 32px;
+    margin-bottom: var(--margins-10);
   }
   .g--margin-11 {
-    margin: 40px;
+    margin: var(--margins-11);
   }
   .g--margin-x-11 {
-    margin-right: 40px;
-    margin-left: 40px;
+    margin-right: var(--margins-11);
+    margin-left: var(--margins-11);
   }
   .g--margin-y-11 {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: var(--margins-11);
+    margin-bottom: var(--margins-11);
   }
   .g--margin-left-11 {
-    margin-left: 40px;
+    margin-left: var(--margins-11);
   }
   .g--margin-right-11 {
-    margin-right: 40px;
+    margin-right: var(--margins-11);
   }
   .g--margin-top-11 {
-    margin-top: 40px;
+    margin-top: var(--margins-11);
   }
   .g--margin-bottom-11 {
-    margin-bottom: 40px;
+    margin-bottom: var(--margins-11);
   }
   .g--margin-12 {
-    margin: 48px;
+    margin: var(--margins-12);
   }
   .g--margin-x-12 {
-    margin-right: 48px;
-    margin-left: 48px;
+    margin-right: var(--margins-12);
+    margin-left: var(--margins-12);
   }
   .g--margin-y-12 {
-    margin-top: 48px;
-    margin-bottom: 48px;
+    margin-top: var(--margins-12);
+    margin-bottom: var(--margins-12);
   }
   .g--margin-left-12 {
-    margin-left: 48px;
+    margin-left: var(--margins-12);
   }
   .g--margin-right-12 {
-    margin-right: 48px;
+    margin-right: var(--margins-12);
   }
   .g--margin-top-12 {
-    margin-top: 48px;
+    margin-top: var(--margins-12);
   }
   .g--margin-bottom-12 {
-    margin-bottom: 48px;
+    margin-bottom: var(--margins-12);
   }
   .g--margin-13 {
-    margin: 64px;
+    margin: var(--margins-13);
   }
   .g--margin-x-13 {
-    margin-right: 64px;
-    margin-left: 64px;
+    margin-right: var(--margins-13);
+    margin-left: var(--margins-13);
   }
   .g--margin-y-13 {
-    margin-top: 64px;
-    margin-bottom: 64px;
+    margin-top: var(--margins-13);
+    margin-bottom: var(--margins-13);
   }
   .g--margin-left-13 {
-    margin-left: 64px;
+    margin-left: var(--margins-13);
   }
   .g--margin-right-13 {
-    margin-right: 64px;
+    margin-right: var(--margins-13);
   }
   .g--margin-top-13 {
-    margin-top: 64px;
+    margin-top: var(--margins-13);
   }
   .g--margin-bottom-13 {
-    margin-bottom: 64px;
+    margin-bottom: var(--margins-13);
   }
   .g--margin-14 {
-    margin: 80px;
+    margin: var(--margins-14);
   }
   .g--margin-x-14 {
-    margin-right: 80px;
-    margin-left: 80px;
+    margin-right: var(--margins-14);
+    margin-left: var(--margins-14);
   }
   .g--margin-y-14 {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: var(--margins-14);
+    margin-bottom: var(--margins-14);
   }
   .g--margin-left-14 {
-    margin-left: 80px;
+    margin-left: var(--margins-14);
   }
   .g--margin-right-14 {
-    margin-right: 80px;
+    margin-right: var(--margins-14);
   }
   .g--margin-top-14 {
-    margin-top: 80px;
+    margin-top: var(--margins-14);
   }
   .g--margin-bottom-14 {
-    margin-bottom: 80px;
+    margin-bottom: var(--margins-14);
   }
   .g--margin-15 {
-    margin: 96px;
+    margin: var(--margins-15);
   }
   .g--margin-x-15 {
-    margin-right: 96px;
-    margin-left: 96px;
+    margin-right: var(--margins-15);
+    margin-left: var(--margins-15);
   }
   .g--margin-y-15 {
-    margin-top: 96px;
-    margin-bottom: 96px;
+    margin-top: var(--margins-15);
+    margin-bottom: var(--margins-15);
   }
   .g--margin-left-15 {
-    margin-left: 96px;
+    margin-left: var(--margins-15);
   }
   .g--margin-right-15 {
-    margin-right: 96px;
+    margin-right: var(--margins-15);
   }
   .g--margin-top-15 {
-    margin-top: 96px;
+    margin-top: var(--margins-15);
   }
   .g--margin-bottom-15 {
-    margin-bottom: 96px;
+    margin-bottom: var(--margins-15);
   }
   .g--margin-16 {
-    margin: 128px;
+    margin: var(--margins-16);
   }
   .g--margin-x-16 {
-    margin-right: 128px;
-    margin-left: 128px;
+    margin-right: var(--margins-16);
+    margin-left: var(--margins-16);
   }
   .g--margin-y-16 {
-    margin-top: 128px;
-    margin-bottom: 128px;
+    margin-top: var(--margins-16);
+    margin-bottom: var(--margins-16);
   }
   .g--margin-left-16 {
-    margin-left: 128px;
+    margin-left: var(--margins-16);
   }
   .g--margin-right-16 {
-    margin-right: 128px;
+    margin-right: var(--margins-16);
   }
   .g--margin-top-16 {
-    margin-top: 128px;
+    margin-top: var(--margins-16);
   }
   .g--margin-bottom-16 {
-    margin-bottom: 128px;
+    margin-bottom: var(--margins-16);
   }
   .g--margin-17 {
-    margin: 160px;
+    margin: var(--margins-17);
   }
   .g--margin-x-17 {
-    margin-right: 160px;
-    margin-left: 160px;
+    margin-right: var(--margins-17);
+    margin-left: var(--margins-17);
   }
   .g--margin-y-17 {
-    margin-top: 160px;
-    margin-bottom: 160px;
+    margin-top: var(--margins-17);
+    margin-bottom: var(--margins-17);
   }
   .g--margin-left-17 {
-    margin-left: 160px;
+    margin-left: var(--margins-17);
   }
   .g--margin-right-17 {
-    margin-right: 160px;
+    margin-right: var(--margins-17);
   }
   .g--margin-top-17 {
-    margin-top: 160px;
+    margin-top: var(--margins-17);
   }
   .g--margin-bottom-17 {
-    margin-bottom: 160px;
+    margin-bottom: var(--margins-17);
   }
   .g--margin-18 {
-    margin: 192px;
+    margin: var(--margins-18);
   }
   .g--margin-x-18 {
-    margin-right: 192px;
-    margin-left: 192px;
+    margin-right: var(--margins-18);
+    margin-left: var(--margins-18);
   }
   .g--margin-y-18 {
-    margin-top: 192px;
-    margin-bottom: 192px;
+    margin-top: var(--margins-18);
+    margin-bottom: var(--margins-18);
   }
   .g--margin-left-18 {
-    margin-left: 192px;
+    margin-left: var(--margins-18);
   }
   .g--margin-right-18 {
-    margin-right: 192px;
+    margin-right: var(--margins-18);
   }
   .g--margin-top-18 {
-    margin-top: 192px;
+    margin-top: var(--margins-18);
   }
   .g--margin-bottom-18 {
-    margin-bottom: 192px;
+    margin-bottom: var(--margins-18);
   }
   .g--margin-19 {
-    margin: 224px;
+    margin: var(--margins-19);
   }
   .g--margin-x-19 {
-    margin-right: 224px;
-    margin-left: 224px;
+    margin-right: var(--margins-19);
+    margin-left: var(--margins-19);
   }
   .g--margin-y-19 {
-    margin-top: 224px;
-    margin-bottom: 224px;
+    margin-top: var(--margins-19);
+    margin-bottom: var(--margins-19);
   }
   .g--margin-left-19 {
-    margin-left: 224px;
+    margin-left: var(--margins-19);
   }
   .g--margin-right-19 {
-    margin-right: 224px;
+    margin-right: var(--margins-19);
   }
   .g--margin-top-19 {
-    margin-top: 224px;
+    margin-top: var(--margins-19);
   }
   .g--margin-bottom-19 {
-    margin-bottom: 224px;
+    margin-bottom: var(--margins-19);
   }
   .g--margin-20 {
-    margin: 256px;
+    margin: var(--margins-20);
   }
   .g--margin-x-20 {
-    margin-right: 256px;
-    margin-left: 256px;
+    margin-right: var(--margins-20);
+    margin-left: var(--margins-20);
   }
   .g--margin-y-20 {
-    margin-top: 256px;
-    margin-bottom: 256px;
+    margin-top: var(--margins-20);
+    margin-bottom: var(--margins-20);
   }
   .g--margin-left-20 {
-    margin-left: 256px;
+    margin-left: var(--margins-20);
   }
   .g--margin-right-20 {
-    margin-right: 256px;
+    margin-right: var(--margins-20);
   }
   .g--margin-top-20 {
-    margin-top: 256px;
+    margin-top: var(--margins-20);
   }
   .g--margin-bottom-20 {
-    margin-bottom: 256px;
+    margin-bottom: var(--margins-20);
   }
   .g--margin-21 {
-    margin: 320px;
+    margin: var(--margins-21);
   }
   .g--margin-x-21 {
-    margin-right: 320px;
-    margin-left: 320px;
+    margin-right: var(--margins-21);
+    margin-left: var(--margins-21);
   }
   .g--margin-y-21 {
-    margin-top: 320px;
-    margin-bottom: 320px;
+    margin-top: var(--margins-21);
+    margin-bottom: var(--margins-21);
   }
   .g--margin-left-21 {
-    margin-left: 320px;
+    margin-left: var(--margins-21);
   }
   .g--margin-right-21 {
-    margin-right: 320px;
+    margin-right: var(--margins-21);
   }
   .g--margin-top-21 {
-    margin-top: 320px;
+    margin-top: var(--margins-21);
   }
   .g--margin-bottom-21 {
-    margin-bottom: 320px;
+    margin-bottom: var(--margins-21);
   }
   .g--margin-22 {
-    margin: 480px;
+    margin: var(--margins-22);
   }
   .g--margin-x-22 {
-    margin-right: 480px;
-    margin-left: 480px;
+    margin-right: var(--margins-22);
+    margin-left: var(--margins-22);
   }
   .g--margin-y-22 {
-    margin-top: 480px;
-    margin-bottom: 480px;
+    margin-top: var(--margins-22);
+    margin-bottom: var(--margins-22);
   }
   .g--margin-left-22 {
-    margin-left: 480px;
+    margin-left: var(--margins-22);
   }
   .g--margin-right-22 {
-    margin-right: 480px;
+    margin-right: var(--margins-22);
   }
   .g--margin-top-22 {
-    margin-top: 480px;
+    margin-top: var(--margins-22);
   }
   .g--margin-bottom-22 {
-    margin-bottom: 480px;
+    margin-bottom: var(--margins-22);
+  }
+  .g--margin-23 {
+    margin: var(--margins-23);
+  }
+  .g--margin-x-23 {
+    margin-right: var(--margins-23);
+    margin-left: var(--margins-23);
+  }
+  .g--margin-y-23 {
+    margin-top: var(--margins-23);
+    margin-bottom: var(--margins-23);
+  }
+  .g--margin-left-23 {
+    margin-left: var(--margins-23);
+  }
+  .g--margin-right-23 {
+    margin-right: var(--margins-23);
+  }
+  .g--margin-top-23 {
+    margin-top: var(--margins-23);
+  }
+  .g--margin-bottom-23 {
+    margin-bottom: var(--margins-23);
   }
 }
 @media (min-width: 768px) {
   .tablet\@g--margin-1 {
-    margin: 0px;
+    margin: var(--margins-1);
   }
   .tablet\@g--margin-x-1 {
-    margin-right: 0px;
-    margin-left: 0px;
+    margin-right: var(--margins-1);
+    margin-left: var(--margins-1);
   }
   .tablet\@g--margin-y-1 {
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: var(--margins-1);
+    margin-bottom: var(--margins-1);
   }
   .tablet\@g--margin-left-1 {
-    margin-left: 0px;
+    margin-left: var(--margins-1);
   }
   .tablet\@g--margin-right-1 {
-    margin-right: 0px;
+    margin-right: var(--margins-1);
   }
   .tablet\@g--margin-top-1 {
-    margin-top: 0px;
+    margin-top: var(--margins-1);
   }
   .tablet\@g--margin-bottom-1 {
-    margin-bottom: 0px;
+    margin-bottom: var(--margins-1);
   }
   .tablet\@g--margin-2 {
-    margin: 4px;
+    margin: var(--margins-2);
   }
   .tablet\@g--margin-x-2 {
-    margin-right: 4px;
-    margin-left: 4px;
+    margin-right: var(--margins-2);
+    margin-left: var(--margins-2);
   }
   .tablet\@g--margin-y-2 {
-    margin-top: 4px;
-    margin-bottom: 4px;
+    margin-top: var(--margins-2);
+    margin-bottom: var(--margins-2);
   }
   .tablet\@g--margin-left-2 {
-    margin-left: 4px;
+    margin-left: var(--margins-2);
   }
   .tablet\@g--margin-right-2 {
-    margin-right: 4px;
+    margin-right: var(--margins-2);
   }
   .tablet\@g--margin-top-2 {
-    margin-top: 4px;
+    margin-top: var(--margins-2);
   }
   .tablet\@g--margin-bottom-2 {
-    margin-bottom: 4px;
+    margin-bottom: var(--margins-2);
   }
   .tablet\@g--margin-3 {
-    margin: 6px;
+    margin: var(--margins-3);
   }
   .tablet\@g--margin-x-3 {
-    margin-right: 6px;
-    margin-left: 6px;
+    margin-right: var(--margins-3);
+    margin-left: var(--margins-3);
   }
   .tablet\@g--margin-y-3 {
-    margin-top: 6px;
-    margin-bottom: 6px;
+    margin-top: var(--margins-3);
+    margin-bottom: var(--margins-3);
   }
   .tablet\@g--margin-left-3 {
-    margin-left: 6px;
+    margin-left: var(--margins-3);
   }
   .tablet\@g--margin-right-3 {
-    margin-right: 6px;
+    margin-right: var(--margins-3);
   }
   .tablet\@g--margin-top-3 {
-    margin-top: 6px;
+    margin-top: var(--margins-3);
   }
   .tablet\@g--margin-bottom-3 {
-    margin-bottom: 6px;
+    margin-bottom: var(--margins-3);
   }
   .tablet\@g--margin-4 {
-    margin: 8px;
+    margin: var(--margins-4);
   }
   .tablet\@g--margin-x-4 {
-    margin-right: 8px;
-    margin-left: 8px;
+    margin-right: var(--margins-4);
+    margin-left: var(--margins-4);
   }
   .tablet\@g--margin-y-4 {
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: var(--margins-4);
+    margin-bottom: var(--margins-4);
   }
   .tablet\@g--margin-left-4 {
-    margin-left: 8px;
+    margin-left: var(--margins-4);
   }
   .tablet\@g--margin-right-4 {
-    margin-right: 8px;
+    margin-right: var(--margins-4);
   }
   .tablet\@g--margin-top-4 {
-    margin-top: 8px;
+    margin-top: var(--margins-4);
   }
   .tablet\@g--margin-bottom-4 {
-    margin-bottom: 8px;
+    margin-bottom: var(--margins-4);
   }
   .tablet\@g--margin-5 {
-    margin: 10px;
+    margin: var(--margins-5);
   }
   .tablet\@g--margin-x-5 {
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: var(--margins-5);
+    margin-left: var(--margins-5);
   }
   .tablet\@g--margin-y-5 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: var(--margins-5);
+    margin-bottom: var(--margins-5);
   }
   .tablet\@g--margin-left-5 {
-    margin-left: 10px;
+    margin-left: var(--margins-5);
   }
   .tablet\@g--margin-right-5 {
-    margin-right: 10px;
+    margin-right: var(--margins-5);
   }
   .tablet\@g--margin-top-5 {
-    margin-top: 10px;
+    margin-top: var(--margins-5);
   }
   .tablet\@g--margin-bottom-5 {
-    margin-bottom: 10px;
+    margin-bottom: var(--margins-5);
   }
   .tablet\@g--margin-6 {
-    margin: 12px;
+    margin: var(--margins-6);
   }
   .tablet\@g--margin-x-6 {
-    margin-right: 12px;
-    margin-left: 12px;
+    margin-right: var(--margins-6);
+    margin-left: var(--margins-6);
   }
   .tablet\@g--margin-y-6 {
-    margin-top: 12px;
-    margin-bottom: 12px;
+    margin-top: var(--margins-6);
+    margin-bottom: var(--margins-6);
   }
   .tablet\@g--margin-left-6 {
-    margin-left: 12px;
+    margin-left: var(--margins-6);
   }
   .tablet\@g--margin-right-6 {
-    margin-right: 12px;
+    margin-right: var(--margins-6);
   }
   .tablet\@g--margin-top-6 {
-    margin-top: 12px;
+    margin-top: var(--margins-6);
   }
   .tablet\@g--margin-bottom-6 {
-    margin-bottom: 12px;
+    margin-bottom: var(--margins-6);
   }
   .tablet\@g--margin-7 {
-    margin: 16px;
+    margin: var(--margins-7);
   }
   .tablet\@g--margin-x-7 {
-    margin-right: 16px;
-    margin-left: 16px;
+    margin-right: var(--margins-7);
+    margin-left: var(--margins-7);
   }
   .tablet\@g--margin-y-7 {
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin-top: var(--margins-7);
+    margin-bottom: var(--margins-7);
   }
   .tablet\@g--margin-left-7 {
-    margin-left: 16px;
+    margin-left: var(--margins-7);
   }
   .tablet\@g--margin-right-7 {
-    margin-right: 16px;
+    margin-right: var(--margins-7);
   }
   .tablet\@g--margin-top-7 {
-    margin-top: 16px;
+    margin-top: var(--margins-7);
   }
   .tablet\@g--margin-bottom-7 {
-    margin-bottom: 16px;
+    margin-bottom: var(--margins-7);
   }
   .tablet\@g--margin-8 {
-    margin: 20px;
+    margin: var(--margins-8);
   }
   .tablet\@g--margin-x-8 {
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: var(--margins-8);
+    margin-left: var(--margins-8);
   }
   .tablet\@g--margin-y-8 {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: var(--margins-8);
+    margin-bottom: var(--margins-8);
   }
   .tablet\@g--margin-left-8 {
-    margin-left: 20px;
+    margin-left: var(--margins-8);
   }
   .tablet\@g--margin-right-8 {
-    margin-right: 20px;
+    margin-right: var(--margins-8);
   }
   .tablet\@g--margin-top-8 {
-    margin-top: 20px;
+    margin-top: var(--margins-8);
   }
   .tablet\@g--margin-bottom-8 {
-    margin-bottom: 20px;
+    margin-bottom: var(--margins-8);
   }
   .tablet\@g--margin-9 {
-    margin: 24px;
+    margin: var(--margins-9);
   }
   .tablet\@g--margin-x-9 {
-    margin-right: 24px;
-    margin-left: 24px;
+    margin-right: var(--margins-9);
+    margin-left: var(--margins-9);
   }
   .tablet\@g--margin-y-9 {
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin-top: var(--margins-9);
+    margin-bottom: var(--margins-9);
   }
   .tablet\@g--margin-left-9 {
-    margin-left: 24px;
+    margin-left: var(--margins-9);
   }
   .tablet\@g--margin-right-9 {
-    margin-right: 24px;
+    margin-right: var(--margins-9);
   }
   .tablet\@g--margin-top-9 {
-    margin-top: 24px;
+    margin-top: var(--margins-9);
   }
   .tablet\@g--margin-bottom-9 {
-    margin-bottom: 24px;
+    margin-bottom: var(--margins-9);
   }
   .tablet\@g--margin-10 {
-    margin: 32px;
+    margin: var(--margins-10);
   }
   .tablet\@g--margin-x-10 {
-    margin-right: 32px;
-    margin-left: 32px;
+    margin-right: var(--margins-10);
+    margin-left: var(--margins-10);
   }
   .tablet\@g--margin-y-10 {
-    margin-top: 32px;
-    margin-bottom: 32px;
+    margin-top: var(--margins-10);
+    margin-bottom: var(--margins-10);
   }
   .tablet\@g--margin-left-10 {
-    margin-left: 32px;
+    margin-left: var(--margins-10);
   }
   .tablet\@g--margin-right-10 {
-    margin-right: 32px;
+    margin-right: var(--margins-10);
   }
   .tablet\@g--margin-top-10 {
-    margin-top: 32px;
+    margin-top: var(--margins-10);
   }
   .tablet\@g--margin-bottom-10 {
-    margin-bottom: 32px;
+    margin-bottom: var(--margins-10);
   }
   .tablet\@g--margin-11 {
-    margin: 40px;
+    margin: var(--margins-11);
   }
   .tablet\@g--margin-x-11 {
-    margin-right: 40px;
-    margin-left: 40px;
+    margin-right: var(--margins-11);
+    margin-left: var(--margins-11);
   }
   .tablet\@g--margin-y-11 {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: var(--margins-11);
+    margin-bottom: var(--margins-11);
   }
   .tablet\@g--margin-left-11 {
-    margin-left: 40px;
+    margin-left: var(--margins-11);
   }
   .tablet\@g--margin-right-11 {
-    margin-right: 40px;
+    margin-right: var(--margins-11);
   }
   .tablet\@g--margin-top-11 {
-    margin-top: 40px;
+    margin-top: var(--margins-11);
   }
   .tablet\@g--margin-bottom-11 {
-    margin-bottom: 40px;
+    margin-bottom: var(--margins-11);
   }
   .tablet\@g--margin-12 {
-    margin: 48px;
+    margin: var(--margins-12);
   }
   .tablet\@g--margin-x-12 {
-    margin-right: 48px;
-    margin-left: 48px;
+    margin-right: var(--margins-12);
+    margin-left: var(--margins-12);
   }
   .tablet\@g--margin-y-12 {
-    margin-top: 48px;
-    margin-bottom: 48px;
+    margin-top: var(--margins-12);
+    margin-bottom: var(--margins-12);
   }
   .tablet\@g--margin-left-12 {
-    margin-left: 48px;
+    margin-left: var(--margins-12);
   }
   .tablet\@g--margin-right-12 {
-    margin-right: 48px;
+    margin-right: var(--margins-12);
   }
   .tablet\@g--margin-top-12 {
-    margin-top: 48px;
+    margin-top: var(--margins-12);
   }
   .tablet\@g--margin-bottom-12 {
-    margin-bottom: 48px;
+    margin-bottom: var(--margins-12);
   }
   .tablet\@g--margin-13 {
-    margin: 64px;
+    margin: var(--margins-13);
   }
   .tablet\@g--margin-x-13 {
-    margin-right: 64px;
-    margin-left: 64px;
+    margin-right: var(--margins-13);
+    margin-left: var(--margins-13);
   }
   .tablet\@g--margin-y-13 {
-    margin-top: 64px;
-    margin-bottom: 64px;
+    margin-top: var(--margins-13);
+    margin-bottom: var(--margins-13);
   }
   .tablet\@g--margin-left-13 {
-    margin-left: 64px;
+    margin-left: var(--margins-13);
   }
   .tablet\@g--margin-right-13 {
-    margin-right: 64px;
+    margin-right: var(--margins-13);
   }
   .tablet\@g--margin-top-13 {
-    margin-top: 64px;
+    margin-top: var(--margins-13);
   }
   .tablet\@g--margin-bottom-13 {
-    margin-bottom: 64px;
+    margin-bottom: var(--margins-13);
   }
   .tablet\@g--margin-14 {
-    margin: 80px;
+    margin: var(--margins-14);
   }
   .tablet\@g--margin-x-14 {
-    margin-right: 80px;
-    margin-left: 80px;
+    margin-right: var(--margins-14);
+    margin-left: var(--margins-14);
   }
   .tablet\@g--margin-y-14 {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: var(--margins-14);
+    margin-bottom: var(--margins-14);
   }
   .tablet\@g--margin-left-14 {
-    margin-left: 80px;
+    margin-left: var(--margins-14);
   }
   .tablet\@g--margin-right-14 {
-    margin-right: 80px;
+    margin-right: var(--margins-14);
   }
   .tablet\@g--margin-top-14 {
-    margin-top: 80px;
+    margin-top: var(--margins-14);
   }
   .tablet\@g--margin-bottom-14 {
-    margin-bottom: 80px;
+    margin-bottom: var(--margins-14);
   }
   .tablet\@g--margin-15 {
-    margin: 96px;
+    margin: var(--margins-15);
   }
   .tablet\@g--margin-x-15 {
-    margin-right: 96px;
-    margin-left: 96px;
+    margin-right: var(--margins-15);
+    margin-left: var(--margins-15);
   }
   .tablet\@g--margin-y-15 {
-    margin-top: 96px;
-    margin-bottom: 96px;
+    margin-top: var(--margins-15);
+    margin-bottom: var(--margins-15);
   }
   .tablet\@g--margin-left-15 {
-    margin-left: 96px;
+    margin-left: var(--margins-15);
   }
   .tablet\@g--margin-right-15 {
-    margin-right: 96px;
+    margin-right: var(--margins-15);
   }
   .tablet\@g--margin-top-15 {
-    margin-top: 96px;
+    margin-top: var(--margins-15);
   }
   .tablet\@g--margin-bottom-15 {
-    margin-bottom: 96px;
+    margin-bottom: var(--margins-15);
   }
   .tablet\@g--margin-16 {
-    margin: 128px;
+    margin: var(--margins-16);
   }
   .tablet\@g--margin-x-16 {
-    margin-right: 128px;
-    margin-left: 128px;
+    margin-right: var(--margins-16);
+    margin-left: var(--margins-16);
   }
   .tablet\@g--margin-y-16 {
-    margin-top: 128px;
-    margin-bottom: 128px;
+    margin-top: var(--margins-16);
+    margin-bottom: var(--margins-16);
   }
   .tablet\@g--margin-left-16 {
-    margin-left: 128px;
+    margin-left: var(--margins-16);
   }
   .tablet\@g--margin-right-16 {
-    margin-right: 128px;
+    margin-right: var(--margins-16);
   }
   .tablet\@g--margin-top-16 {
-    margin-top: 128px;
+    margin-top: var(--margins-16);
   }
   .tablet\@g--margin-bottom-16 {
-    margin-bottom: 128px;
+    margin-bottom: var(--margins-16);
   }
   .tablet\@g--margin-17 {
-    margin: 160px;
+    margin: var(--margins-17);
   }
   .tablet\@g--margin-x-17 {
-    margin-right: 160px;
-    margin-left: 160px;
+    margin-right: var(--margins-17);
+    margin-left: var(--margins-17);
   }
   .tablet\@g--margin-y-17 {
-    margin-top: 160px;
-    margin-bottom: 160px;
+    margin-top: var(--margins-17);
+    margin-bottom: var(--margins-17);
   }
   .tablet\@g--margin-left-17 {
-    margin-left: 160px;
+    margin-left: var(--margins-17);
   }
   .tablet\@g--margin-right-17 {
-    margin-right: 160px;
+    margin-right: var(--margins-17);
   }
   .tablet\@g--margin-top-17 {
-    margin-top: 160px;
+    margin-top: var(--margins-17);
   }
   .tablet\@g--margin-bottom-17 {
-    margin-bottom: 160px;
+    margin-bottom: var(--margins-17);
   }
   .tablet\@g--margin-18 {
-    margin: 192px;
+    margin: var(--margins-18);
   }
   .tablet\@g--margin-x-18 {
-    margin-right: 192px;
-    margin-left: 192px;
+    margin-right: var(--margins-18);
+    margin-left: var(--margins-18);
   }
   .tablet\@g--margin-y-18 {
-    margin-top: 192px;
-    margin-bottom: 192px;
+    margin-top: var(--margins-18);
+    margin-bottom: var(--margins-18);
   }
   .tablet\@g--margin-left-18 {
-    margin-left: 192px;
+    margin-left: var(--margins-18);
   }
   .tablet\@g--margin-right-18 {
-    margin-right: 192px;
+    margin-right: var(--margins-18);
   }
   .tablet\@g--margin-top-18 {
-    margin-top: 192px;
+    margin-top: var(--margins-18);
   }
   .tablet\@g--margin-bottom-18 {
-    margin-bottom: 192px;
+    margin-bottom: var(--margins-18);
   }
   .tablet\@g--margin-19 {
-    margin: 224px;
+    margin: var(--margins-19);
   }
   .tablet\@g--margin-x-19 {
-    margin-right: 224px;
-    margin-left: 224px;
+    margin-right: var(--margins-19);
+    margin-left: var(--margins-19);
   }
   .tablet\@g--margin-y-19 {
-    margin-top: 224px;
-    margin-bottom: 224px;
+    margin-top: var(--margins-19);
+    margin-bottom: var(--margins-19);
   }
   .tablet\@g--margin-left-19 {
-    margin-left: 224px;
+    margin-left: var(--margins-19);
   }
   .tablet\@g--margin-right-19 {
-    margin-right: 224px;
+    margin-right: var(--margins-19);
   }
   .tablet\@g--margin-top-19 {
-    margin-top: 224px;
+    margin-top: var(--margins-19);
   }
   .tablet\@g--margin-bottom-19 {
-    margin-bottom: 224px;
+    margin-bottom: var(--margins-19);
   }
   .tablet\@g--margin-20 {
-    margin: 256px;
+    margin: var(--margins-20);
   }
   .tablet\@g--margin-x-20 {
-    margin-right: 256px;
-    margin-left: 256px;
+    margin-right: var(--margins-20);
+    margin-left: var(--margins-20);
   }
   .tablet\@g--margin-y-20 {
-    margin-top: 256px;
-    margin-bottom: 256px;
+    margin-top: var(--margins-20);
+    margin-bottom: var(--margins-20);
   }
   .tablet\@g--margin-left-20 {
-    margin-left: 256px;
+    margin-left: var(--margins-20);
   }
   .tablet\@g--margin-right-20 {
-    margin-right: 256px;
+    margin-right: var(--margins-20);
   }
   .tablet\@g--margin-top-20 {
-    margin-top: 256px;
+    margin-top: var(--margins-20);
   }
   .tablet\@g--margin-bottom-20 {
-    margin-bottom: 256px;
+    margin-bottom: var(--margins-20);
   }
   .tablet\@g--margin-21 {
-    margin: 320px;
+    margin: var(--margins-21);
   }
   .tablet\@g--margin-x-21 {
-    margin-right: 320px;
-    margin-left: 320px;
+    margin-right: var(--margins-21);
+    margin-left: var(--margins-21);
   }
   .tablet\@g--margin-y-21 {
-    margin-top: 320px;
-    margin-bottom: 320px;
+    margin-top: var(--margins-21);
+    margin-bottom: var(--margins-21);
   }
   .tablet\@g--margin-left-21 {
-    margin-left: 320px;
+    margin-left: var(--margins-21);
   }
   .tablet\@g--margin-right-21 {
-    margin-right: 320px;
+    margin-right: var(--margins-21);
   }
   .tablet\@g--margin-top-21 {
-    margin-top: 320px;
+    margin-top: var(--margins-21);
   }
   .tablet\@g--margin-bottom-21 {
-    margin-bottom: 320px;
+    margin-bottom: var(--margins-21);
   }
   .tablet\@g--margin-22 {
-    margin: 480px;
+    margin: var(--margins-22);
   }
   .tablet\@g--margin-x-22 {
-    margin-right: 480px;
-    margin-left: 480px;
+    margin-right: var(--margins-22);
+    margin-left: var(--margins-22);
   }
   .tablet\@g--margin-y-22 {
-    margin-top: 480px;
-    margin-bottom: 480px;
+    margin-top: var(--margins-22);
+    margin-bottom: var(--margins-22);
   }
   .tablet\@g--margin-left-22 {
-    margin-left: 480px;
+    margin-left: var(--margins-22);
   }
   .tablet\@g--margin-right-22 {
-    margin-right: 480px;
+    margin-right: var(--margins-22);
   }
   .tablet\@g--margin-top-22 {
-    margin-top: 480px;
+    margin-top: var(--margins-22);
   }
   .tablet\@g--margin-bottom-22 {
-    margin-bottom: 480px;
+    margin-bottom: var(--margins-22);
+  }
+  .tablet\@g--margin-23 {
+    margin: var(--margins-23);
+  }
+  .tablet\@g--margin-x-23 {
+    margin-right: var(--margins-23);
+    margin-left: var(--margins-23);
+  }
+  .tablet\@g--margin-y-23 {
+    margin-top: var(--margins-23);
+    margin-bottom: var(--margins-23);
+  }
+  .tablet\@g--margin-left-23 {
+    margin-left: var(--margins-23);
+  }
+  .tablet\@g--margin-right-23 {
+    margin-right: var(--margins-23);
+  }
+  .tablet\@g--margin-top-23 {
+    margin-top: var(--margins-23);
+  }
+  .tablet\@g--margin-bottom-23 {
+    margin-bottom: var(--margins-23);
   }
 }
 @media (min-width: 992px) {
   .desktop\@g--margin-1 {
-    margin: 0px;
+    margin: var(--margins-1);
   }
   .desktop\@g--margin-x-1 {
-    margin-right: 0px;
-    margin-left: 0px;
+    margin-right: var(--margins-1);
+    margin-left: var(--margins-1);
   }
   .desktop\@g--margin-y-1 {
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: var(--margins-1);
+    margin-bottom: var(--margins-1);
   }
   .desktop\@g--margin-left-1 {
-    margin-left: 0px;
+    margin-left: var(--margins-1);
   }
   .desktop\@g--margin-right-1 {
-    margin-right: 0px;
+    margin-right: var(--margins-1);
   }
   .desktop\@g--margin-top-1 {
-    margin-top: 0px;
+    margin-top: var(--margins-1);
   }
   .desktop\@g--margin-bottom-1 {
-    margin-bottom: 0px;
+    margin-bottom: var(--margins-1);
   }
   .desktop\@g--margin-2 {
-    margin: 4px;
+    margin: var(--margins-2);
   }
   .desktop\@g--margin-x-2 {
-    margin-right: 4px;
-    margin-left: 4px;
+    margin-right: var(--margins-2);
+    margin-left: var(--margins-2);
   }
   .desktop\@g--margin-y-2 {
-    margin-top: 4px;
-    margin-bottom: 4px;
+    margin-top: var(--margins-2);
+    margin-bottom: var(--margins-2);
   }
   .desktop\@g--margin-left-2 {
-    margin-left: 4px;
+    margin-left: var(--margins-2);
   }
   .desktop\@g--margin-right-2 {
-    margin-right: 4px;
+    margin-right: var(--margins-2);
   }
   .desktop\@g--margin-top-2 {
-    margin-top: 4px;
+    margin-top: var(--margins-2);
   }
   .desktop\@g--margin-bottom-2 {
-    margin-bottom: 4px;
+    margin-bottom: var(--margins-2);
   }
   .desktop\@g--margin-3 {
-    margin: 6px;
+    margin: var(--margins-3);
   }
   .desktop\@g--margin-x-3 {
-    margin-right: 6px;
-    margin-left: 6px;
+    margin-right: var(--margins-3);
+    margin-left: var(--margins-3);
   }
   .desktop\@g--margin-y-3 {
-    margin-top: 6px;
-    margin-bottom: 6px;
+    margin-top: var(--margins-3);
+    margin-bottom: var(--margins-3);
   }
   .desktop\@g--margin-left-3 {
-    margin-left: 6px;
+    margin-left: var(--margins-3);
   }
   .desktop\@g--margin-right-3 {
-    margin-right: 6px;
+    margin-right: var(--margins-3);
   }
   .desktop\@g--margin-top-3 {
-    margin-top: 6px;
+    margin-top: var(--margins-3);
   }
   .desktop\@g--margin-bottom-3 {
-    margin-bottom: 6px;
+    margin-bottom: var(--margins-3);
   }
   .desktop\@g--margin-4 {
-    margin: 8px;
+    margin: var(--margins-4);
   }
   .desktop\@g--margin-x-4 {
-    margin-right: 8px;
-    margin-left: 8px;
+    margin-right: var(--margins-4);
+    margin-left: var(--margins-4);
   }
   .desktop\@g--margin-y-4 {
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: var(--margins-4);
+    margin-bottom: var(--margins-4);
   }
   .desktop\@g--margin-left-4 {
-    margin-left: 8px;
+    margin-left: var(--margins-4);
   }
   .desktop\@g--margin-right-4 {
-    margin-right: 8px;
+    margin-right: var(--margins-4);
   }
   .desktop\@g--margin-top-4 {
-    margin-top: 8px;
+    margin-top: var(--margins-4);
   }
   .desktop\@g--margin-bottom-4 {
-    margin-bottom: 8px;
+    margin-bottom: var(--margins-4);
   }
   .desktop\@g--margin-5 {
-    margin: 10px;
+    margin: var(--margins-5);
   }
   .desktop\@g--margin-x-5 {
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: var(--margins-5);
+    margin-left: var(--margins-5);
   }
   .desktop\@g--margin-y-5 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: var(--margins-5);
+    margin-bottom: var(--margins-5);
   }
   .desktop\@g--margin-left-5 {
-    margin-left: 10px;
+    margin-left: var(--margins-5);
   }
   .desktop\@g--margin-right-5 {
-    margin-right: 10px;
+    margin-right: var(--margins-5);
   }
   .desktop\@g--margin-top-5 {
-    margin-top: 10px;
+    margin-top: var(--margins-5);
   }
   .desktop\@g--margin-bottom-5 {
-    margin-bottom: 10px;
+    margin-bottom: var(--margins-5);
   }
   .desktop\@g--margin-6 {
-    margin: 12px;
+    margin: var(--margins-6);
   }
   .desktop\@g--margin-x-6 {
-    margin-right: 12px;
-    margin-left: 12px;
+    margin-right: var(--margins-6);
+    margin-left: var(--margins-6);
   }
   .desktop\@g--margin-y-6 {
-    margin-top: 12px;
-    margin-bottom: 12px;
+    margin-top: var(--margins-6);
+    margin-bottom: var(--margins-6);
   }
   .desktop\@g--margin-left-6 {
-    margin-left: 12px;
+    margin-left: var(--margins-6);
   }
   .desktop\@g--margin-right-6 {
-    margin-right: 12px;
+    margin-right: var(--margins-6);
   }
   .desktop\@g--margin-top-6 {
-    margin-top: 12px;
+    margin-top: var(--margins-6);
   }
   .desktop\@g--margin-bottom-6 {
-    margin-bottom: 12px;
+    margin-bottom: var(--margins-6);
   }
   .desktop\@g--margin-7 {
-    margin: 16px;
+    margin: var(--margins-7);
   }
   .desktop\@g--margin-x-7 {
-    margin-right: 16px;
-    margin-left: 16px;
+    margin-right: var(--margins-7);
+    margin-left: var(--margins-7);
   }
   .desktop\@g--margin-y-7 {
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin-top: var(--margins-7);
+    margin-bottom: var(--margins-7);
   }
   .desktop\@g--margin-left-7 {
-    margin-left: 16px;
+    margin-left: var(--margins-7);
   }
   .desktop\@g--margin-right-7 {
-    margin-right: 16px;
+    margin-right: var(--margins-7);
   }
   .desktop\@g--margin-top-7 {
-    margin-top: 16px;
+    margin-top: var(--margins-7);
   }
   .desktop\@g--margin-bottom-7 {
-    margin-bottom: 16px;
+    margin-bottom: var(--margins-7);
   }
   .desktop\@g--margin-8 {
-    margin: 20px;
+    margin: var(--margins-8);
   }
   .desktop\@g--margin-x-8 {
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: var(--margins-8);
+    margin-left: var(--margins-8);
   }
   .desktop\@g--margin-y-8 {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: var(--margins-8);
+    margin-bottom: var(--margins-8);
   }
   .desktop\@g--margin-left-8 {
-    margin-left: 20px;
+    margin-left: var(--margins-8);
   }
   .desktop\@g--margin-right-8 {
-    margin-right: 20px;
+    margin-right: var(--margins-8);
   }
   .desktop\@g--margin-top-8 {
-    margin-top: 20px;
+    margin-top: var(--margins-8);
   }
   .desktop\@g--margin-bottom-8 {
-    margin-bottom: 20px;
+    margin-bottom: var(--margins-8);
   }
   .desktop\@g--margin-9 {
-    margin: 24px;
+    margin: var(--margins-9);
   }
   .desktop\@g--margin-x-9 {
-    margin-right: 24px;
-    margin-left: 24px;
+    margin-right: var(--margins-9);
+    margin-left: var(--margins-9);
   }
   .desktop\@g--margin-y-9 {
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin-top: var(--margins-9);
+    margin-bottom: var(--margins-9);
   }
   .desktop\@g--margin-left-9 {
-    margin-left: 24px;
+    margin-left: var(--margins-9);
   }
   .desktop\@g--margin-right-9 {
-    margin-right: 24px;
+    margin-right: var(--margins-9);
   }
   .desktop\@g--margin-top-9 {
-    margin-top: 24px;
+    margin-top: var(--margins-9);
   }
   .desktop\@g--margin-bottom-9 {
-    margin-bottom: 24px;
+    margin-bottom: var(--margins-9);
   }
   .desktop\@g--margin-10 {
-    margin: 32px;
+    margin: var(--margins-10);
   }
   .desktop\@g--margin-x-10 {
-    margin-right: 32px;
-    margin-left: 32px;
+    margin-right: var(--margins-10);
+    margin-left: var(--margins-10);
   }
   .desktop\@g--margin-y-10 {
-    margin-top: 32px;
-    margin-bottom: 32px;
+    margin-top: var(--margins-10);
+    margin-bottom: var(--margins-10);
   }
   .desktop\@g--margin-left-10 {
-    margin-left: 32px;
+    margin-left: var(--margins-10);
   }
   .desktop\@g--margin-right-10 {
-    margin-right: 32px;
+    margin-right: var(--margins-10);
   }
   .desktop\@g--margin-top-10 {
-    margin-top: 32px;
+    margin-top: var(--margins-10);
   }
   .desktop\@g--margin-bottom-10 {
-    margin-bottom: 32px;
+    margin-bottom: var(--margins-10);
   }
   .desktop\@g--margin-11 {
-    margin: 40px;
+    margin: var(--margins-11);
   }
   .desktop\@g--margin-x-11 {
-    margin-right: 40px;
-    margin-left: 40px;
+    margin-right: var(--margins-11);
+    margin-left: var(--margins-11);
   }
   .desktop\@g--margin-y-11 {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: var(--margins-11);
+    margin-bottom: var(--margins-11);
   }
   .desktop\@g--margin-left-11 {
-    margin-left: 40px;
+    margin-left: var(--margins-11);
   }
   .desktop\@g--margin-right-11 {
-    margin-right: 40px;
+    margin-right: var(--margins-11);
   }
   .desktop\@g--margin-top-11 {
-    margin-top: 40px;
+    margin-top: var(--margins-11);
   }
   .desktop\@g--margin-bottom-11 {
-    margin-bottom: 40px;
+    margin-bottom: var(--margins-11);
   }
   .desktop\@g--margin-12 {
-    margin: 48px;
+    margin: var(--margins-12);
   }
   .desktop\@g--margin-x-12 {
-    margin-right: 48px;
-    margin-left: 48px;
+    margin-right: var(--margins-12);
+    margin-left: var(--margins-12);
   }
   .desktop\@g--margin-y-12 {
-    margin-top: 48px;
-    margin-bottom: 48px;
+    margin-top: var(--margins-12);
+    margin-bottom: var(--margins-12);
   }
   .desktop\@g--margin-left-12 {
-    margin-left: 48px;
+    margin-left: var(--margins-12);
   }
   .desktop\@g--margin-right-12 {
-    margin-right: 48px;
+    margin-right: var(--margins-12);
   }
   .desktop\@g--margin-top-12 {
-    margin-top: 48px;
+    margin-top: var(--margins-12);
   }
   .desktop\@g--margin-bottom-12 {
-    margin-bottom: 48px;
+    margin-bottom: var(--margins-12);
   }
   .desktop\@g--margin-13 {
-    margin: 64px;
+    margin: var(--margins-13);
   }
   .desktop\@g--margin-x-13 {
-    margin-right: 64px;
-    margin-left: 64px;
+    margin-right: var(--margins-13);
+    margin-left: var(--margins-13);
   }
   .desktop\@g--margin-y-13 {
-    margin-top: 64px;
-    margin-bottom: 64px;
+    margin-top: var(--margins-13);
+    margin-bottom: var(--margins-13);
   }
   .desktop\@g--margin-left-13 {
-    margin-left: 64px;
+    margin-left: var(--margins-13);
   }
   .desktop\@g--margin-right-13 {
-    margin-right: 64px;
+    margin-right: var(--margins-13);
   }
   .desktop\@g--margin-top-13 {
-    margin-top: 64px;
+    margin-top: var(--margins-13);
   }
   .desktop\@g--margin-bottom-13 {
-    margin-bottom: 64px;
+    margin-bottom: var(--margins-13);
   }
   .desktop\@g--margin-14 {
-    margin: 80px;
+    margin: var(--margins-14);
   }
   .desktop\@g--margin-x-14 {
-    margin-right: 80px;
-    margin-left: 80px;
+    margin-right: var(--margins-14);
+    margin-left: var(--margins-14);
   }
   .desktop\@g--margin-y-14 {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: var(--margins-14);
+    margin-bottom: var(--margins-14);
   }
   .desktop\@g--margin-left-14 {
-    margin-left: 80px;
+    margin-left: var(--margins-14);
   }
   .desktop\@g--margin-right-14 {
-    margin-right: 80px;
+    margin-right: var(--margins-14);
   }
   .desktop\@g--margin-top-14 {
-    margin-top: 80px;
+    margin-top: var(--margins-14);
   }
   .desktop\@g--margin-bottom-14 {
-    margin-bottom: 80px;
+    margin-bottom: var(--margins-14);
   }
   .desktop\@g--margin-15 {
-    margin: 96px;
+    margin: var(--margins-15);
   }
   .desktop\@g--margin-x-15 {
-    margin-right: 96px;
-    margin-left: 96px;
+    margin-right: var(--margins-15);
+    margin-left: var(--margins-15);
   }
   .desktop\@g--margin-y-15 {
-    margin-top: 96px;
-    margin-bottom: 96px;
+    margin-top: var(--margins-15);
+    margin-bottom: var(--margins-15);
   }
   .desktop\@g--margin-left-15 {
-    margin-left: 96px;
+    margin-left: var(--margins-15);
   }
   .desktop\@g--margin-right-15 {
-    margin-right: 96px;
+    margin-right: var(--margins-15);
   }
   .desktop\@g--margin-top-15 {
-    margin-top: 96px;
+    margin-top: var(--margins-15);
   }
   .desktop\@g--margin-bottom-15 {
-    margin-bottom: 96px;
+    margin-bottom: var(--margins-15);
   }
   .desktop\@g--margin-16 {
-    margin: 128px;
+    margin: var(--margins-16);
   }
   .desktop\@g--margin-x-16 {
-    margin-right: 128px;
-    margin-left: 128px;
+    margin-right: var(--margins-16);
+    margin-left: var(--margins-16);
   }
   .desktop\@g--margin-y-16 {
-    margin-top: 128px;
-    margin-bottom: 128px;
+    margin-top: var(--margins-16);
+    margin-bottom: var(--margins-16);
   }
   .desktop\@g--margin-left-16 {
-    margin-left: 128px;
+    margin-left: var(--margins-16);
   }
   .desktop\@g--margin-right-16 {
-    margin-right: 128px;
+    margin-right: var(--margins-16);
   }
   .desktop\@g--margin-top-16 {
-    margin-top: 128px;
+    margin-top: var(--margins-16);
   }
   .desktop\@g--margin-bottom-16 {
-    margin-bottom: 128px;
+    margin-bottom: var(--margins-16);
   }
   .desktop\@g--margin-17 {
-    margin: 160px;
+    margin: var(--margins-17);
   }
   .desktop\@g--margin-x-17 {
-    margin-right: 160px;
-    margin-left: 160px;
+    margin-right: var(--margins-17);
+    margin-left: var(--margins-17);
   }
   .desktop\@g--margin-y-17 {
-    margin-top: 160px;
-    margin-bottom: 160px;
+    margin-top: var(--margins-17);
+    margin-bottom: var(--margins-17);
   }
   .desktop\@g--margin-left-17 {
-    margin-left: 160px;
+    margin-left: var(--margins-17);
   }
   .desktop\@g--margin-right-17 {
-    margin-right: 160px;
+    margin-right: var(--margins-17);
   }
   .desktop\@g--margin-top-17 {
-    margin-top: 160px;
+    margin-top: var(--margins-17);
   }
   .desktop\@g--margin-bottom-17 {
-    margin-bottom: 160px;
+    margin-bottom: var(--margins-17);
   }
   .desktop\@g--margin-18 {
-    margin: 192px;
+    margin: var(--margins-18);
   }
   .desktop\@g--margin-x-18 {
-    margin-right: 192px;
-    margin-left: 192px;
+    margin-right: var(--margins-18);
+    margin-left: var(--margins-18);
   }
   .desktop\@g--margin-y-18 {
-    margin-top: 192px;
-    margin-bottom: 192px;
+    margin-top: var(--margins-18);
+    margin-bottom: var(--margins-18);
   }
   .desktop\@g--margin-left-18 {
-    margin-left: 192px;
+    margin-left: var(--margins-18);
   }
   .desktop\@g--margin-right-18 {
-    margin-right: 192px;
+    margin-right: var(--margins-18);
   }
   .desktop\@g--margin-top-18 {
-    margin-top: 192px;
+    margin-top: var(--margins-18);
   }
   .desktop\@g--margin-bottom-18 {
-    margin-bottom: 192px;
+    margin-bottom: var(--margins-18);
   }
   .desktop\@g--margin-19 {
-    margin: 224px;
+    margin: var(--margins-19);
   }
   .desktop\@g--margin-x-19 {
-    margin-right: 224px;
-    margin-left: 224px;
+    margin-right: var(--margins-19);
+    margin-left: var(--margins-19);
   }
   .desktop\@g--margin-y-19 {
-    margin-top: 224px;
-    margin-bottom: 224px;
+    margin-top: var(--margins-19);
+    margin-bottom: var(--margins-19);
   }
   .desktop\@g--margin-left-19 {
-    margin-left: 224px;
+    margin-left: var(--margins-19);
   }
   .desktop\@g--margin-right-19 {
-    margin-right: 224px;
+    margin-right: var(--margins-19);
   }
   .desktop\@g--margin-top-19 {
-    margin-top: 224px;
+    margin-top: var(--margins-19);
   }
   .desktop\@g--margin-bottom-19 {
-    margin-bottom: 224px;
+    margin-bottom: var(--margins-19);
   }
   .desktop\@g--margin-20 {
-    margin: 256px;
+    margin: var(--margins-20);
   }
   .desktop\@g--margin-x-20 {
-    margin-right: 256px;
-    margin-left: 256px;
+    margin-right: var(--margins-20);
+    margin-left: var(--margins-20);
   }
   .desktop\@g--margin-y-20 {
-    margin-top: 256px;
-    margin-bottom: 256px;
+    margin-top: var(--margins-20);
+    margin-bottom: var(--margins-20);
   }
   .desktop\@g--margin-left-20 {
-    margin-left: 256px;
+    margin-left: var(--margins-20);
   }
   .desktop\@g--margin-right-20 {
-    margin-right: 256px;
+    margin-right: var(--margins-20);
   }
   .desktop\@g--margin-top-20 {
-    margin-top: 256px;
+    margin-top: var(--margins-20);
   }
   .desktop\@g--margin-bottom-20 {
-    margin-bottom: 256px;
+    margin-bottom: var(--margins-20);
   }
   .desktop\@g--margin-21 {
-    margin: 320px;
+    margin: var(--margins-21);
   }
   .desktop\@g--margin-x-21 {
-    margin-right: 320px;
-    margin-left: 320px;
+    margin-right: var(--margins-21);
+    margin-left: var(--margins-21);
   }
   .desktop\@g--margin-y-21 {
-    margin-top: 320px;
-    margin-bottom: 320px;
+    margin-top: var(--margins-21);
+    margin-bottom: var(--margins-21);
   }
   .desktop\@g--margin-left-21 {
-    margin-left: 320px;
+    margin-left: var(--margins-21);
   }
   .desktop\@g--margin-right-21 {
-    margin-right: 320px;
+    margin-right: var(--margins-21);
   }
   .desktop\@g--margin-top-21 {
-    margin-top: 320px;
+    margin-top: var(--margins-21);
   }
   .desktop\@g--margin-bottom-21 {
-    margin-bottom: 320px;
+    margin-bottom: var(--margins-21);
   }
   .desktop\@g--margin-22 {
-    margin: 480px;
+    margin: var(--margins-22);
   }
   .desktop\@g--margin-x-22 {
-    margin-right: 480px;
-    margin-left: 480px;
+    margin-right: var(--margins-22);
+    margin-left: var(--margins-22);
   }
   .desktop\@g--margin-y-22 {
-    margin-top: 480px;
-    margin-bottom: 480px;
+    margin-top: var(--margins-22);
+    margin-bottom: var(--margins-22);
   }
   .desktop\@g--margin-left-22 {
-    margin-left: 480px;
+    margin-left: var(--margins-22);
   }
   .desktop\@g--margin-right-22 {
-    margin-right: 480px;
+    margin-right: var(--margins-22);
   }
   .desktop\@g--margin-top-22 {
-    margin-top: 480px;
+    margin-top: var(--margins-22);
   }
   .desktop\@g--margin-bottom-22 {
-    margin-bottom: 480px;
+    margin-bottom: var(--margins-22);
+  }
+  .desktop\@g--margin-23 {
+    margin: var(--margins-23);
+  }
+  .desktop\@g--margin-x-23 {
+    margin-right: var(--margins-23);
+    margin-left: var(--margins-23);
+  }
+  .desktop\@g--margin-y-23 {
+    margin-top: var(--margins-23);
+    margin-bottom: var(--margins-23);
+  }
+  .desktop\@g--margin-left-23 {
+    margin-left: var(--margins-23);
+  }
+  .desktop\@g--margin-right-23 {
+    margin-right: var(--margins-23);
+  }
+  .desktop\@g--margin-top-23 {
+    margin-top: var(--margins-23);
+  }
+  .desktop\@g--margin-bottom-23 {
+    margin-bottom: var(--margins-23);
   }
 }
 :root {
-  --shadow-none: map-get($shadows, $value);
-  --shadow-sm: map-get($shadows, $value);
-  --shadow-: map-get($shadows, $value);
-  --shadow-lg: map-get($shadows, $value);
-  --shadow-xlg: map-get($shadows, $value);
-  --shadow-xxlg: map-get($shadows, $value);
+  --shadow-none:none;
+  --shadow-sm:0 1px 3px hsla(0, 0%, 0%, 0.2);
+  --shadow-:0 4px 6px hsla(0, 0%, 0%, 0.2);
+  --shadow-lg:0 5px 15px hsla(0, 0%, 0%, 0.2);
+  --shadow-xlg:0 10px 24px hsla(0, 0%, 0%, 0.2);
+  --shadow-xxlg:0 15px 35px hsla(0, 0%, 0%, 0.2);
 }
 
 @media (min-width: 0px) {
   .g--box-shadow-none {
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
+    -webkit-box-shadow: var(--shadow-none);
+    -moz-box-shadow: var(--shadow-none);
+    box-shadow: var(--shadow-none);
   }
   .g--box-shadow-sm {
-    -webkit-box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.2);
-    -moz-box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.2);
-    box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.2);
+    -webkit-box-shadow: var(--shadow-sm);
+    -moz-box-shadow: var(--shadow-sm);
+    box-shadow: var(--shadow-sm);
   }
   .g--box-shadow {
-    -webkit-box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.2);
-    -moz-box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.2);
-    box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.2);
+    -webkit-box-shadow: var(--shadow-);
+    -moz-box-shadow: var(--shadow-);
+    box-shadow: var(--shadow-);
   }
   .g--box-shadow-lg {
-    -webkit-box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.2);
-    -moz-box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.2);
-    box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.2);
+    -webkit-box-shadow: var(--shadow-lg);
+    -moz-box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-lg);
   }
   .g--box-shadow-xlg {
-    -webkit-box-shadow: 0 10px 24px hsla(0, 0%, 0%, 0.2);
-    -moz-box-shadow: 0 10px 24px hsla(0, 0%, 0%, 0.2);
-    box-shadow: 0 10px 24px hsla(0, 0%, 0%, 0.2);
+    -webkit-box-shadow: var(--shadow-xlg);
+    -moz-box-shadow: var(--shadow-xlg);
+    box-shadow: var(--shadow-xlg);
   }
   .g--box-shadow-xxlg {
-    -webkit-box-shadow: 0 15px 35px hsla(0, 0%, 0%, 0.2);
-    -moz-box-shadow: 0 15px 35px hsla(0, 0%, 0%, 0.2);
-    box-shadow: 0 15px 35px hsla(0, 0%, 0%, 0.2);
+    -webkit-box-shadow: var(--shadow-xxlg);
+    -moz-box-shadow: var(--shadow-xxlg);
+    box-shadow: var(--shadow-xxlg);
   }
 }
 @media (min-width: 768px) {
   .tablet\@g--box-shadow-none {
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
+    -webkit-box-shadow: var(--shadow-none);
+    -moz-box-shadow: var(--shadow-none);
+    box-shadow: var(--shadow-none);
   }
   .tablet\@g--box-shadow-sm {
-    -webkit-box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.2);
-    -moz-box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.2);
-    box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.2);
+    -webkit-box-shadow: var(--shadow-sm);
+    -moz-box-shadow: var(--shadow-sm);
+    box-shadow: var(--shadow-sm);
   }
   .tablet\@g--box-shadow {
-    -webkit-box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.2);
-    -moz-box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.2);
-    box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.2);
+    -webkit-box-shadow: var(--shadow-);
+    -moz-box-shadow: var(--shadow-);
+    box-shadow: var(--shadow-);
   }
   .tablet\@g--box-shadow-lg {
-    -webkit-box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.2);
-    -moz-box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.2);
-    box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.2);
+    -webkit-box-shadow: var(--shadow-lg);
+    -moz-box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-lg);
   }
   .tablet\@g--box-shadow-xlg {
-    -webkit-box-shadow: 0 10px 24px hsla(0, 0%, 0%, 0.2);
-    -moz-box-shadow: 0 10px 24px hsla(0, 0%, 0%, 0.2);
-    box-shadow: 0 10px 24px hsla(0, 0%, 0%, 0.2);
+    -webkit-box-shadow: var(--shadow-xlg);
+    -moz-box-shadow: var(--shadow-xlg);
+    box-shadow: var(--shadow-xlg);
   }
   .tablet\@g--box-shadow-xxlg {
-    -webkit-box-shadow: 0 15px 35px hsla(0, 0%, 0%, 0.2);
-    -moz-box-shadow: 0 15px 35px hsla(0, 0%, 0%, 0.2);
-    box-shadow: 0 15px 35px hsla(0, 0%, 0%, 0.2);
+    -webkit-box-shadow: var(--shadow-xxlg);
+    -moz-box-shadow: var(--shadow-xxlg);
+    box-shadow: var(--shadow-xxlg);
   }
 }
 @media (min-width: 992px) {
   .desktop\@g--box-shadow-none {
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
+    -webkit-box-shadow: var(--shadow-none);
+    -moz-box-shadow: var(--shadow-none);
+    box-shadow: var(--shadow-none);
   }
   .desktop\@g--box-shadow-sm {
-    -webkit-box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.2);
-    -moz-box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.2);
-    box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.2);
+    -webkit-box-shadow: var(--shadow-sm);
+    -moz-box-shadow: var(--shadow-sm);
+    box-shadow: var(--shadow-sm);
   }
   .desktop\@g--box-shadow {
-    -webkit-box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.2);
-    -moz-box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.2);
-    box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.2);
+    -webkit-box-shadow: var(--shadow-);
+    -moz-box-shadow: var(--shadow-);
+    box-shadow: var(--shadow-);
   }
   .desktop\@g--box-shadow-lg {
-    -webkit-box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.2);
-    -moz-box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.2);
-    box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.2);
+    -webkit-box-shadow: var(--shadow-lg);
+    -moz-box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-lg);
   }
   .desktop\@g--box-shadow-xlg {
-    -webkit-box-shadow: 0 10px 24px hsla(0, 0%, 0%, 0.2);
-    -moz-box-shadow: 0 10px 24px hsla(0, 0%, 0%, 0.2);
-    box-shadow: 0 10px 24px hsla(0, 0%, 0%, 0.2);
+    -webkit-box-shadow: var(--shadow-xlg);
+    -moz-box-shadow: var(--shadow-xlg);
+    box-shadow: var(--shadow-xlg);
   }
   .desktop\@g--box-shadow-xxlg {
-    -webkit-box-shadow: 0 15px 35px hsla(0, 0%, 0%, 0.2);
-    -moz-box-shadow: 0 15px 35px hsla(0, 0%, 0%, 0.2);
-    box-shadow: 0 15px 35px hsla(0, 0%, 0%, 0.2);
+    -webkit-box-shadow: var(--shadow-xxlg);
+    -moz-box-shadow: var(--shadow-xxlg);
+    box-shadow: var(--shadow-xxlg);
   }
 }
 :root {
@@ -6591,2859 +6740,1193 @@ html {
   }
 }
 :root {
-  --font-zize-1: nth($font-size, $i);
-  --font-zize-2: nth($font-size, $i);
-  --font-zize-3: nth($font-size, $i);
-  --font-zize-4: nth($font-size, $i);
-  --font-zize-5: nth($font-size, $i);
-  --font-zize-6: nth($font-size, $i);
-  --font-zize-7: nth($font-size, $i);
-  --font-zize-8: nth($font-size, $i);
-  --font-zize-9: nth($font-size, $i);
-  --font-zize-10: nth($font-size, $i);
-  --font-zize-11: nth($font-size, $i);
-  --font-zize-12: nth($font-size, $i);
+  --font-zize-1: 0px;
+  --font-zize-2: 4px;
+  --font-zize-3: 6px;
+  --font-zize-4: 8px;
+  --font-zize-5: 10px;
+  --font-zize-6: 12px;
+  --font-zize-7: 16px;
+  --font-zize-8: 20px;
+  --font-zize-9: 24px;
+  --font-zize-10: 32px;
+  --font-zize-11: 40px;
+  --font-zize-12: 48px;
+  --font-zize-13: 64px;
 }
 
 @media (min-width: 0px) {
   .g--font-size-1 {
-    font-size: 0px;
+    font-size: var(--font-zize-1);
   }
   .g--font-size-2 {
-    font-size: 4px;
+    font-size: var(--font-zize-2);
   }
   .g--font-size-3 {
-    font-size: 6px;
+    font-size: var(--font-zize-3);
   }
   .g--font-size-4 {
-    font-size: 8px;
+    font-size: var(--font-zize-4);
   }
   .g--font-size-5 {
-    font-size: 10px;
+    font-size: var(--font-zize-5);
   }
   .g--font-size-6 {
-    font-size: 12px;
+    font-size: var(--font-zize-6);
   }
   .g--font-size-7 {
-    font-size: 16px;
+    font-size: var(--font-zize-7);
   }
   .g--font-size-8 {
-    font-size: 20px;
+    font-size: var(--font-zize-8);
   }
   .g--font-size-9 {
-    font-size: 24px;
+    font-size: var(--font-zize-9);
   }
   .g--font-size-10 {
-    font-size: 32px;
+    font-size: var(--font-zize-10);
   }
   .g--font-size-11 {
-    font-size: 40px;
+    font-size: var(--font-zize-11);
   }
   .g--font-size-12 {
-    font-size: 48px;
+    font-size: var(--font-zize-12);
+  }
+  .g--font-size-13 {
+    font-size: var(--font-zize-13);
   }
 }
 @media (min-width: 768px) {
   .tablet\@g--font-size-1 {
-    font-size: 0px;
+    font-size: var(--font-zize-1);
   }
   .tablet\@g--font-size-2 {
-    font-size: 4px;
+    font-size: var(--font-zize-2);
   }
   .tablet\@g--font-size-3 {
-    font-size: 6px;
+    font-size: var(--font-zize-3);
   }
   .tablet\@g--font-size-4 {
-    font-size: 8px;
+    font-size: var(--font-zize-4);
   }
   .tablet\@g--font-size-5 {
-    font-size: 10px;
+    font-size: var(--font-zize-5);
   }
   .tablet\@g--font-size-6 {
-    font-size: 12px;
+    font-size: var(--font-zize-6);
   }
   .tablet\@g--font-size-7 {
-    font-size: 16px;
+    font-size: var(--font-zize-7);
   }
   .tablet\@g--font-size-8 {
-    font-size: 20px;
+    font-size: var(--font-zize-8);
   }
   .tablet\@g--font-size-9 {
-    font-size: 24px;
+    font-size: var(--font-zize-9);
   }
   .tablet\@g--font-size-10 {
-    font-size: 32px;
+    font-size: var(--font-zize-10);
   }
   .tablet\@g--font-size-11 {
-    font-size: 40px;
+    font-size: var(--font-zize-11);
   }
   .tablet\@g--font-size-12 {
-    font-size: 48px;
+    font-size: var(--font-zize-12);
+  }
+  .tablet\@g--font-size-13 {
+    font-size: var(--font-zize-13);
   }
 }
 @media (min-width: 992px) {
   .desktop\@g--font-size-1 {
-    font-size: 0px;
+    font-size: var(--font-zize-1);
   }
   .desktop\@g--font-size-2 {
-    font-size: 4px;
+    font-size: var(--font-zize-2);
   }
   .desktop\@g--font-size-3 {
-    font-size: 6px;
+    font-size: var(--font-zize-3);
   }
   .desktop\@g--font-size-4 {
-    font-size: 8px;
+    font-size: var(--font-zize-4);
   }
   .desktop\@g--font-size-5 {
-    font-size: 10px;
+    font-size: var(--font-zize-5);
   }
   .desktop\@g--font-size-6 {
-    font-size: 12px;
+    font-size: var(--font-zize-6);
   }
   .desktop\@g--font-size-7 {
-    font-size: 16px;
+    font-size: var(--font-zize-7);
   }
   .desktop\@g--font-size-8 {
-    font-size: 20px;
+    font-size: var(--font-zize-8);
   }
   .desktop\@g--font-size-9 {
-    font-size: 24px;
+    font-size: var(--font-zize-9);
   }
   .desktop\@g--font-size-10 {
-    font-size: 32px;
+    font-size: var(--font-zize-10);
   }
   .desktop\@g--font-size-11 {
-    font-size: 40px;
+    font-size: var(--font-zize-11);
   }
   .desktop\@g--font-size-12 {
-    font-size: 48px;
+    font-size: var(--font-zize-12);
+  }
+  .desktop\@g--font-size-13 {
+    font-size: var(--font-zize-13);
   }
 }
 :root {
-  --border-radius-1: nth($border-radius, $i);
-  --border-radius-2: nth($border-radius, $i);
-  --border-radius-3: nth($border-radius, $i);
-  --border-radius-4: nth($border-radius, $i);
-  --border-radius-5: nth($border-radius, $i);
-  --border-radius-6: nth($border-radius, $i);
-  --border-radius-7: nth($border-radius, $i);
+  --border-radius-1: 0px;
+  --border-radius-2: 4px;
+  --border-radius-3: 6px;
+  --border-radius-4: 8px;
+  --border-radius-5: 10px;
+  --border-radius-6: 12px;
+  --border-radius-7: 16px;
+  --border-radius-8: 20px;
 }
 
 @media (min-width: 0px) {
   .g--border-radius-1 {
-    border-radius: 0px;
+    border-radius: var(--border-radius-1);
   }
   .g--border-top-right-radius-1 {
-    border-top-right-radius: 0px;
+    border-top-right-radius: var(--border-radius-1);
   }
   .g--border-bottom-left-radius-1 {
-    border-bottom-left-radius: 0px;
+    border-bottom-left-radius: --border-radius-1;
   }
   .g--border-bottom-right-radius-1 {
-    border-bottom-right-radius: 0px;
+    border-bottom-right-radius: --border-radius-1;
   }
   .g--border-top-left-radius-1 {
-    border-top-left-radius: 0px;
+    border-top-left-radius: --border-radius-1;
   }
   .g--border-radius-2 {
-    border-radius: 4px;
+    border-radius: var(--border-radius-2);
   }
   .g--border-top-right-radius-2 {
-    border-top-right-radius: 4px;
+    border-top-right-radius: var(--border-radius-2);
   }
   .g--border-bottom-left-radius-2 {
-    border-bottom-left-radius: 4px;
+    border-bottom-left-radius: --border-radius-2;
   }
   .g--border-bottom-right-radius-2 {
-    border-bottom-right-radius: 4px;
+    border-bottom-right-radius: --border-radius-2;
   }
   .g--border-top-left-radius-2 {
-    border-top-left-radius: 4px;
+    border-top-left-radius: --border-radius-2;
   }
   .g--border-radius-3 {
-    border-radius: 6px;
+    border-radius: var(--border-radius-3);
   }
   .g--border-top-right-radius-3 {
-    border-top-right-radius: 6px;
+    border-top-right-radius: var(--border-radius-3);
   }
   .g--border-bottom-left-radius-3 {
-    border-bottom-left-radius: 6px;
+    border-bottom-left-radius: --border-radius-3;
   }
   .g--border-bottom-right-radius-3 {
-    border-bottom-right-radius: 6px;
+    border-bottom-right-radius: --border-radius-3;
   }
   .g--border-top-left-radius-3 {
-    border-top-left-radius: 6px;
+    border-top-left-radius: --border-radius-3;
   }
   .g--border-radius-4 {
-    border-radius: 8px;
+    border-radius: var(--border-radius-4);
   }
   .g--border-top-right-radius-4 {
-    border-top-right-radius: 8px;
+    border-top-right-radius: var(--border-radius-4);
   }
   .g--border-bottom-left-radius-4 {
-    border-bottom-left-radius: 8px;
+    border-bottom-left-radius: --border-radius-4;
   }
   .g--border-bottom-right-radius-4 {
-    border-bottom-right-radius: 8px;
+    border-bottom-right-radius: --border-radius-4;
   }
   .g--border-top-left-radius-4 {
-    border-top-left-radius: 8px;
+    border-top-left-radius: --border-radius-4;
   }
   .g--border-radius-5 {
-    border-radius: 10px;
+    border-radius: var(--border-radius-5);
   }
   .g--border-top-right-radius-5 {
-    border-top-right-radius: 10px;
+    border-top-right-radius: var(--border-radius-5);
   }
   .g--border-bottom-left-radius-5 {
-    border-bottom-left-radius: 10px;
+    border-bottom-left-radius: --border-radius-5;
   }
   .g--border-bottom-right-radius-5 {
-    border-bottom-right-radius: 10px;
+    border-bottom-right-radius: --border-radius-5;
   }
   .g--border-top-left-radius-5 {
-    border-top-left-radius: 10px;
+    border-top-left-radius: --border-radius-5;
   }
   .g--border-radius-6 {
-    border-radius: 12px;
+    border-radius: var(--border-radius-6);
   }
   .g--border-top-right-radius-6 {
-    border-top-right-radius: 12px;
+    border-top-right-radius: var(--border-radius-6);
   }
   .g--border-bottom-left-radius-6 {
-    border-bottom-left-radius: 12px;
+    border-bottom-left-radius: --border-radius-6;
   }
   .g--border-bottom-right-radius-6 {
-    border-bottom-right-radius: 12px;
+    border-bottom-right-radius: --border-radius-6;
   }
   .g--border-top-left-radius-6 {
-    border-top-left-radius: 12px;
+    border-top-left-radius: --border-radius-6;
   }
   .g--border-radius-7 {
-    border-radius: 16px;
+    border-radius: var(--border-radius-7);
   }
   .g--border-top-right-radius-7 {
-    border-top-right-radius: 16px;
+    border-top-right-radius: var(--border-radius-7);
   }
   .g--border-bottom-left-radius-7 {
-    border-bottom-left-radius: 16px;
+    border-bottom-left-radius: --border-radius-7;
   }
   .g--border-bottom-right-radius-7 {
-    border-bottom-right-radius: 16px;
+    border-bottom-right-radius: --border-radius-7;
   }
   .g--border-top-left-radius-7 {
-    border-top-left-radius: 16px;
+    border-top-left-radius: --border-radius-7;
+  }
+  .g--border-radius-8 {
+    border-radius: var(--border-radius-8);
+  }
+  .g--border-top-right-radius-8 {
+    border-top-right-radius: var(--border-radius-8);
+  }
+  .g--border-bottom-left-radius-8 {
+    border-bottom-left-radius: --border-radius-8;
+  }
+  .g--border-bottom-right-radius-8 {
+    border-bottom-right-radius: --border-radius-8;
+  }
+  .g--border-top-left-radius-8 {
+    border-top-left-radius: --border-radius-8;
   }
 }
 @media (min-width: 768px) {
   .tablet\@g--border-radius-1 {
-    border-radius: 0px;
+    border-radius: var(--border-radius-1);
   }
   .tablet\@g--border-top-right-radius-1 {
-    border-top-right-radius: 0px;
+    border-top-right-radius: var(--border-radius-1);
   }
   .tablet\@g--border-bottom-left-radius-1 {
-    border-bottom-left-radius: 0px;
+    border-bottom-left-radius: --border-radius-1;
   }
   .tablet\@g--border-bottom-right-radius-1 {
-    border-bottom-right-radius: 0px;
+    border-bottom-right-radius: --border-radius-1;
   }
   .tablet\@g--border-top-left-radius-1 {
-    border-top-left-radius: 0px;
+    border-top-left-radius: --border-radius-1;
   }
   .tablet\@g--border-radius-2 {
-    border-radius: 4px;
+    border-radius: var(--border-radius-2);
   }
   .tablet\@g--border-top-right-radius-2 {
-    border-top-right-radius: 4px;
+    border-top-right-radius: var(--border-radius-2);
   }
   .tablet\@g--border-bottom-left-radius-2 {
-    border-bottom-left-radius: 4px;
+    border-bottom-left-radius: --border-radius-2;
   }
   .tablet\@g--border-bottom-right-radius-2 {
-    border-bottom-right-radius: 4px;
+    border-bottom-right-radius: --border-radius-2;
   }
   .tablet\@g--border-top-left-radius-2 {
-    border-top-left-radius: 4px;
+    border-top-left-radius: --border-radius-2;
   }
   .tablet\@g--border-radius-3 {
-    border-radius: 6px;
+    border-radius: var(--border-radius-3);
   }
   .tablet\@g--border-top-right-radius-3 {
-    border-top-right-radius: 6px;
+    border-top-right-radius: var(--border-radius-3);
   }
   .tablet\@g--border-bottom-left-radius-3 {
-    border-bottom-left-radius: 6px;
+    border-bottom-left-radius: --border-radius-3;
   }
   .tablet\@g--border-bottom-right-radius-3 {
-    border-bottom-right-radius: 6px;
+    border-bottom-right-radius: --border-radius-3;
   }
   .tablet\@g--border-top-left-radius-3 {
-    border-top-left-radius: 6px;
+    border-top-left-radius: --border-radius-3;
   }
   .tablet\@g--border-radius-4 {
-    border-radius: 8px;
+    border-radius: var(--border-radius-4);
   }
   .tablet\@g--border-top-right-radius-4 {
-    border-top-right-radius: 8px;
+    border-top-right-radius: var(--border-radius-4);
   }
   .tablet\@g--border-bottom-left-radius-4 {
-    border-bottom-left-radius: 8px;
+    border-bottom-left-radius: --border-radius-4;
   }
   .tablet\@g--border-bottom-right-radius-4 {
-    border-bottom-right-radius: 8px;
+    border-bottom-right-radius: --border-radius-4;
   }
   .tablet\@g--border-top-left-radius-4 {
-    border-top-left-radius: 8px;
+    border-top-left-radius: --border-radius-4;
   }
   .tablet\@g--border-radius-5 {
-    border-radius: 10px;
+    border-radius: var(--border-radius-5);
   }
   .tablet\@g--border-top-right-radius-5 {
-    border-top-right-radius: 10px;
+    border-top-right-radius: var(--border-radius-5);
   }
   .tablet\@g--border-bottom-left-radius-5 {
-    border-bottom-left-radius: 10px;
+    border-bottom-left-radius: --border-radius-5;
   }
   .tablet\@g--border-bottom-right-radius-5 {
-    border-bottom-right-radius: 10px;
+    border-bottom-right-radius: --border-radius-5;
   }
   .tablet\@g--border-top-left-radius-5 {
-    border-top-left-radius: 10px;
+    border-top-left-radius: --border-radius-5;
   }
   .tablet\@g--border-radius-6 {
-    border-radius: 12px;
+    border-radius: var(--border-radius-6);
   }
   .tablet\@g--border-top-right-radius-6 {
-    border-top-right-radius: 12px;
+    border-top-right-radius: var(--border-radius-6);
   }
   .tablet\@g--border-bottom-left-radius-6 {
-    border-bottom-left-radius: 12px;
+    border-bottom-left-radius: --border-radius-6;
   }
   .tablet\@g--border-bottom-right-radius-6 {
-    border-bottom-right-radius: 12px;
+    border-bottom-right-radius: --border-radius-6;
   }
   .tablet\@g--border-top-left-radius-6 {
-    border-top-left-radius: 12px;
+    border-top-left-radius: --border-radius-6;
   }
   .tablet\@g--border-radius-7 {
-    border-radius: 16px;
+    border-radius: var(--border-radius-7);
   }
   .tablet\@g--border-top-right-radius-7 {
-    border-top-right-radius: 16px;
+    border-top-right-radius: var(--border-radius-7);
   }
   .tablet\@g--border-bottom-left-radius-7 {
-    border-bottom-left-radius: 16px;
+    border-bottom-left-radius: --border-radius-7;
   }
   .tablet\@g--border-bottom-right-radius-7 {
-    border-bottom-right-radius: 16px;
+    border-bottom-right-radius: --border-radius-7;
   }
   .tablet\@g--border-top-left-radius-7 {
-    border-top-left-radius: 16px;
+    border-top-left-radius: --border-radius-7;
+  }
+  .tablet\@g--border-radius-8 {
+    border-radius: var(--border-radius-8);
+  }
+  .tablet\@g--border-top-right-radius-8 {
+    border-top-right-radius: var(--border-radius-8);
+  }
+  .tablet\@g--border-bottom-left-radius-8 {
+    border-bottom-left-radius: --border-radius-8;
+  }
+  .tablet\@g--border-bottom-right-radius-8 {
+    border-bottom-right-radius: --border-radius-8;
+  }
+  .tablet\@g--border-top-left-radius-8 {
+    border-top-left-radius: --border-radius-8;
   }
 }
 @media (min-width: 992px) {
   .desktop\@g--border-radius-1 {
-    border-radius: 0px;
+    border-radius: var(--border-radius-1);
   }
   .desktop\@g--border-top-right-radius-1 {
-    border-top-right-radius: 0px;
+    border-top-right-radius: var(--border-radius-1);
   }
   .desktop\@g--border-bottom-left-radius-1 {
-    border-bottom-left-radius: 0px;
+    border-bottom-left-radius: --border-radius-1;
   }
   .desktop\@g--border-bottom-right-radius-1 {
-    border-bottom-right-radius: 0px;
+    border-bottom-right-radius: --border-radius-1;
   }
   .desktop\@g--border-top-left-radius-1 {
-    border-top-left-radius: 0px;
+    border-top-left-radius: --border-radius-1;
   }
   .desktop\@g--border-radius-2 {
-    border-radius: 4px;
+    border-radius: var(--border-radius-2);
   }
   .desktop\@g--border-top-right-radius-2 {
-    border-top-right-radius: 4px;
+    border-top-right-radius: var(--border-radius-2);
   }
   .desktop\@g--border-bottom-left-radius-2 {
-    border-bottom-left-radius: 4px;
+    border-bottom-left-radius: --border-radius-2;
   }
   .desktop\@g--border-bottom-right-radius-2 {
-    border-bottom-right-radius: 4px;
+    border-bottom-right-radius: --border-radius-2;
   }
   .desktop\@g--border-top-left-radius-2 {
-    border-top-left-radius: 4px;
+    border-top-left-radius: --border-radius-2;
   }
   .desktop\@g--border-radius-3 {
-    border-radius: 6px;
+    border-radius: var(--border-radius-3);
   }
   .desktop\@g--border-top-right-radius-3 {
-    border-top-right-radius: 6px;
+    border-top-right-radius: var(--border-radius-3);
   }
   .desktop\@g--border-bottom-left-radius-3 {
-    border-bottom-left-radius: 6px;
+    border-bottom-left-radius: --border-radius-3;
   }
   .desktop\@g--border-bottom-right-radius-3 {
-    border-bottom-right-radius: 6px;
+    border-bottom-right-radius: --border-radius-3;
   }
   .desktop\@g--border-top-left-radius-3 {
-    border-top-left-radius: 6px;
+    border-top-left-radius: --border-radius-3;
   }
   .desktop\@g--border-radius-4 {
-    border-radius: 8px;
+    border-radius: var(--border-radius-4);
   }
   .desktop\@g--border-top-right-radius-4 {
-    border-top-right-radius: 8px;
+    border-top-right-radius: var(--border-radius-4);
   }
   .desktop\@g--border-bottom-left-radius-4 {
-    border-bottom-left-radius: 8px;
+    border-bottom-left-radius: --border-radius-4;
   }
   .desktop\@g--border-bottom-right-radius-4 {
-    border-bottom-right-radius: 8px;
+    border-bottom-right-radius: --border-radius-4;
   }
   .desktop\@g--border-top-left-radius-4 {
-    border-top-left-radius: 8px;
+    border-top-left-radius: --border-radius-4;
   }
   .desktop\@g--border-radius-5 {
-    border-radius: 10px;
+    border-radius: var(--border-radius-5);
   }
   .desktop\@g--border-top-right-radius-5 {
-    border-top-right-radius: 10px;
+    border-top-right-radius: var(--border-radius-5);
   }
   .desktop\@g--border-bottom-left-radius-5 {
-    border-bottom-left-radius: 10px;
+    border-bottom-left-radius: --border-radius-5;
   }
   .desktop\@g--border-bottom-right-radius-5 {
-    border-bottom-right-radius: 10px;
+    border-bottom-right-radius: --border-radius-5;
   }
   .desktop\@g--border-top-left-radius-5 {
-    border-top-left-radius: 10px;
+    border-top-left-radius: --border-radius-5;
   }
   .desktop\@g--border-radius-6 {
-    border-radius: 12px;
+    border-radius: var(--border-radius-6);
   }
   .desktop\@g--border-top-right-radius-6 {
-    border-top-right-radius: 12px;
+    border-top-right-radius: var(--border-radius-6);
   }
   .desktop\@g--border-bottom-left-radius-6 {
-    border-bottom-left-radius: 12px;
+    border-bottom-left-radius: --border-radius-6;
   }
   .desktop\@g--border-bottom-right-radius-6 {
-    border-bottom-right-radius: 12px;
+    border-bottom-right-radius: --border-radius-6;
   }
   .desktop\@g--border-top-left-radius-6 {
-    border-top-left-radius: 12px;
+    border-top-left-radius: --border-radius-6;
   }
   .desktop\@g--border-radius-7 {
-    border-radius: 16px;
+    border-radius: var(--border-radius-7);
   }
   .desktop\@g--border-top-right-radius-7 {
-    border-top-right-radius: 16px;
+    border-top-right-radius: var(--border-radius-7);
   }
   .desktop\@g--border-bottom-left-radius-7 {
-    border-bottom-left-radius: 16px;
+    border-bottom-left-radius: --border-radius-7;
   }
   .desktop\@g--border-bottom-right-radius-7 {
-    border-bottom-right-radius: 16px;
+    border-bottom-right-radius: --border-radius-7;
   }
   .desktop\@g--border-top-left-radius-7 {
-    border-top-left-radius: 16px;
+    border-top-left-radius: --border-radius-7;
+  }
+  .desktop\@g--border-radius-8 {
+    border-radius: var(--border-radius-8);
+  }
+  .desktop\@g--border-top-right-radius-8 {
+    border-top-right-radius: var(--border-radius-8);
+  }
+  .desktop\@g--border-bottom-left-radius-8 {
+    border-bottom-left-radius: --border-radius-8;
+  }
+  .desktop\@g--border-bottom-right-radius-8 {
+    border-bottom-right-radius: --border-radius-8;
+  }
+  .desktop\@g--border-top-left-radius-8 {
+    border-top-left-radius: --border-radius-8;
   }
 }
 :root {
-  --height-1: nth($height, $i);
-  --height-2: nth($height, $i);
-  --height-3: nth($height, $i);
-  --height-4: nth($height, $i);
-  --height-5: nth($height, $i);
-  --height-6: nth($height, $i);
-  --height-7: nth($height, $i);
-  --height-8: nth($height, $i);
-  --height-9: nth($height, $i);
-  --height-10: nth($height, $i);
-  --height-11: nth($height, $i);
-  --height-12: nth($height, $i);
-  --height-13: nth($height, $i);
-  --height-14: nth($height, $i);
-  --height-15: nth($height, $i);
-  --height-16: nth($height, $i);
-  --height-17: nth($height, $i);
-  --height-18: nth($height, $i);
-  --height-19: nth($height, $i);
-  --height-20: nth($height, $i);
-  --height-21: nth($height, $i);
-  --height-22: nth($height, $i);
+  --height-1: 0px;
+  --height-2: 4px;
+  --height-3: 6px;
+  --height-4: 8px;
+  --height-5: 10px;
+  --height-6: 12px;
+  --height-7: 16px;
+  --height-8: 20px;
+  --height-9: 24px;
+  --height-10: 32px;
+  --height-11: 40px;
+  --height-12: 48px;
+  --height-13: 64px;
+  --height-14: 80px;
+  --height-15: 96px;
+  --height-16: 128px;
+  --height-17: 160px;
+  --height-18: 192px;
+  --height-19: 224px;
+  --height-20: 256px;
+  --height-21: 320px;
+  --height-22: 480px;
+  --height-23: 640px;
 }
 
 @media (min-width: 0px) {
   .g--height-1 {
-    height: 0px;
+    height: var(--height-1);
   }
   .g--height-2 {
-    height: 4px;
+    height: var(--height-2);
   }
   .g--height-3 {
-    height: 6px;
+    height: var(--height-3);
   }
   .g--height-4 {
-    height: 8px;
+    height: var(--height-4);
   }
   .g--height-5 {
-    height: 10px;
+    height: var(--height-5);
   }
   .g--height-6 {
-    height: 12px;
+    height: var(--height-6);
   }
   .g--height-7 {
-    height: 16px;
+    height: var(--height-7);
   }
   .g--height-8 {
-    height: 20px;
+    height: var(--height-8);
   }
   .g--height-9 {
-    height: 24px;
+    height: var(--height-9);
   }
   .g--height-10 {
-    height: 32px;
+    height: var(--height-10);
   }
   .g--height-11 {
-    height: 40px;
+    height: var(--height-11);
   }
   .g--height-12 {
-    height: 48px;
+    height: var(--height-12);
   }
   .g--height-13 {
-    height: 64px;
+    height: var(--height-13);
   }
   .g--height-14 {
-    height: 80px;
+    height: var(--height-14);
   }
   .g--height-15 {
-    height: 96px;
+    height: var(--height-15);
   }
   .g--height-16 {
-    height: 128px;
+    height: var(--height-16);
   }
   .g--height-17 {
-    height: 160px;
+    height: var(--height-17);
   }
   .g--height-18 {
-    height: 192px;
+    height: var(--height-18);
   }
   .g--height-19 {
-    height: 224px;
+    height: var(--height-19);
   }
   .g--height-20 {
-    height: 256px;
+    height: var(--height-20);
   }
   .g--height-21 {
-    height: 320px;
+    height: var(--height-21);
   }
   .g--height-22 {
-    height: 480px;
+    height: var(--height-22);
+  }
+  .g--height-23 {
+    height: var(--height-23);
   }
 }
 @media (min-width: 768px) {
   .tablet\@g--height-1 {
-    height: 0px;
+    height: var(--height-1);
   }
   .tablet\@g--height-2 {
-    height: 4px;
+    height: var(--height-2);
   }
   .tablet\@g--height-3 {
-    height: 6px;
+    height: var(--height-3);
   }
   .tablet\@g--height-4 {
-    height: 8px;
+    height: var(--height-4);
   }
   .tablet\@g--height-5 {
-    height: 10px;
+    height: var(--height-5);
   }
   .tablet\@g--height-6 {
-    height: 12px;
+    height: var(--height-6);
   }
   .tablet\@g--height-7 {
-    height: 16px;
+    height: var(--height-7);
   }
   .tablet\@g--height-8 {
-    height: 20px;
+    height: var(--height-8);
   }
   .tablet\@g--height-9 {
-    height: 24px;
+    height: var(--height-9);
   }
   .tablet\@g--height-10 {
-    height: 32px;
+    height: var(--height-10);
   }
   .tablet\@g--height-11 {
-    height: 40px;
+    height: var(--height-11);
   }
   .tablet\@g--height-12 {
-    height: 48px;
+    height: var(--height-12);
   }
   .tablet\@g--height-13 {
-    height: 64px;
+    height: var(--height-13);
   }
   .tablet\@g--height-14 {
-    height: 80px;
+    height: var(--height-14);
   }
   .tablet\@g--height-15 {
-    height: 96px;
+    height: var(--height-15);
   }
   .tablet\@g--height-16 {
-    height: 128px;
+    height: var(--height-16);
   }
   .tablet\@g--height-17 {
-    height: 160px;
+    height: var(--height-17);
   }
   .tablet\@g--height-18 {
-    height: 192px;
+    height: var(--height-18);
   }
   .tablet\@g--height-19 {
-    height: 224px;
+    height: var(--height-19);
   }
   .tablet\@g--height-20 {
-    height: 256px;
+    height: var(--height-20);
   }
   .tablet\@g--height-21 {
-    height: 320px;
+    height: var(--height-21);
   }
   .tablet\@g--height-22 {
-    height: 480px;
+    height: var(--height-22);
+  }
+  .tablet\@g--height-23 {
+    height: var(--height-23);
   }
 }
 @media (min-width: 992px) {
   .desktop\@g--height-1 {
-    height: 0px;
+    height: var(--height-1);
   }
   .desktop\@g--height-2 {
-    height: 4px;
+    height: var(--height-2);
   }
   .desktop\@g--height-3 {
-    height: 6px;
+    height: var(--height-3);
   }
   .desktop\@g--height-4 {
-    height: 8px;
+    height: var(--height-4);
   }
   .desktop\@g--height-5 {
-    height: 10px;
+    height: var(--height-5);
   }
   .desktop\@g--height-6 {
-    height: 12px;
+    height: var(--height-6);
   }
   .desktop\@g--height-7 {
-    height: 16px;
+    height: var(--height-7);
   }
   .desktop\@g--height-8 {
-    height: 20px;
+    height: var(--height-8);
   }
   .desktop\@g--height-9 {
-    height: 24px;
+    height: var(--height-9);
   }
   .desktop\@g--height-10 {
-    height: 32px;
+    height: var(--height-10);
   }
   .desktop\@g--height-11 {
-    height: 40px;
+    height: var(--height-11);
   }
   .desktop\@g--height-12 {
-    height: 48px;
+    height: var(--height-12);
   }
   .desktop\@g--height-13 {
-    height: 64px;
+    height: var(--height-13);
   }
   .desktop\@g--height-14 {
-    height: 80px;
+    height: var(--height-14);
   }
   .desktop\@g--height-15 {
-    height: 96px;
+    height: var(--height-15);
   }
   .desktop\@g--height-16 {
-    height: 128px;
+    height: var(--height-16);
   }
   .desktop\@g--height-17 {
-    height: 160px;
+    height: var(--height-17);
   }
   .desktop\@g--height-18 {
-    height: 192px;
+    height: var(--height-18);
   }
   .desktop\@g--height-19 {
-    height: 224px;
+    height: var(--height-19);
   }
   .desktop\@g--height-20 {
-    height: 256px;
+    height: var(--height-20);
   }
   .desktop\@g--height-21 {
-    height: 320px;
+    height: var(--height-21);
   }
   .desktop\@g--height-22 {
-    height: 480px;
+    height: var(--height-22);
+  }
+  .desktop\@g--height-23 {
+    height: var(--height-23);
   }
 }
 :root {
-  --width-1: nth($width, $i);
-  --width-2: nth($width, $i);
-  --width-3: nth($width, $i);
-  --width-4: nth($width, $i);
-  --width-5: nth($width, $i);
-  --width-6: nth($width, $i);
-  --width-7: nth($width, $i);
-  --width-8: nth($width, $i);
-  --width-9: nth($width, $i);
-  --width-10: nth($width, $i);
-  --width-11: nth($width, $i);
-  --width-12: nth($width, $i);
-  --width-13: nth($width, $i);
-  --width-14: nth($width, $i);
-  --width-15: nth($width, $i);
-  --width-16: nth($width, $i);
-  --width-17: nth($width, $i);
-  --width-18: nth($width, $i);
-  --width-19: nth($width, $i);
-  --width-20: nth($width, $i);
-  --width-21: nth($width, $i);
-  --width-22: nth($width, $i);
+  --width-1: 0px;
+  --width-2: 4px;
+  --width-3: 6px;
+  --width-4: 8px;
+  --width-5: 10px;
+  --width-6: 12px;
+  --width-7: 16px;
+  --width-8: 20px;
+  --width-9: 24px;
+  --width-10: 32px;
+  --width-11: 40px;
+  --width-12: 48px;
+  --width-13: 64px;
+  --width-14: 80px;
+  --width-15: 96px;
+  --width-16: 128px;
+  --width-17: 160px;
+  --width-18: 192px;
+  --width-19: 224px;
+  --width-20: 256px;
+  --width-21: 320px;
+  --width-22: 480px;
+  --width-23: 640px;
 }
 
 @media (min-width: 0px) {
   .g--width-1 {
-    width: 0px;
+    width: var(--width-1);
   }
   .g--width-2 {
-    width: 4px;
+    width: var(--width-2);
   }
   .g--width-3 {
-    width: 6px;
+    width: var(--width-3);
   }
   .g--width-4 {
-    width: 8px;
+    width: var(--width-4);
   }
   .g--width-5 {
-    width: 10px;
+    width: var(--width-5);
   }
   .g--width-6 {
-    width: 12px;
+    width: var(--width-6);
   }
   .g--width-7 {
-    width: 16px;
+    width: var(--width-7);
   }
   .g--width-8 {
-    width: 20px;
+    width: var(--width-8);
   }
   .g--width-9 {
-    width: 24px;
+    width: var(--width-9);
   }
   .g--width-10 {
-    width: 32px;
+    width: var(--width-10);
   }
   .g--width-11 {
-    width: 40px;
+    width: var(--width-11);
   }
   .g--width-12 {
-    width: 48px;
+    width: var(--width-12);
   }
   .g--width-13 {
-    width: 64px;
+    width: var(--width-13);
   }
   .g--width-14 {
-    width: 80px;
+    width: var(--width-14);
   }
   .g--width-15 {
-    width: 96px;
+    width: var(--width-15);
   }
   .g--width-16 {
-    width: 128px;
+    width: var(--width-16);
   }
   .g--width-17 {
-    width: 160px;
+    width: var(--width-17);
   }
   .g--width-18 {
-    width: 192px;
+    width: var(--width-18);
   }
   .g--width-19 {
-    width: 224px;
+    width: var(--width-19);
   }
   .g--width-20 {
-    width: 256px;
+    width: var(--width-20);
   }
   .g--width-21 {
-    width: 320px;
+    width: var(--width-21);
   }
   .g--width-22 {
-    width: 480px;
+    width: var(--width-22);
+  }
+  .g--width-23 {
+    width: var(--width-23);
   }
 }
 @media (min-width: 768px) {
   .tablet\@g--width-1 {
-    width: 0px;
+    width: var(--width-1);
   }
   .tablet\@g--width-2 {
-    width: 4px;
+    width: var(--width-2);
   }
   .tablet\@g--width-3 {
-    width: 6px;
+    width: var(--width-3);
   }
   .tablet\@g--width-4 {
-    width: 8px;
+    width: var(--width-4);
   }
   .tablet\@g--width-5 {
-    width: 10px;
+    width: var(--width-5);
   }
   .tablet\@g--width-6 {
-    width: 12px;
+    width: var(--width-6);
   }
   .tablet\@g--width-7 {
-    width: 16px;
+    width: var(--width-7);
   }
   .tablet\@g--width-8 {
-    width: 20px;
+    width: var(--width-8);
   }
   .tablet\@g--width-9 {
-    width: 24px;
+    width: var(--width-9);
   }
   .tablet\@g--width-10 {
-    width: 32px;
+    width: var(--width-10);
   }
   .tablet\@g--width-11 {
-    width: 40px;
+    width: var(--width-11);
   }
   .tablet\@g--width-12 {
-    width: 48px;
+    width: var(--width-12);
   }
   .tablet\@g--width-13 {
-    width: 64px;
+    width: var(--width-13);
   }
   .tablet\@g--width-14 {
-    width: 80px;
+    width: var(--width-14);
   }
   .tablet\@g--width-15 {
-    width: 96px;
+    width: var(--width-15);
   }
   .tablet\@g--width-16 {
-    width: 128px;
+    width: var(--width-16);
   }
   .tablet\@g--width-17 {
-    width: 160px;
+    width: var(--width-17);
   }
   .tablet\@g--width-18 {
-    width: 192px;
+    width: var(--width-18);
   }
   .tablet\@g--width-19 {
-    width: 224px;
+    width: var(--width-19);
   }
   .tablet\@g--width-20 {
-    width: 256px;
+    width: var(--width-20);
   }
   .tablet\@g--width-21 {
-    width: 320px;
+    width: var(--width-21);
   }
   .tablet\@g--width-22 {
-    width: 480px;
+    width: var(--width-22);
+  }
+  .tablet\@g--width-23 {
+    width: var(--width-23);
   }
 }
 @media (min-width: 992px) {
   .desktop\@g--width-1 {
-    width: 0px;
+    width: var(--width-1);
   }
   .desktop\@g--width-2 {
-    width: 4px;
+    width: var(--width-2);
   }
   .desktop\@g--width-3 {
-    width: 6px;
+    width: var(--width-3);
   }
   .desktop\@g--width-4 {
-    width: 8px;
+    width: var(--width-4);
   }
   .desktop\@g--width-5 {
-    width: 10px;
+    width: var(--width-5);
   }
   .desktop\@g--width-6 {
-    width: 12px;
+    width: var(--width-6);
   }
   .desktop\@g--width-7 {
-    width: 16px;
+    width: var(--width-7);
   }
   .desktop\@g--width-8 {
-    width: 20px;
+    width: var(--width-8);
   }
   .desktop\@g--width-9 {
-    width: 24px;
+    width: var(--width-9);
   }
   .desktop\@g--width-10 {
-    width: 32px;
+    width: var(--width-10);
   }
   .desktop\@g--width-11 {
-    width: 40px;
+    width: var(--width-11);
   }
   .desktop\@g--width-12 {
-    width: 48px;
+    width: var(--width-12);
   }
   .desktop\@g--width-13 {
-    width: 64px;
+    width: var(--width-13);
   }
   .desktop\@g--width-14 {
-    width: 80px;
+    width: var(--width-14);
   }
   .desktop\@g--width-15 {
-    width: 96px;
+    width: var(--width-15);
   }
   .desktop\@g--width-16 {
-    width: 128px;
+    width: var(--width-16);
   }
   .desktop\@g--width-17 {
-    width: 160px;
+    width: var(--width-17);
   }
   .desktop\@g--width-18 {
-    width: 192px;
+    width: var(--width-18);
   }
   .desktop\@g--width-19 {
-    width: 224px;
+    width: var(--width-19);
   }
   .desktop\@g--width-20 {
-    width: 256px;
+    width: var(--width-20);
   }
   .desktop\@g--width-21 {
-    width: 320px;
+    width: var(--width-21);
   }
   .desktop\@g--width-22 {
-    width: 480px;
+    width: var(--width-22);
+  }
+  .desktop\@g--width-23 {
+    width: var(--width-23);
   }
 }
 :root {
-  --inset-1: nth($inset, $i);
-  --inset-2: nth($inset, $i);
-  --inset-3: nth($inset, $i);
-  --inset-4: nth($inset, $i);
-  --inset-5: nth($inset, $i);
-  --inset-6: nth($inset, $i);
-  --inset-7: nth($inset, $i);
-  --inset-8: nth($inset, $i);
-  --inset-9: nth($inset, $i);
-  --inset-10: nth($inset, $i);
-  --inset-11: nth($inset, $i);
-  --inset-12: nth($inset, $i);
-  --inset-13: nth($inset, $i);
-  --inset-14: nth($inset, $i);
-  --inset-15: nth($inset, $i);
-  --inset-16: nth($inset, $i);
-  --inset-17: nth($inset, $i);
-  --inset-18: nth($inset, $i);
-  --inset-19: nth($inset, $i);
-  --inset-20: nth($inset, $i);
-  --inset-21: nth($inset, $i);
-  --inset-22: nth($inset, $i);
+  --border-1: 1px;
+  --border-2: 2px;
+  --border-3: 3px;
 }
 
 @media (min-width: 0px) {
-  .g--inset-1 {
-    position: relative;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
+  .g--border--1 {
+    border: var(--border-1) solid black;
   }
-  .g--inset-top-1 {
-    position: relative;
-    top: 0px;
+  .g--border--dashed--1 {
+    border: var(--border-1) dashed black;
   }
-  .g--inset-right-1 {
-    position: relative;
-    right: 0px;
+  .g--borde--dotted--1 {
+    border: var(--border-1) px dotted black;
   }
-  .g--inset-bottom-1 {
-    position: relative;
-    bottom: 0px;
+  .g--border--double--1 {
+    border: var(--border-1) double black;
   }
-  .g--inset-left1- {
-    position: relative;
-    left: 0px;
+  .g--border--groove--1 {
+    border: var(--border-1) groove black;
   }
-  .g--inset-2 {
-    position: relative;
-    top: 4px;
-    right: 4px;
-    bottom: 4px;
-    left: 4px;
+  .g--border--2 {
+    border: var(--border-2) solid black;
   }
-  .g--inset-top-2 {
-    position: relative;
-    top: 4px;
+  .g--border--dashed--2 {
+    border: var(--border-2) dashed black;
   }
-  .g--inset-right-2 {
-    position: relative;
-    right: 4px;
+  .g--borde--dotted--2 {
+    border: var(--border-2) px dotted black;
   }
-  .g--inset-bottom-2 {
-    position: relative;
-    bottom: 4px;
+  .g--border--double--2 {
+    border: var(--border-2) double black;
   }
-  .g--inset-left2- {
-    position: relative;
-    left: 4px;
+  .g--border--groove--2 {
+    border: var(--border-2) groove black;
   }
-  .g--inset-3 {
-    position: relative;
-    top: 6px;
-    right: 6px;
-    bottom: 6px;
-    left: 6px;
+  .g--border--3 {
+    border: var(--border-3) solid black;
   }
-  .g--inset-top-3 {
-    position: relative;
-    top: 6px;
+  .g--border--dashed--3 {
+    border: var(--border-3) dashed black;
   }
-  .g--inset-right-3 {
-    position: relative;
-    right: 6px;
+  .g--borde--dotted--3 {
+    border: var(--border-3) px dotted black;
   }
-  .g--inset-bottom-3 {
-    position: relative;
-    bottom: 6px;
+  .g--border--double--3 {
+    border: var(--border-3) double black;
   }
-  .g--inset-left3- {
-    position: relative;
-    left: 6px;
-  }
-  .g--inset-4 {
-    position: relative;
-    top: 8px;
-    right: 8px;
-    bottom: 8px;
-    left: 8px;
-  }
-  .g--inset-top-4 {
-    position: relative;
-    top: 8px;
-  }
-  .g--inset-right-4 {
-    position: relative;
-    right: 8px;
-  }
-  .g--inset-bottom-4 {
-    position: relative;
-    bottom: 8px;
-  }
-  .g--inset-left4- {
-    position: relative;
-    left: 8px;
-  }
-  .g--inset-5 {
-    position: relative;
-    top: 10px;
-    right: 10px;
-    bottom: 10px;
-    left: 10px;
-  }
-  .g--inset-top-5 {
-    position: relative;
-    top: 10px;
-  }
-  .g--inset-right-5 {
-    position: relative;
-    right: 10px;
-  }
-  .g--inset-bottom-5 {
-    position: relative;
-    bottom: 10px;
-  }
-  .g--inset-left5- {
-    position: relative;
-    left: 10px;
-  }
-  .g--inset-6 {
-    position: relative;
-    top: 12px;
-    right: 12px;
-    bottom: 12px;
-    left: 12px;
-  }
-  .g--inset-top-6 {
-    position: relative;
-    top: 12px;
-  }
-  .g--inset-right-6 {
-    position: relative;
-    right: 12px;
-  }
-  .g--inset-bottom-6 {
-    position: relative;
-    bottom: 12px;
-  }
-  .g--inset-left6- {
-    position: relative;
-    left: 12px;
-  }
-  .g--inset-7 {
-    position: relative;
-    top: 16px;
-    right: 16px;
-    bottom: 16px;
-    left: 16px;
-  }
-  .g--inset-top-7 {
-    position: relative;
-    top: 16px;
-  }
-  .g--inset-right-7 {
-    position: relative;
-    right: 16px;
-  }
-  .g--inset-bottom-7 {
-    position: relative;
-    bottom: 16px;
-  }
-  .g--inset-left7- {
-    position: relative;
-    left: 16px;
-  }
-  .g--inset-8 {
-    position: relative;
-    top: 20px;
-    right: 20px;
-    bottom: 20px;
-    left: 20px;
-  }
-  .g--inset-top-8 {
-    position: relative;
-    top: 20px;
-  }
-  .g--inset-right-8 {
-    position: relative;
-    right: 20px;
-  }
-  .g--inset-bottom-8 {
-    position: relative;
-    bottom: 20px;
-  }
-  .g--inset-left8- {
-    position: relative;
-    left: 20px;
-  }
-  .g--inset-9 {
-    position: relative;
-    top: 24px;
-    right: 24px;
-    bottom: 24px;
-    left: 24px;
-  }
-  .g--inset-top-9 {
-    position: relative;
-    top: 24px;
-  }
-  .g--inset-right-9 {
-    position: relative;
-    right: 24px;
-  }
-  .g--inset-bottom-9 {
-    position: relative;
-    bottom: 24px;
-  }
-  .g--inset-left9- {
-    position: relative;
-    left: 24px;
-  }
-  .g--inset-10 {
-    position: relative;
-    top: 32px;
-    right: 32px;
-    bottom: 32px;
-    left: 32px;
-  }
-  .g--inset-top-10 {
-    position: relative;
-    top: 32px;
-  }
-  .g--inset-right-10 {
-    position: relative;
-    right: 32px;
-  }
-  .g--inset-bottom-10 {
-    position: relative;
-    bottom: 32px;
-  }
-  .g--inset-left10- {
-    position: relative;
-    left: 32px;
-  }
-  .g--inset-11 {
-    position: relative;
-    top: 40px;
-    right: 40px;
-    bottom: 40px;
-    left: 40px;
-  }
-  .g--inset-top-11 {
-    position: relative;
-    top: 40px;
-  }
-  .g--inset-right-11 {
-    position: relative;
-    right: 40px;
-  }
-  .g--inset-bottom-11 {
-    position: relative;
-    bottom: 40px;
-  }
-  .g--inset-left11- {
-    position: relative;
-    left: 40px;
-  }
-  .g--inset-12 {
-    position: relative;
-    top: 48px;
-    right: 48px;
-    bottom: 48px;
-    left: 48px;
-  }
-  .g--inset-top-12 {
-    position: relative;
-    top: 48px;
-  }
-  .g--inset-right-12 {
-    position: relative;
-    right: 48px;
-  }
-  .g--inset-bottom-12 {
-    position: relative;
-    bottom: 48px;
-  }
-  .g--inset-left12- {
-    position: relative;
-    left: 48px;
-  }
-  .g--inset-13 {
-    position: relative;
-    top: 64px;
-    right: 64px;
-    bottom: 64px;
-    left: 64px;
-  }
-  .g--inset-top-13 {
-    position: relative;
-    top: 64px;
-  }
-  .g--inset-right-13 {
-    position: relative;
-    right: 64px;
-  }
-  .g--inset-bottom-13 {
-    position: relative;
-    bottom: 64px;
-  }
-  .g--inset-left13- {
-    position: relative;
-    left: 64px;
-  }
-  .g--inset-14 {
-    position: relative;
-    top: 80px;
-    right: 80px;
-    bottom: 80px;
-    left: 80px;
-  }
-  .g--inset-top-14 {
-    position: relative;
-    top: 80px;
-  }
-  .g--inset-right-14 {
-    position: relative;
-    right: 80px;
-  }
-  .g--inset-bottom-14 {
-    position: relative;
-    bottom: 80px;
-  }
-  .g--inset-left14- {
-    position: relative;
-    left: 80px;
-  }
-  .g--inset-15 {
-    position: relative;
-    top: 96px;
-    right: 96px;
-    bottom: 96px;
-    left: 96px;
-  }
-  .g--inset-top-15 {
-    position: relative;
-    top: 96px;
-  }
-  .g--inset-right-15 {
-    position: relative;
-    right: 96px;
-  }
-  .g--inset-bottom-15 {
-    position: relative;
-    bottom: 96px;
-  }
-  .g--inset-left15- {
-    position: relative;
-    left: 96px;
-  }
-  .g--inset-16 {
-    position: relative;
-    top: 128px;
-    right: 128px;
-    bottom: 128px;
-    left: 128px;
-  }
-  .g--inset-top-16 {
-    position: relative;
-    top: 128px;
-  }
-  .g--inset-right-16 {
-    position: relative;
-    right: 128px;
-  }
-  .g--inset-bottom-16 {
-    position: relative;
-    bottom: 128px;
-  }
-  .g--inset-left16- {
-    position: relative;
-    left: 128px;
-  }
-  .g--inset-17 {
-    position: relative;
-    top: 160px;
-    right: 160px;
-    bottom: 160px;
-    left: 160px;
-  }
-  .g--inset-top-17 {
-    position: relative;
-    top: 160px;
-  }
-  .g--inset-right-17 {
-    position: relative;
-    right: 160px;
-  }
-  .g--inset-bottom-17 {
-    position: relative;
-    bottom: 160px;
-  }
-  .g--inset-left17- {
-    position: relative;
-    left: 160px;
-  }
-  .g--inset-18 {
-    position: relative;
-    top: 192px;
-    right: 192px;
-    bottom: 192px;
-    left: 192px;
-  }
-  .g--inset-top-18 {
-    position: relative;
-    top: 192px;
-  }
-  .g--inset-right-18 {
-    position: relative;
-    right: 192px;
-  }
-  .g--inset-bottom-18 {
-    position: relative;
-    bottom: 192px;
-  }
-  .g--inset-left18- {
-    position: relative;
-    left: 192px;
-  }
-  .g--inset-19 {
-    position: relative;
-    top: 224px;
-    right: 224px;
-    bottom: 224px;
-    left: 224px;
-  }
-  .g--inset-top-19 {
-    position: relative;
-    top: 224px;
-  }
-  .g--inset-right-19 {
-    position: relative;
-    right: 224px;
-  }
-  .g--inset-bottom-19 {
-    position: relative;
-    bottom: 224px;
-  }
-  .g--inset-left19- {
-    position: relative;
-    left: 224px;
-  }
-  .g--inset-20 {
-    position: relative;
-    top: 256px;
-    right: 256px;
-    bottom: 256px;
-    left: 256px;
-  }
-  .g--inset-top-20 {
-    position: relative;
-    top: 256px;
-  }
-  .g--inset-right-20 {
-    position: relative;
-    right: 256px;
-  }
-  .g--inset-bottom-20 {
-    position: relative;
-    bottom: 256px;
-  }
-  .g--inset-left20- {
-    position: relative;
-    left: 256px;
-  }
-  .g--inset-21 {
-    position: relative;
-    top: 320px;
-    right: 320px;
-    bottom: 320px;
-    left: 320px;
-  }
-  .g--inset-top-21 {
-    position: relative;
-    top: 320px;
-  }
-  .g--inset-right-21 {
-    position: relative;
-    right: 320px;
-  }
-  .g--inset-bottom-21 {
-    position: relative;
-    bottom: 320px;
-  }
-  .g--inset-left21- {
-    position: relative;
-    left: 320px;
-  }
-  .g--inset-22 {
-    position: relative;
-    top: 480px;
-    right: 480px;
-    bottom: 480px;
-    left: 480px;
-  }
-  .g--inset-top-22 {
-    position: relative;
-    top: 480px;
-  }
-  .g--inset-right-22 {
-    position: relative;
-    right: 480px;
-  }
-  .g--inset-bottom-22 {
-    position: relative;
-    bottom: 480px;
-  }
-  .g--inset-left22- {
-    position: relative;
-    left: 480px;
+  .g--border--groove--3 {
+    border: var(--border-3) groove black;
   }
 }
 @media (min-width: 768px) {
-  .tablet\@g--inset-1 {
-    position: relative;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
+  .tablet\@g--border--1 {
+    border: var(--border-1) solid black;
   }
-  .tablet\@g--inset-top-1 {
-    position: relative;
-    top: 0px;
+  .tablet\@g--border--dashed--1 {
+    border: var(--border-1) dashed black;
   }
-  .tablet\@g--inset-right-1 {
-    position: relative;
-    right: 0px;
+  .tablet\@g--borde--dotted--1 {
+    border: var(--border-1) px dotted black;
   }
-  .tablet\@g--inset-bottom-1 {
-    position: relative;
-    bottom: 0px;
+  .tablet\@g--border--double--1 {
+    border: var(--border-1) double black;
   }
-  .tablet\@g--inset-left1- {
-    position: relative;
-    left: 0px;
+  .tablet\@g--border--groove--1 {
+    border: var(--border-1) groove black;
   }
-  .tablet\@g--inset-2 {
-    position: relative;
-    top: 4px;
-    right: 4px;
-    bottom: 4px;
-    left: 4px;
+  .tablet\@g--border--2 {
+    border: var(--border-2) solid black;
   }
-  .tablet\@g--inset-top-2 {
-    position: relative;
-    top: 4px;
+  .tablet\@g--border--dashed--2 {
+    border: var(--border-2) dashed black;
   }
-  .tablet\@g--inset-right-2 {
-    position: relative;
-    right: 4px;
+  .tablet\@g--borde--dotted--2 {
+    border: var(--border-2) px dotted black;
   }
-  .tablet\@g--inset-bottom-2 {
-    position: relative;
-    bottom: 4px;
+  .tablet\@g--border--double--2 {
+    border: var(--border-2) double black;
   }
-  .tablet\@g--inset-left2- {
-    position: relative;
-    left: 4px;
+  .tablet\@g--border--groove--2 {
+    border: var(--border-2) groove black;
   }
-  .tablet\@g--inset-3 {
-    position: relative;
-    top: 6px;
-    right: 6px;
-    bottom: 6px;
-    left: 6px;
+  .tablet\@g--border--3 {
+    border: var(--border-3) solid black;
   }
-  .tablet\@g--inset-top-3 {
-    position: relative;
-    top: 6px;
+  .tablet\@g--border--dashed--3 {
+    border: var(--border-3) dashed black;
   }
-  .tablet\@g--inset-right-3 {
-    position: relative;
-    right: 6px;
+  .tablet\@g--borde--dotted--3 {
+    border: var(--border-3) px dotted black;
   }
-  .tablet\@g--inset-bottom-3 {
-    position: relative;
-    bottom: 6px;
+  .tablet\@g--border--double--3 {
+    border: var(--border-3) double black;
   }
-  .tablet\@g--inset-left3- {
-    position: relative;
-    left: 6px;
-  }
-  .tablet\@g--inset-4 {
-    position: relative;
-    top: 8px;
-    right: 8px;
-    bottom: 8px;
-    left: 8px;
-  }
-  .tablet\@g--inset-top-4 {
-    position: relative;
-    top: 8px;
-  }
-  .tablet\@g--inset-right-4 {
-    position: relative;
-    right: 8px;
-  }
-  .tablet\@g--inset-bottom-4 {
-    position: relative;
-    bottom: 8px;
-  }
-  .tablet\@g--inset-left4- {
-    position: relative;
-    left: 8px;
-  }
-  .tablet\@g--inset-5 {
-    position: relative;
-    top: 10px;
-    right: 10px;
-    bottom: 10px;
-    left: 10px;
-  }
-  .tablet\@g--inset-top-5 {
-    position: relative;
-    top: 10px;
-  }
-  .tablet\@g--inset-right-5 {
-    position: relative;
-    right: 10px;
-  }
-  .tablet\@g--inset-bottom-5 {
-    position: relative;
-    bottom: 10px;
-  }
-  .tablet\@g--inset-left5- {
-    position: relative;
-    left: 10px;
-  }
-  .tablet\@g--inset-6 {
-    position: relative;
-    top: 12px;
-    right: 12px;
-    bottom: 12px;
-    left: 12px;
-  }
-  .tablet\@g--inset-top-6 {
-    position: relative;
-    top: 12px;
-  }
-  .tablet\@g--inset-right-6 {
-    position: relative;
-    right: 12px;
-  }
-  .tablet\@g--inset-bottom-6 {
-    position: relative;
-    bottom: 12px;
-  }
-  .tablet\@g--inset-left6- {
-    position: relative;
-    left: 12px;
-  }
-  .tablet\@g--inset-7 {
-    position: relative;
-    top: 16px;
-    right: 16px;
-    bottom: 16px;
-    left: 16px;
-  }
-  .tablet\@g--inset-top-7 {
-    position: relative;
-    top: 16px;
-  }
-  .tablet\@g--inset-right-7 {
-    position: relative;
-    right: 16px;
-  }
-  .tablet\@g--inset-bottom-7 {
-    position: relative;
-    bottom: 16px;
-  }
-  .tablet\@g--inset-left7- {
-    position: relative;
-    left: 16px;
-  }
-  .tablet\@g--inset-8 {
-    position: relative;
-    top: 20px;
-    right: 20px;
-    bottom: 20px;
-    left: 20px;
-  }
-  .tablet\@g--inset-top-8 {
-    position: relative;
-    top: 20px;
-  }
-  .tablet\@g--inset-right-8 {
-    position: relative;
-    right: 20px;
-  }
-  .tablet\@g--inset-bottom-8 {
-    position: relative;
-    bottom: 20px;
-  }
-  .tablet\@g--inset-left8- {
-    position: relative;
-    left: 20px;
-  }
-  .tablet\@g--inset-9 {
-    position: relative;
-    top: 24px;
-    right: 24px;
-    bottom: 24px;
-    left: 24px;
-  }
-  .tablet\@g--inset-top-9 {
-    position: relative;
-    top: 24px;
-  }
-  .tablet\@g--inset-right-9 {
-    position: relative;
-    right: 24px;
-  }
-  .tablet\@g--inset-bottom-9 {
-    position: relative;
-    bottom: 24px;
-  }
-  .tablet\@g--inset-left9- {
-    position: relative;
-    left: 24px;
-  }
-  .tablet\@g--inset-10 {
-    position: relative;
-    top: 32px;
-    right: 32px;
-    bottom: 32px;
-    left: 32px;
-  }
-  .tablet\@g--inset-top-10 {
-    position: relative;
-    top: 32px;
-  }
-  .tablet\@g--inset-right-10 {
-    position: relative;
-    right: 32px;
-  }
-  .tablet\@g--inset-bottom-10 {
-    position: relative;
-    bottom: 32px;
-  }
-  .tablet\@g--inset-left10- {
-    position: relative;
-    left: 32px;
-  }
-  .tablet\@g--inset-11 {
-    position: relative;
-    top: 40px;
-    right: 40px;
-    bottom: 40px;
-    left: 40px;
-  }
-  .tablet\@g--inset-top-11 {
-    position: relative;
-    top: 40px;
-  }
-  .tablet\@g--inset-right-11 {
-    position: relative;
-    right: 40px;
-  }
-  .tablet\@g--inset-bottom-11 {
-    position: relative;
-    bottom: 40px;
-  }
-  .tablet\@g--inset-left11- {
-    position: relative;
-    left: 40px;
-  }
-  .tablet\@g--inset-12 {
-    position: relative;
-    top: 48px;
-    right: 48px;
-    bottom: 48px;
-    left: 48px;
-  }
-  .tablet\@g--inset-top-12 {
-    position: relative;
-    top: 48px;
-  }
-  .tablet\@g--inset-right-12 {
-    position: relative;
-    right: 48px;
-  }
-  .tablet\@g--inset-bottom-12 {
-    position: relative;
-    bottom: 48px;
-  }
-  .tablet\@g--inset-left12- {
-    position: relative;
-    left: 48px;
-  }
-  .tablet\@g--inset-13 {
-    position: relative;
-    top: 64px;
-    right: 64px;
-    bottom: 64px;
-    left: 64px;
-  }
-  .tablet\@g--inset-top-13 {
-    position: relative;
-    top: 64px;
-  }
-  .tablet\@g--inset-right-13 {
-    position: relative;
-    right: 64px;
-  }
-  .tablet\@g--inset-bottom-13 {
-    position: relative;
-    bottom: 64px;
-  }
-  .tablet\@g--inset-left13- {
-    position: relative;
-    left: 64px;
-  }
-  .tablet\@g--inset-14 {
-    position: relative;
-    top: 80px;
-    right: 80px;
-    bottom: 80px;
-    left: 80px;
-  }
-  .tablet\@g--inset-top-14 {
-    position: relative;
-    top: 80px;
-  }
-  .tablet\@g--inset-right-14 {
-    position: relative;
-    right: 80px;
-  }
-  .tablet\@g--inset-bottom-14 {
-    position: relative;
-    bottom: 80px;
-  }
-  .tablet\@g--inset-left14- {
-    position: relative;
-    left: 80px;
-  }
-  .tablet\@g--inset-15 {
-    position: relative;
-    top: 96px;
-    right: 96px;
-    bottom: 96px;
-    left: 96px;
-  }
-  .tablet\@g--inset-top-15 {
-    position: relative;
-    top: 96px;
-  }
-  .tablet\@g--inset-right-15 {
-    position: relative;
-    right: 96px;
-  }
-  .tablet\@g--inset-bottom-15 {
-    position: relative;
-    bottom: 96px;
-  }
-  .tablet\@g--inset-left15- {
-    position: relative;
-    left: 96px;
-  }
-  .tablet\@g--inset-16 {
-    position: relative;
-    top: 128px;
-    right: 128px;
-    bottom: 128px;
-    left: 128px;
-  }
-  .tablet\@g--inset-top-16 {
-    position: relative;
-    top: 128px;
-  }
-  .tablet\@g--inset-right-16 {
-    position: relative;
-    right: 128px;
-  }
-  .tablet\@g--inset-bottom-16 {
-    position: relative;
-    bottom: 128px;
-  }
-  .tablet\@g--inset-left16- {
-    position: relative;
-    left: 128px;
-  }
-  .tablet\@g--inset-17 {
-    position: relative;
-    top: 160px;
-    right: 160px;
-    bottom: 160px;
-    left: 160px;
-  }
-  .tablet\@g--inset-top-17 {
-    position: relative;
-    top: 160px;
-  }
-  .tablet\@g--inset-right-17 {
-    position: relative;
-    right: 160px;
-  }
-  .tablet\@g--inset-bottom-17 {
-    position: relative;
-    bottom: 160px;
-  }
-  .tablet\@g--inset-left17- {
-    position: relative;
-    left: 160px;
-  }
-  .tablet\@g--inset-18 {
-    position: relative;
-    top: 192px;
-    right: 192px;
-    bottom: 192px;
-    left: 192px;
-  }
-  .tablet\@g--inset-top-18 {
-    position: relative;
-    top: 192px;
-  }
-  .tablet\@g--inset-right-18 {
-    position: relative;
-    right: 192px;
-  }
-  .tablet\@g--inset-bottom-18 {
-    position: relative;
-    bottom: 192px;
-  }
-  .tablet\@g--inset-left18- {
-    position: relative;
-    left: 192px;
-  }
-  .tablet\@g--inset-19 {
-    position: relative;
-    top: 224px;
-    right: 224px;
-    bottom: 224px;
-    left: 224px;
-  }
-  .tablet\@g--inset-top-19 {
-    position: relative;
-    top: 224px;
-  }
-  .tablet\@g--inset-right-19 {
-    position: relative;
-    right: 224px;
-  }
-  .tablet\@g--inset-bottom-19 {
-    position: relative;
-    bottom: 224px;
-  }
-  .tablet\@g--inset-left19- {
-    position: relative;
-    left: 224px;
-  }
-  .tablet\@g--inset-20 {
-    position: relative;
-    top: 256px;
-    right: 256px;
-    bottom: 256px;
-    left: 256px;
-  }
-  .tablet\@g--inset-top-20 {
-    position: relative;
-    top: 256px;
-  }
-  .tablet\@g--inset-right-20 {
-    position: relative;
-    right: 256px;
-  }
-  .tablet\@g--inset-bottom-20 {
-    position: relative;
-    bottom: 256px;
-  }
-  .tablet\@g--inset-left20- {
-    position: relative;
-    left: 256px;
-  }
-  .tablet\@g--inset-21 {
-    position: relative;
-    top: 320px;
-    right: 320px;
-    bottom: 320px;
-    left: 320px;
-  }
-  .tablet\@g--inset-top-21 {
-    position: relative;
-    top: 320px;
-  }
-  .tablet\@g--inset-right-21 {
-    position: relative;
-    right: 320px;
-  }
-  .tablet\@g--inset-bottom-21 {
-    position: relative;
-    bottom: 320px;
-  }
-  .tablet\@g--inset-left21- {
-    position: relative;
-    left: 320px;
-  }
-  .tablet\@g--inset-22 {
-    position: relative;
-    top: 480px;
-    right: 480px;
-    bottom: 480px;
-    left: 480px;
-  }
-  .tablet\@g--inset-top-22 {
-    position: relative;
-    top: 480px;
-  }
-  .tablet\@g--inset-right-22 {
-    position: relative;
-    right: 480px;
-  }
-  .tablet\@g--inset-bottom-22 {
-    position: relative;
-    bottom: 480px;
-  }
-  .tablet\@g--inset-left22- {
-    position: relative;
-    left: 480px;
+  .tablet\@g--border--groove--3 {
+    border: var(--border-3) groove black;
   }
 }
 @media (min-width: 992px) {
-  .desktop\@g--inset-1 {
-    position: relative;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
+  .desktop\@g--border--1 {
+    border: var(--border-1) solid black;
   }
-  .desktop\@g--inset-top-1 {
-    position: relative;
-    top: 0px;
+  .desktop\@g--border--dashed--1 {
+    border: var(--border-1) dashed black;
   }
-  .desktop\@g--inset-right-1 {
-    position: relative;
-    right: 0px;
+  .desktop\@g--borde--dotted--1 {
+    border: var(--border-1) px dotted black;
   }
-  .desktop\@g--inset-bottom-1 {
-    position: relative;
-    bottom: 0px;
+  .desktop\@g--border--double--1 {
+    border: var(--border-1) double black;
   }
-  .desktop\@g--inset-left1- {
-    position: relative;
-    left: 0px;
+  .desktop\@g--border--groove--1 {
+    border: var(--border-1) groove black;
   }
-  .desktop\@g--inset-2 {
-    position: relative;
-    top: 4px;
-    right: 4px;
-    bottom: 4px;
-    left: 4px;
+  .desktop\@g--border--2 {
+    border: var(--border-2) solid black;
   }
-  .desktop\@g--inset-top-2 {
-    position: relative;
-    top: 4px;
+  .desktop\@g--border--dashed--2 {
+    border: var(--border-2) dashed black;
   }
-  .desktop\@g--inset-right-2 {
-    position: relative;
-    right: 4px;
+  .desktop\@g--borde--dotted--2 {
+    border: var(--border-2) px dotted black;
   }
-  .desktop\@g--inset-bottom-2 {
-    position: relative;
-    bottom: 4px;
+  .desktop\@g--border--double--2 {
+    border: var(--border-2) double black;
   }
-  .desktop\@g--inset-left2- {
-    position: relative;
-    left: 4px;
+  .desktop\@g--border--groove--2 {
+    border: var(--border-2) groove black;
   }
-  .desktop\@g--inset-3 {
-    position: relative;
-    top: 6px;
-    right: 6px;
-    bottom: 6px;
-    left: 6px;
+  .desktop\@g--border--3 {
+    border: var(--border-3) solid black;
   }
-  .desktop\@g--inset-top-3 {
-    position: relative;
-    top: 6px;
+  .desktop\@g--border--dashed--3 {
+    border: var(--border-3) dashed black;
   }
-  .desktop\@g--inset-right-3 {
-    position: relative;
-    right: 6px;
+  .desktop\@g--borde--dotted--3 {
+    border: var(--border-3) px dotted black;
   }
-  .desktop\@g--inset-bottom-3 {
-    position: relative;
-    bottom: 6px;
+  .desktop\@g--border--double--3 {
+    border: var(--border-3) double black;
   }
-  .desktop\@g--inset-left3- {
-    position: relative;
-    left: 6px;
-  }
-  .desktop\@g--inset-4 {
-    position: relative;
-    top: 8px;
-    right: 8px;
-    bottom: 8px;
-    left: 8px;
-  }
-  .desktop\@g--inset-top-4 {
-    position: relative;
-    top: 8px;
-  }
-  .desktop\@g--inset-right-4 {
-    position: relative;
-    right: 8px;
-  }
-  .desktop\@g--inset-bottom-4 {
-    position: relative;
-    bottom: 8px;
-  }
-  .desktop\@g--inset-left4- {
-    position: relative;
-    left: 8px;
-  }
-  .desktop\@g--inset-5 {
-    position: relative;
-    top: 10px;
-    right: 10px;
-    bottom: 10px;
-    left: 10px;
-  }
-  .desktop\@g--inset-top-5 {
-    position: relative;
-    top: 10px;
-  }
-  .desktop\@g--inset-right-5 {
-    position: relative;
-    right: 10px;
-  }
-  .desktop\@g--inset-bottom-5 {
-    position: relative;
-    bottom: 10px;
-  }
-  .desktop\@g--inset-left5- {
-    position: relative;
-    left: 10px;
-  }
-  .desktop\@g--inset-6 {
-    position: relative;
-    top: 12px;
-    right: 12px;
-    bottom: 12px;
-    left: 12px;
-  }
-  .desktop\@g--inset-top-6 {
-    position: relative;
-    top: 12px;
-  }
-  .desktop\@g--inset-right-6 {
-    position: relative;
-    right: 12px;
-  }
-  .desktop\@g--inset-bottom-6 {
-    position: relative;
-    bottom: 12px;
-  }
-  .desktop\@g--inset-left6- {
-    position: relative;
-    left: 12px;
-  }
-  .desktop\@g--inset-7 {
-    position: relative;
-    top: 16px;
-    right: 16px;
-    bottom: 16px;
-    left: 16px;
-  }
-  .desktop\@g--inset-top-7 {
-    position: relative;
-    top: 16px;
-  }
-  .desktop\@g--inset-right-7 {
-    position: relative;
-    right: 16px;
-  }
-  .desktop\@g--inset-bottom-7 {
-    position: relative;
-    bottom: 16px;
-  }
-  .desktop\@g--inset-left7- {
-    position: relative;
-    left: 16px;
-  }
-  .desktop\@g--inset-8 {
-    position: relative;
-    top: 20px;
-    right: 20px;
-    bottom: 20px;
-    left: 20px;
-  }
-  .desktop\@g--inset-top-8 {
-    position: relative;
-    top: 20px;
-  }
-  .desktop\@g--inset-right-8 {
-    position: relative;
-    right: 20px;
-  }
-  .desktop\@g--inset-bottom-8 {
-    position: relative;
-    bottom: 20px;
-  }
-  .desktop\@g--inset-left8- {
-    position: relative;
-    left: 20px;
-  }
-  .desktop\@g--inset-9 {
-    position: relative;
-    top: 24px;
-    right: 24px;
-    bottom: 24px;
-    left: 24px;
-  }
-  .desktop\@g--inset-top-9 {
-    position: relative;
-    top: 24px;
-  }
-  .desktop\@g--inset-right-9 {
-    position: relative;
-    right: 24px;
-  }
-  .desktop\@g--inset-bottom-9 {
-    position: relative;
-    bottom: 24px;
-  }
-  .desktop\@g--inset-left9- {
-    position: relative;
-    left: 24px;
-  }
-  .desktop\@g--inset-10 {
-    position: relative;
-    top: 32px;
-    right: 32px;
-    bottom: 32px;
-    left: 32px;
-  }
-  .desktop\@g--inset-top-10 {
-    position: relative;
-    top: 32px;
-  }
-  .desktop\@g--inset-right-10 {
-    position: relative;
-    right: 32px;
-  }
-  .desktop\@g--inset-bottom-10 {
-    position: relative;
-    bottom: 32px;
-  }
-  .desktop\@g--inset-left10- {
-    position: relative;
-    left: 32px;
-  }
-  .desktop\@g--inset-11 {
-    position: relative;
-    top: 40px;
-    right: 40px;
-    bottom: 40px;
-    left: 40px;
-  }
-  .desktop\@g--inset-top-11 {
-    position: relative;
-    top: 40px;
-  }
-  .desktop\@g--inset-right-11 {
-    position: relative;
-    right: 40px;
-  }
-  .desktop\@g--inset-bottom-11 {
-    position: relative;
-    bottom: 40px;
-  }
-  .desktop\@g--inset-left11- {
-    position: relative;
-    left: 40px;
-  }
-  .desktop\@g--inset-12 {
-    position: relative;
-    top: 48px;
-    right: 48px;
-    bottom: 48px;
-    left: 48px;
-  }
-  .desktop\@g--inset-top-12 {
-    position: relative;
-    top: 48px;
-  }
-  .desktop\@g--inset-right-12 {
-    position: relative;
-    right: 48px;
-  }
-  .desktop\@g--inset-bottom-12 {
-    position: relative;
-    bottom: 48px;
-  }
-  .desktop\@g--inset-left12- {
-    position: relative;
-    left: 48px;
-  }
-  .desktop\@g--inset-13 {
-    position: relative;
-    top: 64px;
-    right: 64px;
-    bottom: 64px;
-    left: 64px;
-  }
-  .desktop\@g--inset-top-13 {
-    position: relative;
-    top: 64px;
-  }
-  .desktop\@g--inset-right-13 {
-    position: relative;
-    right: 64px;
-  }
-  .desktop\@g--inset-bottom-13 {
-    position: relative;
-    bottom: 64px;
-  }
-  .desktop\@g--inset-left13- {
-    position: relative;
-    left: 64px;
-  }
-  .desktop\@g--inset-14 {
-    position: relative;
-    top: 80px;
-    right: 80px;
-    bottom: 80px;
-    left: 80px;
-  }
-  .desktop\@g--inset-top-14 {
-    position: relative;
-    top: 80px;
-  }
-  .desktop\@g--inset-right-14 {
-    position: relative;
-    right: 80px;
-  }
-  .desktop\@g--inset-bottom-14 {
-    position: relative;
-    bottom: 80px;
-  }
-  .desktop\@g--inset-left14- {
-    position: relative;
-    left: 80px;
-  }
-  .desktop\@g--inset-15 {
-    position: relative;
-    top: 96px;
-    right: 96px;
-    bottom: 96px;
-    left: 96px;
-  }
-  .desktop\@g--inset-top-15 {
-    position: relative;
-    top: 96px;
-  }
-  .desktop\@g--inset-right-15 {
-    position: relative;
-    right: 96px;
-  }
-  .desktop\@g--inset-bottom-15 {
-    position: relative;
-    bottom: 96px;
-  }
-  .desktop\@g--inset-left15- {
-    position: relative;
-    left: 96px;
-  }
-  .desktop\@g--inset-16 {
-    position: relative;
-    top: 128px;
-    right: 128px;
-    bottom: 128px;
-    left: 128px;
-  }
-  .desktop\@g--inset-top-16 {
-    position: relative;
-    top: 128px;
-  }
-  .desktop\@g--inset-right-16 {
-    position: relative;
-    right: 128px;
-  }
-  .desktop\@g--inset-bottom-16 {
-    position: relative;
-    bottom: 128px;
-  }
-  .desktop\@g--inset-left16- {
-    position: relative;
-    left: 128px;
-  }
-  .desktop\@g--inset-17 {
-    position: relative;
-    top: 160px;
-    right: 160px;
-    bottom: 160px;
-    left: 160px;
-  }
-  .desktop\@g--inset-top-17 {
-    position: relative;
-    top: 160px;
-  }
-  .desktop\@g--inset-right-17 {
-    position: relative;
-    right: 160px;
-  }
-  .desktop\@g--inset-bottom-17 {
-    position: relative;
-    bottom: 160px;
-  }
-  .desktop\@g--inset-left17- {
-    position: relative;
-    left: 160px;
-  }
-  .desktop\@g--inset-18 {
-    position: relative;
-    top: 192px;
-    right: 192px;
-    bottom: 192px;
-    left: 192px;
-  }
-  .desktop\@g--inset-top-18 {
-    position: relative;
-    top: 192px;
-  }
-  .desktop\@g--inset-right-18 {
-    position: relative;
-    right: 192px;
-  }
-  .desktop\@g--inset-bottom-18 {
-    position: relative;
-    bottom: 192px;
-  }
-  .desktop\@g--inset-left18- {
-    position: relative;
-    left: 192px;
-  }
-  .desktop\@g--inset-19 {
-    position: relative;
-    top: 224px;
-    right: 224px;
-    bottom: 224px;
-    left: 224px;
-  }
-  .desktop\@g--inset-top-19 {
-    position: relative;
-    top: 224px;
-  }
-  .desktop\@g--inset-right-19 {
-    position: relative;
-    right: 224px;
-  }
-  .desktop\@g--inset-bottom-19 {
-    position: relative;
-    bottom: 224px;
-  }
-  .desktop\@g--inset-left19- {
-    position: relative;
-    left: 224px;
-  }
-  .desktop\@g--inset-20 {
-    position: relative;
-    top: 256px;
-    right: 256px;
-    bottom: 256px;
-    left: 256px;
-  }
-  .desktop\@g--inset-top-20 {
-    position: relative;
-    top: 256px;
-  }
-  .desktop\@g--inset-right-20 {
-    position: relative;
-    right: 256px;
-  }
-  .desktop\@g--inset-bottom-20 {
-    position: relative;
-    bottom: 256px;
-  }
-  .desktop\@g--inset-left20- {
-    position: relative;
-    left: 256px;
-  }
-  .desktop\@g--inset-21 {
-    position: relative;
-    top: 320px;
-    right: 320px;
-    bottom: 320px;
-    left: 320px;
-  }
-  .desktop\@g--inset-top-21 {
-    position: relative;
-    top: 320px;
-  }
-  .desktop\@g--inset-right-21 {
-    position: relative;
-    right: 320px;
-  }
-  .desktop\@g--inset-bottom-21 {
-    position: relative;
-    bottom: 320px;
-  }
-  .desktop\@g--inset-left21- {
-    position: relative;
-    left: 320px;
-  }
-  .desktop\@g--inset-22 {
-    position: relative;
-    top: 480px;
-    right: 480px;
-    bottom: 480px;
-    left: 480px;
-  }
-  .desktop\@g--inset-top-22 {
-    position: relative;
-    top: 480px;
-  }
-  .desktop\@g--inset-right-22 {
-    position: relative;
-    right: 480px;
-  }
-  .desktop\@g--inset-bottom-22 {
-    position: relative;
-    bottom: 480px;
-  }
-  .desktop\@g--inset-left22- {
-    position: relative;
-    left: 480px;
+  .desktop\@g--border--groove--3 {
+    border: var(--border-3) groove black;
   }
 }
 :root {
-  --font-family-sans-1: system-ui;
-  --font-family-sans-2:  -apple-system;
-  --font-family-sans-3: BlinkMacSystemFont;
-  --font-family-sans-4:  "Segoe UI";
-  --font-family-sans-5: Roboto;
-  --font-family-sans-6: "Helvetica Neue";
-  --font-family-sans-7: Arial;
-  --font-family-sans-8: "Noto Sans";
-  --font-family-sans-9: sans-serif;
-  --font-family-sans-10: "Apple Color Emoji";
-  --font-family-sans-11: "Segoe UI Emoji";
-  --font-family-sans-12: "Segoe UI Symbol";
-  --font-family-sans-13: "Noto Color Emoji" ;
-  --font-family-default-1: system-ui;
-  --font-family-default-2: -apple-system;
-  --font-family-default-3: BlinkMacSystemFont;
-  --font-family-default-4: "Segoe UI";
-  --font-family-default-5: Roboto;
-  --font-family-default-6: "Helvetica Neue";
-  --font-family-default-7: Arial;
-  --font-family-default-8: "Noto Sans";
-  --font-family-default-9: sans-serif;
-  --font-family-default-10: "Apple Color Emoji";
-  --font-family-default-11: "Segoe UI Emoji";
-  --font-family-default-12: "Segoe UI Symbol";
-  --font-family-default-13: "Noto Color Emoji";
-  --font-family-serif-1: Georgia;
-  --font-family-serif-2: Cambria;
-  --font-family-serif-3: "Times New Roman";
-  --font-family-serif-4: Times;
-  --font-family-serif-5: serif;
-  --font-family-mono-1: "Roboto Mono";
-  --font-family-mono-2: Menlo;
-  --font-family-mono-3: Monaco;
-  --font-family-mono-4: Consolas;
-  --font-family-mono-5: "Liberation Mono";
-  --font-family-mono-6: "Courier New";
-  --font-family-mono-7: monospace;
+  --font-family-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" ;
+  --font-family-default: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" ;
+  --font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-family-mono: "Roboto Mono",Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 @media (min-width: 0px) {
-  .g--font-family-sans--1 {
-    font-family: system-ui;
+  .g--font-family-sans {
+    font-family: var(--font-family-sans);
   }
-  .g--font-family-sans--2 {
-    font-family:  -apple-system;
+  .g--font-family-default {
+    font-family: var(--font-family-default);
   }
-  .g--font-family-sans--3 {
-    font-family: BlinkMacSystemFont;
+  .g--font-family-serif {
+    font-family: var(--font-family-serif);
   }
-  .g--font-family-sans--4 {
-    font-family:  "Segoe UI";
-  }
-  .g--font-family-sans--5 {
-    font-family: Roboto;
-  }
-  .g--font-family-sans--6 {
-    font-family: "Helvetica Neue";
-  }
-  .g--font-family-sans--7 {
-    font-family: Arial;
-  }
-  .g--font-family-sans--8 {
-    font-family: "Noto Sans";
-  }
-  .g--font-family-sans--9 {
-    font-family: sans-serif;
-  }
-  .g--font-family-sans--10 {
-    font-family: "Apple Color Emoji";
-  }
-  .g--font-family-sans--11 {
-    font-family: "Segoe UI Emoji";
-  }
-  .g--font-family-sans--12 {
-    font-family: "Segoe UI Symbol";
-  }
-  .g--font-family-sans--13 {
-    font-family: "Noto Color Emoji" ;
-  }
-  .g--font-family-default--1 {
-    font-family: system-ui;
-  }
-  .g--font-family-default--2 {
-    font-family: -apple-system;
-  }
-  .g--font-family-default--3 {
-    font-family: BlinkMacSystemFont;
-  }
-  .g--font-family-default--4 {
-    font-family: "Segoe UI";
-  }
-  .g--font-family-default--5 {
-    font-family: Roboto;
-  }
-  .g--font-family-default--6 {
-    font-family: "Helvetica Neue";
-  }
-  .g--font-family-default--7 {
-    font-family: Arial;
-  }
-  .g--font-family-default--8 {
-    font-family: "Noto Sans";
-  }
-  .g--font-family-default--9 {
-    font-family: sans-serif;
-  }
-  .g--font-family-default--10 {
-    font-family: "Apple Color Emoji";
-  }
-  .g--font-family-default--11 {
-    font-family: "Segoe UI Emoji";
-  }
-  .g--font-family-default--12 {
-    font-family: "Segoe UI Symbol";
-  }
-  .g--font-family-default--13 {
-    font-family: "Noto Color Emoji";
-  }
-  .g--font-family-serif--1 {
-    font-family: Georgia;
-  }
-  .g--font-family-serif--2 {
-    font-family: Cambria;
-  }
-  .g--font-family-serif--3 {
-    font-family: "Times New Roman";
-  }
-  .g--font-family-serif--4 {
-    font-family: Times;
-  }
-  .g--font-family-serif--5 {
-    font-family: serif;
-  }
-  .g--font-family-mono--1 {
-    font-family: "Roboto Mono";
-  }
-  .g--font-family-mono--2 {
-    font-family: Menlo;
-  }
-  .g--font-family-mono--3 {
-    font-family: Monaco;
-  }
-  .g--font-family-mono--4 {
-    font-family: Consolas;
-  }
-  .g--font-family-mono--5 {
-    font-family: "Liberation Mono";
-  }
-  .g--font-family-mono--6 {
-    font-family: "Courier New";
-  }
-  .g--font-family-mono--7 {
-    font-family: monospace;
+  .g--font-family-mono {
+    font-family: var(--font-family-mono);
   }
 }
 @media (min-width: 768px) {
-  .tablet\@g--font-family-sans--1 {
-    font-family: system-ui;
+  .tablet\@g--font-family-sans {
+    font-family: var(--font-family-sans);
   }
-  .tablet\@g--font-family-sans--2 {
-    font-family:  -apple-system;
+  .tablet\@g--font-family-default {
+    font-family: var(--font-family-default);
   }
-  .tablet\@g--font-family-sans--3 {
-    font-family: BlinkMacSystemFont;
+  .tablet\@g--font-family-serif {
+    font-family: var(--font-family-serif);
   }
-  .tablet\@g--font-family-sans--4 {
-    font-family:  "Segoe UI";
-  }
-  .tablet\@g--font-family-sans--5 {
-    font-family: Roboto;
-  }
-  .tablet\@g--font-family-sans--6 {
-    font-family: "Helvetica Neue";
-  }
-  .tablet\@g--font-family-sans--7 {
-    font-family: Arial;
-  }
-  .tablet\@g--font-family-sans--8 {
-    font-family: "Noto Sans";
-  }
-  .tablet\@g--font-family-sans--9 {
-    font-family: sans-serif;
-  }
-  .tablet\@g--font-family-sans--10 {
-    font-family: "Apple Color Emoji";
-  }
-  .tablet\@g--font-family-sans--11 {
-    font-family: "Segoe UI Emoji";
-  }
-  .tablet\@g--font-family-sans--12 {
-    font-family: "Segoe UI Symbol";
-  }
-  .tablet\@g--font-family-sans--13 {
-    font-family: "Noto Color Emoji" ;
-  }
-  .tablet\@g--font-family-default--1 {
-    font-family: system-ui;
-  }
-  .tablet\@g--font-family-default--2 {
-    font-family: -apple-system;
-  }
-  .tablet\@g--font-family-default--3 {
-    font-family: BlinkMacSystemFont;
-  }
-  .tablet\@g--font-family-default--4 {
-    font-family: "Segoe UI";
-  }
-  .tablet\@g--font-family-default--5 {
-    font-family: Roboto;
-  }
-  .tablet\@g--font-family-default--6 {
-    font-family: "Helvetica Neue";
-  }
-  .tablet\@g--font-family-default--7 {
-    font-family: Arial;
-  }
-  .tablet\@g--font-family-default--8 {
-    font-family: "Noto Sans";
-  }
-  .tablet\@g--font-family-default--9 {
-    font-family: sans-serif;
-  }
-  .tablet\@g--font-family-default--10 {
-    font-family: "Apple Color Emoji";
-  }
-  .tablet\@g--font-family-default--11 {
-    font-family: "Segoe UI Emoji";
-  }
-  .tablet\@g--font-family-default--12 {
-    font-family: "Segoe UI Symbol";
-  }
-  .tablet\@g--font-family-default--13 {
-    font-family: "Noto Color Emoji";
-  }
-  .tablet\@g--font-family-serif--1 {
-    font-family: Georgia;
-  }
-  .tablet\@g--font-family-serif--2 {
-    font-family: Cambria;
-  }
-  .tablet\@g--font-family-serif--3 {
-    font-family: "Times New Roman";
-  }
-  .tablet\@g--font-family-serif--4 {
-    font-family: Times;
-  }
-  .tablet\@g--font-family-serif--5 {
-    font-family: serif;
-  }
-  .tablet\@g--font-family-mono--1 {
-    font-family: "Roboto Mono";
-  }
-  .tablet\@g--font-family-mono--2 {
-    font-family: Menlo;
-  }
-  .tablet\@g--font-family-mono--3 {
-    font-family: Monaco;
-  }
-  .tablet\@g--font-family-mono--4 {
-    font-family: Consolas;
-  }
-  .tablet\@g--font-family-mono--5 {
-    font-family: "Liberation Mono";
-  }
-  .tablet\@g--font-family-mono--6 {
-    font-family: "Courier New";
-  }
-  .tablet\@g--font-family-mono--7 {
-    font-family: monospace;
+  .tablet\@g--font-family-mono {
+    font-family: var(--font-family-mono);
   }
 }
 @media (min-width: 992px) {
-  .desktop\@g--font-family-sans--1 {
-    font-family: system-ui;
+  .desktop\@g--font-family-sans {
+    font-family: var(--font-family-sans);
   }
-  .desktop\@g--font-family-sans--2 {
-    font-family:  -apple-system;
+  .desktop\@g--font-family-default {
+    font-family: var(--font-family-default);
   }
-  .desktop\@g--font-family-sans--3 {
-    font-family: BlinkMacSystemFont;
+  .desktop\@g--font-family-serif {
+    font-family: var(--font-family-serif);
   }
-  .desktop\@g--font-family-sans--4 {
-    font-family:  "Segoe UI";
-  }
-  .desktop\@g--font-family-sans--5 {
-    font-family: Roboto;
-  }
-  .desktop\@g--font-family-sans--6 {
-    font-family: "Helvetica Neue";
-  }
-  .desktop\@g--font-family-sans--7 {
-    font-family: Arial;
-  }
-  .desktop\@g--font-family-sans--8 {
-    font-family: "Noto Sans";
-  }
-  .desktop\@g--font-family-sans--9 {
-    font-family: sans-serif;
-  }
-  .desktop\@g--font-family-sans--10 {
-    font-family: "Apple Color Emoji";
-  }
-  .desktop\@g--font-family-sans--11 {
-    font-family: "Segoe UI Emoji";
-  }
-  .desktop\@g--font-family-sans--12 {
-    font-family: "Segoe UI Symbol";
-  }
-  .desktop\@g--font-family-sans--13 {
-    font-family: "Noto Color Emoji" ;
-  }
-  .desktop\@g--font-family-default--1 {
-    font-family: system-ui;
-  }
-  .desktop\@g--font-family-default--2 {
-    font-family: -apple-system;
-  }
-  .desktop\@g--font-family-default--3 {
-    font-family: BlinkMacSystemFont;
-  }
-  .desktop\@g--font-family-default--4 {
-    font-family: "Segoe UI";
-  }
-  .desktop\@g--font-family-default--5 {
-    font-family: Roboto;
-  }
-  .desktop\@g--font-family-default--6 {
-    font-family: "Helvetica Neue";
-  }
-  .desktop\@g--font-family-default--7 {
-    font-family: Arial;
-  }
-  .desktop\@g--font-family-default--8 {
-    font-family: "Noto Sans";
-  }
-  .desktop\@g--font-family-default--9 {
-    font-family: sans-serif;
-  }
-  .desktop\@g--font-family-default--10 {
-    font-family: "Apple Color Emoji";
-  }
-  .desktop\@g--font-family-default--11 {
-    font-family: "Segoe UI Emoji";
-  }
-  .desktop\@g--font-family-default--12 {
-    font-family: "Segoe UI Symbol";
-  }
-  .desktop\@g--font-family-default--13 {
-    font-family: "Noto Color Emoji";
-  }
-  .desktop\@g--font-family-serif--1 {
-    font-family: Georgia;
-  }
-  .desktop\@g--font-family-serif--2 {
-    font-family: Cambria;
-  }
-  .desktop\@g--font-family-serif--3 {
-    font-family: "Times New Roman";
-  }
-  .desktop\@g--font-family-serif--4 {
-    font-family: Times;
-  }
-  .desktop\@g--font-family-serif--5 {
-    font-family: serif;
-  }
-  .desktop\@g--font-family-mono--1 {
-    font-family: "Roboto Mono";
-  }
-  .desktop\@g--font-family-mono--2 {
-    font-family: Menlo;
-  }
-  .desktop\@g--font-family-mono--3 {
-    font-family: Monaco;
-  }
-  .desktop\@g--font-family-mono--4 {
-    font-family: Consolas;
-  }
-  .desktop\@g--font-family-mono--5 {
-    font-family: "Liberation Mono";
-  }
-  .desktop\@g--font-family-mono--6 {
-    font-family: "Courier New";
-  }
-  .desktop\@g--font-family-mono--7 {
-    font-family: monospace;
+  .desktop\@g--font-family-mono {
+    font-family: var(--font-family-mono);
   }
 }
 

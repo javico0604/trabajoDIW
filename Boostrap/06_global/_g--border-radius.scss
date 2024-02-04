@@ -1,6 +1,6 @@
 :root{
-    @for $i from 1 to length($border-radius){
-        --border-radius-#{$i}: nth($border-radius, $i);
+    @for $i from 1 through length($border-radius){
+        --border-radius-#{$i}: #{nth($border-radius, $i)};
     }
 }
 
@@ -19,25 +19,25 @@
             $left-side: "";
         }
 
-        @for $i from 1 to length($border-radius){
+        @for $i from 1 through length($border-radius){
             .#{$left-side}g--border-radius-#{$i}#{$right-side}{
-                border-radius:  nth($border-radius, $i);
+                border-radius: var(--border-radius-#{$i})
             }
 
             .#{$left-side}g--border-top-right-radius-#{$i}#{$right-side}{
-                border-top-right-radius: nth($border-radius, $i);
+                border-top-right-radius:var(--border-radius-#{$i})
             }
 
             .#{$left-side}g--border-bottom-left-radius-#{$i}#{$right-side}{
-                border-bottom-left-radius: nth($border-radius, $i);
+                border-bottom-left-radius:--border-radius-#{$i}
             }
 
             .#{$left-side}g--border-bottom-right-radius-#{$i}#{$right-side}{
-                border-bottom-right-radius: nth($border-radius, $i);
+                border-bottom-right-radius:--border-radius-#{$i}
             }
 
             .#{$left-side}g--border-top-left-radius-#{$i}#{$right-side}{
-                border-top-left-radius: nth($border-radius, $i);
+                border-top-left-radius:--border-radius-#{$i}
             }
         }
     }

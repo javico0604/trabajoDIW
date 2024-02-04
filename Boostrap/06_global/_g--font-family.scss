@@ -1,7 +1,7 @@
 :root{
     @each $key, $value in $font-family{
         @for $i from 1 through length($value){
-            --font-family-#{$key}-#{$i}: #{nth($value, $i)};
+            --font-family-#{$key}: #{nth($value, $i)};
         }
     }
 }
@@ -23,8 +23,8 @@
         
         @each $key, $value in $font-family{
             @for $i from 1 through length($value){
-                .#{$left-side}g--font-family-#{$key}--#{$i}#{$right-side}{
-                    font-family: #{nth($value, $i)};
+                .#{$left-side}g--font-family-#{$key}#{$right-side}{
+                    font-family: var(--font-family-#{$key});
                 }
             }
         }

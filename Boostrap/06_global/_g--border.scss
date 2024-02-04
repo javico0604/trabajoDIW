@@ -1,0 +1,46 @@
+:root{
+    @for $i from 1 through length($border){
+        --border-#{$i}: #{nth($border, $i)};
+    }
+}
+
+@each $key, $value in $breakpoint {
+    @media (min-width: $value){
+        @for $i from 1 through length($border){
+            $right-side: \@#{$key};
+            $left-side: "";
+    
+            @if($initially-breackpoint == true){
+                $right-side: "";
+                $left-side: #{$key}\@;
+            }
+
+            @if($key == ""){
+                $right-side: "";
+                $left-side: "";
+            }
+
+            .#{$left-side}g--border--#{$i}#{$right-side}{
+                border: var(--border-#{$i}) solid black; 
+            }
+
+            .#{$left-side}g--border--dashed--#{$i}#{$right-side}{
+                border: var(--border-#{$i}) dashed black; 
+            }
+
+            .#{$left-side}g--borde--dotted--#{$i}#{$right-side}{
+                border: var(--border-#{$i})px dotted black; 
+            }
+
+            .#{$left-side}g--border--double--#{$i}#{$right-side}{
+                border: var(--border-#{$i}) double black; 
+            }
+
+            .#{$left-side}g--border--groove--#{$i}#{$right-side}{
+                border: var(--border-#{$i}) groove black; 
+            }
+
+        }
+    }
+}
+
