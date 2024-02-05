@@ -23,23 +23,23 @@
             $left-side: "";
         }
 
-        #{$left-side}c-title--very-small#{$right-side}{
+        .#{$left-side}c-title--very-small#{$right-side}{
             font-size: var(--font-size-7);;
         }
 
-        #{$left-side}c-title--small#{$right-side}{
+        .#{$left-side}c-title--small#{$right-side}{
             font-size: var(--font-size-9);
         }
 
-        #{$left-side}c-title--large#{$right-side}{
+        .#{$left-side}c-title--large#{$right-side}{
             font-size: var(--padding-12);
         }
 
-        #{$left-side}c-title--very-large#{$right-side}{
+        .#{$left-side}c-title--very-large#{$right-side}{
             font-size: var(--padding-13);
         }
 
-        #{$left-side}c-title--center#{$right-side}{
+        .#{$left-side}c-title--center#{$right-side}{
             text-align: center;
         }
         @each $key, $tones in $colores{

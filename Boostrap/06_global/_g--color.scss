@@ -19,16 +19,31 @@
         .g--border-color-#{$key}-#{$i}{
             border-color: var(--color-#{$key}-#{$i});
         }
+        
         @media (prefers-color-scheme: dark) {
-            .dark\@g--color-#{$key}-#{$i}{
+
+            $right-side: \@dark;
+            $left-side: "";
+
+            @if($initially-breackpoint == true){
+                $right-side: "";
+                $left-side: dark\@;
+            }
+
+            @if($key == ""){
+                $right-side: "";
+                $left-side: "";
+            }
+
+            .#{$left-side}g--color-#{$key}-#{$i}#{$right-side}{
                 color: var(--color-#{$key}-#{$i});
             }
 
-            .dark\@g--background-color-#{$key}-#{$i}{
+            .#{$left-side}g--background-color-#{$key}-#{$i}#{$right-side}{
                 background-color: var(--color-#{$key}-#{$i});
             }
 
-            .dark\@g--border-color-#{$key}-#{$i}{
+            .#{$left-side}g--border-color-#{$key}-#{$i}#{$right-side}{
                 border-color: var(--color-#{$key}-#{$i});
             }
         }   

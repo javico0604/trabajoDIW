@@ -13,6 +13,16 @@
     background-color: var(--c-header-color);
 }
 
+
+.#{$left-side}c-header__logo#{$right-side} {
+    font-size: var(--font-size-9);
+}
+
+.#{$left-side}c-header__links#{$right-side} {
+    display: flex;
+    gap: 20px;
+}
+
 @each $key, $value in $breakpoint {
     @media (min-width: $value){
         $right-side: \@#{$key};
@@ -27,15 +37,6 @@
             $right-side: "";
             $left-side: "";
         }
-
-            #{$left-side}c-header__logo#{$right-side} {
-                font-size: var(--font-size-9);
-            }
-
-            #{$left-side}__links#{$right-side} {
-                display: flex;
-                gap: 20px;
-            }
             
             @each $key, $tones in $colores{
 
