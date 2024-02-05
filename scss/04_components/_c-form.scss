@@ -7,13 +7,13 @@
 }
 
 @for $i from 1 through length($margins) {
-    .#{$left-side}c-form__submit--#{$i}{
+    .c-form__submit--#{$i}{
         margin-bottom: nth($margins, $i);
     }
 }
 
 @each $key, $tones in $colores{
-    .#{$left-side}c-form__text--#{$key}{
+    .c-form__text--#{$key}{
         color: var( --color-#{$key}-5);    
     }
 }

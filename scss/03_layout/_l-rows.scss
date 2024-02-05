@@ -15,14 +15,21 @@
 
       .#{$left-side}l-rows#{$right-side} {
         display: grid;
-        grid-template-rows: repeat(1, 1fr);
+        grid-template-rows:  1fr 1fr 1fr;
       
-        @for $i from 2 to 12 {
-          &--#{$i} #{$right-side}{
-            grid-template-rows: repeat($i, 1fr);
+        @for $i from 2 to 6 {
+          &-first--#{$i} #{$right-side}{
+            grid-template-rows:  #{$i}fr 1fr 1fr;
           }    
-        } 
-        
+
+          &-second--#{$i} #{$right-side}{
+            grid-template-rows:  1fr #{$i}fr 1fr;
+          } 
+
+          &-third--#{$i} #{$right-side}{
+            grid-template-rows:  1fr 1fr #{$i}fr;
+          }
+        }    
       }
   }
 }
